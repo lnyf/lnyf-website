@@ -405,12 +405,6 @@ const text = {
         "Celina Liu (choreo)", 
         "Cynthia Zhi (choreo)", 
         "Gioia Wang (choreo)",
-        "Alyssa Zhang",
-        "Eileen Li",
-        "Rachel Wei",
-        "Theresa Xuan Nguyen",
-        "Sophia Zhang",
-        "Sophie Song" 
       ],
     },
     {
@@ -418,14 +412,6 @@ const text = {
       image: "dai",
       performers: [
         "Sarah Cao (choreo)", 
-        "Annie Zhao",
-        "Cheney Zhang",
-        "Kylee Kest",
-        "Jadyn Tian",
-        "Lisa Ji",
-        "Maggie Sun",
-        "Rainbow Wu",
-        "Sarah You"
       ],
     },
     {
@@ -435,15 +421,6 @@ const text = {
         "Andrew Choi (choreo)", 
         "Jessica Lee (choreo)", 
         "Hailey Kim (choreo)", 
-        "Abigail Rhee",
-        "Alaina Rhee",
-        "Anlsey Lee",
-        "Eric Montufar-Morales",
-        "Esther Perez",
-        "Jacky Ta",
-        "Katie Auyeung",
-        "Makayla Zheng",
-        "Reina Xu"
       ],
     },
     {
@@ -452,13 +429,6 @@ const text = {
       performers: [
         "Edward Hao (choreo)",
         "Justin Lan (choreo)",
-        "Richard Yang",
-        "Kevin Si",
-        "Lance Yeh",
-        "Kelly Gan",
-        "Jacqueline Chuang",
-        "Allison Tan",
-        "Sarah Gao"
       ],
     },
     {
@@ -467,21 +437,6 @@ const text = {
       performers: [
         "Alex Zhang (choreo)", 
         "Yoon Shin (choreo)",
-        "Abby Tang",
-        "Alan Shi",
-        "Alex Huang",
-        "Ann Lee",
-        "Brandon Cho",
-        "Chelsea Chun",
-        "Elaine Yoo",
-        "Elizabeth Chen",
-        "Heyun Lee",
-        "Juneseo Lee",
-        "Kyle Shon",
-        "Robin Pyo",
-        "Sarah Ye",
-        "Steven Tao",
-        "Yosep Maeng"
       ],
     },
     {
@@ -490,14 +445,6 @@ const text = {
       performers: [
         "Connor Park (choreo)", 
         "Dexter Chen (choreo)",
-        "Avery Kim",
-        "Daniel Yoo",
-        "Dheer Jain",
-        "Hannah Do",
-        "Jade Lo",
-        "Jocelyn Liao",
-        "Justin Yu",
-        "Michelle Cai"
       ],
     },
     {
@@ -506,20 +453,6 @@ const text = {
       performers: [
         "Julie Baguio (choreo)", 
         "Priyanka Deka (choreo)", 
-        "Aaron Chun",
-        "Andrew Kang",
-        "Arwyn Sullivan",
-        "Daniel Oh",
-        "Iliana Acevedo",
-        "Insang Lee",
-        "Jason Ng",
-        "Jonathan Leung",
-        "Kay Stephens",
-        "Keira Nguyen",
-        "Nathan Jeffrey Zhou",
-        "Oleg Ivlev",
-        "Ray Adelstein",
-        "Sarah Cai"
       ],
     },
     {
@@ -529,19 +462,6 @@ const text = {
         "Alex Fang (choreo)", 
         "John Paul (JP) Pineda (choreo)", 
         "Sophie Leong (choreo)", 
-        "Alicia Huang",
-        "Alexandria Flojo",
-        "Alice Xu",
-        "Andrew Aviado",
-        "Dwyneth Jade Calopez Guiterrez",
-        "Grace Huang",
-        "John Glaser",
-        "Joyce Tan",
-        "Julie Baguio",
-        "Junyoung Park",
-        "Malaya Hill",
-        "Noah Sagum",
-        "William Li"
       ],
     },
     {
@@ -567,19 +487,6 @@ const text = {
         "David Zhu (choreo)", 
         "Reina Xu (choreo)", 
         "Sharon Shen (choreo)",
-        "Allison Chang",
-        "Brandon Lin",
-        "Ivy Huang",
-        "Jessie Shi",
-        "Joye Zheng",
-        "Nevin Song",
-        "Madison Wang",
-        "Peter Chang",
-        "Ran Duan",
-        "R. Dehao Tieh",
-        "Ryan Lin",
-        "Thanh Lung",
-        "Vincent Lim"
       ],
     },
   ],
