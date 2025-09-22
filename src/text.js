@@ -186,70 +186,94 @@ const text = {
     //     "Apply to choreograph a dance in the upcoming 2026 show!",
     //   link: "https://docs.google.com/document/d/1fPwDiHwoEnvHn7a3U0Pa0dJshJN13q4eGg8ZCsJtBxc/edit?tab=t.0",
     // },
-    {
-      month: "Sept",
-      day: "7",
-      title: "General Body Meeting",
-      caption: "TBA Time @ Ursa's",
-      description:
-        "Come join our first GBM to find out more about how we celebrate Lunar New Year through performance, fundraising, and other events!",
-    },
-    {
-      month: "Sept",
-      day: "12",
-      title: "LNYF @ AMC's Mid-Autumn Festival",
-      caption: "3-5 PM @ Ursa's",
-      description:
-        "Come to the LNYF Booth to play games and learn more about LNYF!",
-    },
-    {
-      month: "Sept",
-      day: "8-12",
-      title: "Act Workshops",
-      caption: "More info on the LNYF's Instagram!",
-      description:
-        "Explore different LNYF 2026 Acts!",
-    },
-    {
-      month: "Sept",
-      day: "13-14",
-      title: "Auditions",
-      caption: "More info on the Auditions Page and LNYF's Instagram!",
-      description:
-        "Try out to become a performer at LNYF 2026!",
-    },
-    {
-      month: "Sept",
-      day: "15-19",
-      title: "Make-Up Auditions",
-      caption: "More info on the Auditions Page and LNYF's Instagram!",
-      description:
-        "In case you missed it, or for a second chance!",
-    }, 
+    // {
+    //   month: "Sept",
+    //   day: "7",
+    //   title: "General Body Meeting",
+    //   caption: "TBA Time @ Ursa's",
+    //   description:
+    //     "Come join our first GBM to find out more about how we celebrate Lunar New Year through performance, fundraising, and other events!",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "12",
+    //   title: "LNYF @ AMC's Mid-Autumn Festival",
+    //   caption: "3-5 PM @ Ursa's",
+    //   description:
+    //     "Come to the LNYF Booth to play games and learn more about LNYF!",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "8-12",
+    //   title: "Act Workshops",
+    //   caption: "More info on the LNYF's Instagram!",
+    //   description:
+    //     "Explore different LNYF 2026 Acts!",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "13-14",
+    //   title: "Auditions",
+    //   caption: "More info on the Auditions Page and LNYF's Instagram!",
+    //   description:
+    //     "Try out to become a performer at LNYF 2026!",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "15-19",
+    //   title: "Make-Up Auditions",
+    //   caption: "More info on the Auditions Page and LNYF's Instagram!",
+    //   description:
+    //     "In case you missed it, or for a second chance!",
+    // }, 
     {
       month: "Sept",
       day: "24",
-      title: "KBOP Fundraiser",
-      caption: "6-8PM @ BD",
+      title: "Sides of Seoul Fundraiser",
+      caption: "6-8 PM @ BD",
       description:
         "Help us raise money for our philanthropy!",
     }, 
     {
       month: "Sept",
       day: "25",
-      title: "KBOP Fundraiser",
-      caption: "11AM-2PM @ DUC",
+      title: "Sides of Seoul Fundraiser",
+      caption: "11AM-2 PM @ DUC",
       description:
         "Help us raise money for our philanthropy!",
     }, 
-    // {
-    //   month: "Nov",
-    //   day: "9",
-    //   title: "Performer Banquet",
-    //   caption: "6-8 PM @ Umrath Lounge",
-    //   description:
-    //     "Join your fellow performers for a night of fun activities and delicious food!",
-    // },
+    {
+      month: "Oct",
+      day: "19",
+      title: "Performer Social",
+      caption: "3-4:30 PM @ Mudd MPR",
+      description:
+        "Join your fellow performers for a night of fun activities and delicious food!",
+    },
+    {
+      month: "Oct",
+      day: "22",
+      title: "PUSO x LNYF Fundraiser",
+      caption: "6-8 PM @ BD",
+      description:
+        "Help us raise money for our philanthropy!",
+    }, 
+    {
+      month: "Oct",
+      day: "23",
+      title: "PUSO x LNYF Fundraiser",
+      caption: "11AM-2 PM @ DUC",
+      description:
+        "Help us raise money for our philanthropy!",
+    }, 
+    {
+      month: "Nov",
+      day: "9",
+      title: "Performer Banquet",
+      caption: "4-9 PM @ Umrath Lounge",
+      description:
+        "Join your fellow performers for a night of fun activities and delicious food!",
+    },
     // {
     //   month: "Nov",
     //   day: "11",
@@ -375,110 +399,187 @@ const text = {
   },
   performances: [
     {
-      title: "Contemporary Chinese Fan",
-      image: "ccfan",
+      title: "Chinese Fan",
+      image: "cfan",
       performers: [
-        "Rachel Wei (choreo)", "Jennifer Li (choreo)", "Alex Liu", "Catherine Zhao", "Eilene Liu", "Helen Ma", "Jessica Hu", "Julia Li", "Kathleen Weng", "Lisa Ji", "Maggie Cheng", "Ran Duan"
+        "Celina Liu (choreo)", 
+        "Cynthia Zhi (choreo)", 
+        "Gioia Wang (choreo)",
+        "Alyssa Zhang",
+        "Eileen Li",
+        "Rachel Wei",
+        "Theresa Xuan Nguyen",
+        "Sophia Zhang",
+        "Sophie Song" 
       ],
     },
     {
-      title: "Chinese Umbrella",
-      image: "umbrella",
+      title: "Dai",
+      image: "dai",
       performers: [
-        "Emily Shen (choreo)", "Ching Ching Zhang (choreo)", "Amelia Kung", "Andria Luo", "Annie Zhao", "Celina Liu", "Claire Ku", "Gioia Wang", "Kiki Sakano", "Kylee Kest", "Theresa Xuan Nguyen", "Veronica Hsu"
-      ],
-    },
-    {
-      title: "Fashion Show",
-      image: "fashionshow",
-      performers: [
-        "Kelly Gan (choreo)", "Bao Nguyen (choreo)", "Nikki Nguyen (choreo)", "Angel Truong", "Dung Tran", "Hailey Kim", "Hannah Chen", "Jacky Ta", "Jana Yan", "Jessica Chen", "Joye Zheng", "Madeleine Yeung", "Phi Chanda", "Sophie Lin", "William Li"
-      ],
-    },
-    {
-      title: "Juggling",
-      image: "juggling",
-      performers: [
-        "Daniel Chen (choreo)", "Jeremy Cho (choreo)", "Grant Kaplan (choreo)", "Logan Sumitani", "Justin Xu", "Lizzie Wagner", "Mandar Brahmbhatt", "Sandro Xiao", "Synoma Perea"
+        "Sarah Cao (choreo)", 
+        "Annie Zhao",
+        "Cheney Zhang",
+        "Kylee Kest",
+        "Jadyn Tian",
+        "Lisa Ji",
+        "Maggie Sun",
+        "Rainbow Wu",
+        "Sarah You"
       ],
     },
     {
       title: "Korean Fan",
       image: "kfan",
       performers: [
-        "Sarah Cao (choreo)", "Kalea Lee (choreo)", "Vicky Cadena (choreo)", "Audrey Tsai", "Eric Montufar-Morales", "Frank Jiang", "Jamie Shin", "Jessica Lee", "Kaitlyn Wang", "Min Suh Kwak", "Miranda Lee"
+        "Andrew Choi (choreo)", 
+        "Jessica Lee (choreo)", 
+        "Hailey Kim (choreo)", 
+        "Abigail Rhee",
+        "Alaina Rhee",
+        "Anlsey Lee",
+        "Eric Montufar-Morales",
+        "Esther Perez",
+        "Jacky Ta",
+        "Katie Auyeung",
+        "Makayla Zheng",
+        "Reina Xu"
       ],
     },
     {
       title: "Lion",
       image: "lion",
       performers: [
-        "Birdie Lee (H) (choreo)",
-        "Justin Lan (T) (choreo)",
-        "Edward Hao (H)",
-        "Kelly Gan (H)",
-        "Wenting Yu (H)",
-        "Matthew Du (T)",
-        "Richard Yang (T)",
-        "William Yin (T)",
-        "Kevin Si (P)",
-        "Lance Yeh (P)"
-      ],
-    },
-    {
-      title: "Lotus",
-      image: "lotusvietnamese",
-      performers: [
-        "Vicki Truong (choreo)", "Theresa Xuan Nguyen (choreo)", "Abby Tang", "Bao Nguyen", "Cassie Phan", "Emma Shen", "Kim Nguyen", "Nhi Ly", "Sydney Kim", "Sydney Kuo", "Tiffany Chan"
+        "Edward Hao (choreo)",
+        "Justin Lan (choreo)",
+        "Richard Yang",
+        "Kevin Si",
+        "Lance Yeh",
+        "Kelly Gan",
+        "Jacqueline Chuang",
+        "Allison Tan",
+        "Sarah Gao"
       ],
     },
     {
       title: "Samulnori",
       image: "samulnori",
       performers: [
-        "Emily So (choreo)", "Sebastian Lee (choreo)", "Alex Zhang", "Alyssa Kim", "Andy Mun", "Chelsea Chun", "Elaine Yoo", "Emily Shen", "Jane Zhang", "Jasmine Li", "Jeremy Lin", "Juneseo Lee", "Nevin Song", "Sol Bae", "Steven Tao", "Yoon Shin"
+        "Alex Zhang (choreo)", 
+        "Yoon Shin (choreo)",
+        "Abby Tang",
+        "Alan Shi",
+        "Alex Huang",
+        "Ann Lee",
+        "Brandon Cho",
+        "Chelsea Chun",
+        "Elaine Yoo",
+        "Elizabeth Chen",
+        "Heyun Lee",
+        "Juneseo Lee",
+        "Kyle Shon",
+        "Robin Pyo",
+        "Sarah Ye",
+        "Steven Tao",
+        "Yosep Maeng"
       ],
     },
     {
       title: "Standing Drums",
       image: "standingdrums",
       performers: [
-        "Alex Liu (choreo)", "Harry Gao (choreo)", "Birdie Lee", "Daniel Yoo", "Dexter Chen", "Elysia Quah", "Iris Yang", "Justin Yu", "Lia Seo", "Richard Li"
+        "Connor Park (choreo)", 
+        "Dexter Chen (choreo)",
+        "Avery Kim",
+        "Daniel Yoo",
+        "Dheer Jain",
+        "Hannah Do",
+        "Jade Lo",
+        "Jocelyn Liao",
+        "Justin Yu",
+        "Michelle Cai"
       ],
     },
     {
       title: "Taekwondo",
       image: "taekwondo",
       performers: [
-        "Julie Baguio (choreo)", "Priyanka Deka (choreo)", "Sayf Fadil (choreo)", "Daniel Oh", "James Law", "Jason Ng", "Jonathan Leung", "Michael Nguyen", "Nathan Zhou", "Sarah Cai"
+        "Julie Baguio (choreo)", 
+        "Priyanka Deka (choreo)", 
+        "Aaron Chun",
+        "Andrew Kang",
+        "Arwyn Sullivan",
+        "Daniel Oh",
+        "Iliana Acevedo",
+        "Insang Lee",
+        "Jason Ng",
+        "Jonathan Leung",
+        "Kay Stephens",
+        "Keira Nguyen",
+        "Nathan Jeffrey Zhou",
+        "Oleg Ivlev",
+        "Ray Adelstein",
+        "Sarah Cai"
       ],
     },
     {
       title: "Tinikling",
       image: "tinikling",
       performers: [
-        "Jane Liang (choreo)", "Paula Glaser (choreo)", "Ricky Wang (choreo)", "Alexandria Flojo", "Amanda Young", "Cece Idinopulos", "Claudine Noel", "Julie Baguio", "Noelle Casem", "Sophie Leong", "Aaron Wang", "Darian Liu", "Eric Liu", "John Glaser", "Max Francisco", "Noah Sagum", "Ronak Chandiwala"
+        "Alex Fang (choreo)", 
+        "John Paul (JP) Pineda (choreo)", 
+        "Sophie Leong (choreo)", 
+        "Alicia Huang",
+        "Alexandria Flojo",
+        "Alice Xu",
+        "Andrew Aviado",
+        "Dwyneth Jade Calopez Guiterrez",
+        "Grace Huang",
+        "John Glaser",
+        "Joyce Tan",
+        "Julie Baguio",
+        "Junyoung Park",
+        "Malaya Hill",
+        "Noah Sagum",
+        "William Li"
       ],
     },
     {
-      title: "Vietnamese Fan",
-      image: "vfan",
+      title: "Vietnamese Scarves",
+      image: "vscarves",
       performers: [
-        "Tietchan Dang (choreo)", "Vivian Nguyen (choreo)", "Charlotte Chen", "Emily Hao", "Nikki Nguyen", "Sarah You", "Tiffany Ly", "Vy Nguyen"
+        "Charlotte Chen (choreo)", 
+        "Nikki Nguyen (choreo)", 
+        "Vy Nguyen (choreo)", 
       ],
     },
     {
-      title: "Watersleeves",
-      image: "watersleeves",
+      title: "Wushu",
+      image: "wushu",
       performers: [
-        "Celina Liu (choreo)", "Andria Luo (choreo)", "Caleb Lee", "Cynthia Chen", "Cynthia Zhi", "Ella Jang", "Esther Wang", "Jocelyn Liao", "Vicki Truong"
+        "Maggie Cheng (choreo)", 
       ],
     },
     {
       title: "Yoyo",
       image: "yoyo",
       performers: [
-        "Emily Shen (choreo)", "Demi Zhuang (choreo)", "Nevin Song (choreo)", "Brandon Lin", "David Zhu", "Ivy Huang", "Madison Wang", "Megan Guo", "Peter Chang", "Reina Xu", "Ryan Lin", "Sharon Shen", "Thomas Lang"
+        "David Zhu (choreo)", 
+        "Reina Xu (choreo)", 
+        "Sharon Shen (choreo)",
+        "Allison Chang",
+        "Brandon Lin",
+        "Ivy Huang",
+        "Jessie Shi",
+        "Joye Zheng",
+        "Nevin Song",
+        "Madison Wang",
+        "Peter Chang",
+        "Ran Duan",
+        "R. Dehao Tieh",
+        "Ryan Lin",
+        "Thanh Lung",
+        "Vincent Lim"
       ],
     },
   ],

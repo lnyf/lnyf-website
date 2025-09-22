@@ -1,5 +1,6 @@
 {
   "name": "lnyf",
+  "homepage": "https://github.com/wulnyf/website#readme",
   "version": "1.3.0",
   "private": true,
   "description": "LNYF",
@@ -14,9 +15,14 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "dev": "vite",
     "build": "gatsby build",
+    "lint": "eslint src --ext js, jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "develop": "gatsby develop",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -63,5 +69,5 @@
   "bugs": {
     "url": "https://github.com/wulnyf/website/issues"
   },
-  "homepage": "https://github.com/wulnyf/website#readme"
+  "devDependencies": {}
 }
