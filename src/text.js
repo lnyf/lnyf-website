@@ -534,7 +534,7 @@ const text = {
         "Alexandria Flojo",
         "Alice Xu",
         "Andrew Aviado",
-        "Dwyneth Jade Calopez Guiterrez",
+        "Dwyneth Jade Calopez Gutierrez",
         "Grace Huang",
         "Hayne Song",
         "John Glaser",
