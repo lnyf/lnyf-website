@@ -246,7 +246,7 @@ const text = {
       month: "Oct",
       day: "11",
       title: "EarthDance Volunteering",
-      caption: "TBD PM @ TBD",
+      caption: "10AM-1PM @ TBD",
       description:
         "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
     },
@@ -254,7 +254,7 @@ const text = {
       month: "Oct",
       day: "12",
       title: "EarthDance Volunteering",
-      caption: "TBD @ TBD",
+      caption: "10AM-1PM @ TBD",
       description:
       "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
     },
