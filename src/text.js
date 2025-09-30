@@ -226,22 +226,38 @@ const text = {
     //   description:
     //     "In case you missed it, or for a second chance!",
     // }, 
+    // {
+    //   month: "Sept",
+    //   day: "24",
+    //   title: "Sides of Seoul Fundraiser",
+    //   caption: "6-8 PM @ BD",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // }, 
+    // {
+    //   month: "Sept",
+    //   day: "25",
+    //   title: "Sides of Seoul Fundraiser",
+    //   caption: "11AM-2 PM @ DUC",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // }, 
     {
-      month: "Sept",
-      day: "24",
-      title: "Sides of Seoul Fundraiser",
-      caption: "6-8 PM @ BD",
+      month: "Oct",
+      day: "11",
+      title: "EarthDance Volunteering",
+      caption: "TBD PM @ TBD",
       description:
-        "Help us raise money for our philanthropy!",
-    }, 
+        "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+    },
     {
-      month: "Sept",
-      day: "25",
-      title: "Sides of Seoul Fundraiser",
-      caption: "11AM-2 PM @ DUC",
+      month: "Oct",
+      day: "12",
+      title: "EarthDance Volunteering",
+      caption: "TBD @ TBD",
       description:
-        "Help us raise money for our philanthropy!",
-    }, 
+      "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+    },
     {
       month: "Oct",
       day: "19",
