@@ -435,12 +435,10 @@ const text = {
       performers: [
         "Sarah Cao (choreo)", 
         "Annie Zhao",
-        "Cheney Zhang",
         "Kylee Kest",
         "Jadyn Tian",
         "Lisa Ji",
         "Maggie Sun",
-        "Rainbow Wu",
         "Sarah You"
       ],
     },
