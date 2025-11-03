@@ -242,46 +242,46 @@ const text = {
     //   description:
     //     "Help us raise money for our philanthropy!",
     // }, 
-    {
-      month: "Oct",
-      day: "11",
-      title: "EarthDance Volunteering",
-      caption: "10AM-1PM @ TBD",
-      description:
-        "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
-    },
-    {
-      month: "Oct",
-      day: "12",
-      title: "EarthDance Volunteering",
-      caption: "10AM-1PM @ TBD",
-      description:
-      "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
-    },
-    {
-      month: "Oct",
-      day: "19",
-      title: "Performer Social",
-      caption: "3-4:30 PM @ Mudd MPR",
-      description:
-        "Join your fellow performers for a night of fun activities and delicious food!",
-    },
-    {
-      month: "Oct",
-      day: "22",
-      title: "PUSO x LNYF Fundraiser",
-      caption: "6-8 PM @ BD",
-      description:
-        "Help us raise money for our philanthropy!",
-    }, 
-    {
-      month: "Oct",
-      day: "23",
-      title: "PUSO x LNYF Fundraiser",
-      caption: "11AM-2 PM @ DUC",
-      description:
-        "Help us raise money for our philanthropy!",
-    }, 
+    // {
+    //   month: "Oct",
+    //   day: "11",
+    //   title: "EarthDance Volunteering",
+    //   caption: "10AM-1PM @ TBD",
+    //   description:
+    //     "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+    // },
+    // {
+    //   month: "Oct",
+    //   day: "12",
+    //   title: "EarthDance Volunteering",
+    //   caption: "10AM-1PM @ TBD",
+    //   description:
+    //   "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+    // },
+    // {
+    //   month: "Oct",
+    //   day: "19",
+    //   title: "Performer Social",
+    //   caption: "3-4:30 PM @ Mudd MPR",
+    //   description:
+    //     "Join your fellow performers for a night of fun activities and delicious food!",
+    // },
+    // {
+    //   month: "Oct",
+    //   day: "22",
+    //   title: "PUSO x LNYF Fundraiser",
+    //   caption: "6-8 PM @ BD",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // }, 
+    // {
+    //   month: "Oct",
+    //   day: "23",
+    //   title: "PUSO x LNYF Fundraiser",
+    //   caption: "11AM-2 PM @ DUC",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // }, 
     {
       month: "Nov",
       day: "9",
@@ -289,6 +289,30 @@ const text = {
       caption: "4-9 PM @ Umrath Lounge",
       description:
         "Join your fellow performers for a night of fun activities and delicious food!",
+    },
+    {
+      month: "Dec",
+      day: "3",
+      title: "Candy Fundraiser",
+      caption: "6-8 PM @ BD",
+      description:
+        "Help us raise money for our philanthropy!",
+    },
+    {
+      month: "Dec",
+      day: "4",
+      title: "Candy Fundraiser",
+      caption: "11AM-2PM @ DUC",
+      description:
+        "Help us raise money for our philanthropy!",
+    },
+    {
+      month: "Dec",
+      day: "8",
+      title: "Clementine's Benefit Night",
+      caption: "6-8 PM @ TBD",
+      description:
+        "Visit the TBD Clementine's location anytime during 6-8PM and proceeds will go towards our philanthropy!",
     },
     // {
     //   month: "Nov",
