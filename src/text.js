@@ -571,7 +571,6 @@ const text = {
         "Cassie Phan",
         "Cece Ly",
         "Emma Shen",
-        "Grace Kahler",
         "Jasmine Najari",
         "Kim Nguyen",
         "Mya Silveyra"
