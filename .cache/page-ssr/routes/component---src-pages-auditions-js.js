@@ -1116,7 +1116,12 @@ const Header = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
     to: "/events",
     onClick: onMenuClick
-  }, "Events")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", {
+  }, "Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
+    variant: "h4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+    to: "/store",
+    onClick: onMenuClick
+  }, "Store")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", {
     style: {
       ...navbarStyles,
       top: visible ? '0px' : '-60px'
@@ -1971,42 +1976,86 @@ const text = {
   //   description:
   //     "In case you missed it, or for a second chance!",
   // }, 
+  // {
+  //   month: "Sept",
+  //   day: "24",
+  //   title: "Sides of Seoul Fundraiser",
+  //   caption: "6-8 PM @ BD",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // }, 
+  // {
+  //   month: "Sept",
+  //   day: "25",
+  //   title: "Sides of Seoul Fundraiser",
+  //   caption: "11AM-2 PM @ DUC",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // }, 
+  // {
+  //   month: "Oct",
+  //   day: "11",
+  //   title: "EarthDance Volunteering",
+  //   caption: "10AM-1PM @ TBD",
+  //   description:
+  //     "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+  // },
+  // {
+  //   month: "Oct",
+  //   day: "12",
+  //   title: "EarthDance Volunteering",
+  //   caption: "10AM-1PM @ TBD",
+  //   description:
+  //   "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+  // },
+  // {
+  //   month: "Oct",
+  //   day: "19",
+  //   title: "Performer Social",
+  //   caption: "3-4:30 PM @ Mudd MPR",
+  //   description:
+  //     "Join your fellow performers for a night of fun activities and delicious food!",
+  // },
+  // {
+  //   month: "Oct",
+  //   day: "22",
+  //   title: "PUSO x LNYF Fundraiser",
+  //   caption: "6-8 PM @ BD",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // }, 
+  // {
+  //   month: "Oct",
+  //   day: "23",
+  //   title: "PUSO x LNYF Fundraiser",
+  //   caption: "11AM-2 PM @ DUC",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // }, 
   {
-    month: "Sept",
-    day: "24",
-    title: "Sides of Seoul Fundraiser",
-    caption: "6-8 PM @ BD",
-    description: "Help us raise money for our philanthropy!"
-  }, {
-    month: "Sept",
-    day: "25",
-    title: "Sides of Seoul Fundraiser",
-    caption: "11AM-2 PM @ DUC",
-    description: "Help us raise money for our philanthropy!"
-  }, {
-    month: "Oct",
-    day: "19",
-    title: "Performer Social",
-    caption: "3-4:30 PM @ Mudd MPR",
-    description: "Join your fellow performers for a night of fun activities and delicious food!"
-  }, {
-    month: "Oct",
-    day: "22",
-    title: "PUSO x LNYF Fundraiser",
-    caption: "6-8 PM @ BD",
-    description: "Help us raise money for our philanthropy!"
-  }, {
-    month: "Oct",
-    day: "23",
-    title: "PUSO x LNYF Fundraiser",
-    caption: "11AM-2 PM @ DUC",
-    description: "Help us raise money for our philanthropy!"
-  }, {
     month: "Nov",
     day: "9",
     title: "Performer Banquet",
     caption: "4-9 PM @ Umrath Lounge",
     description: "Join your fellow performers for a night of fun activities and delicious food!"
+  }, {
+    month: "Dec",
+    day: "3",
+    title: "Candy Fundraiser",
+    caption: "6-8 PM @ BD",
+    description: "Help us raise money for our philanthropy!"
+  }, {
+    month: "Dec",
+    day: "4",
+    title: "Candy Fundraiser",
+    caption: "11AM-2PM @ DUC",
+    description: "Help us raise money for our philanthropy!"
+  }, {
+    month: "Dec",
+    day: "8",
+    title: "Clementine's Benefit Night",
+    caption: "6-8 PM @ TBD",
+    description: "Visit the TBD Clementine's location anytime during 6-8PM and proceeds will go towards our philanthropy!"
   }
   // {
   //   month: "Nov",
@@ -2128,15 +2177,15 @@ const text = {
   }, {
     title: "Dai",
     image: "dai",
-    performers: ["Sarah Cao (choreo)", "Annie Zhao", "Cheney Zhang", "Kylee Kest", "Jadyn Tian", "Lisa Ji", "Maggie Sun", "Rainbow Wu", "Sarah You"]
+    performers: ["Sarah Cao (choreo)", "Annie Zhao", "Kylee Kest", "Jadyn Tian", "Lisa Ji", "Maggie Sun", "Sarah You"]
   }, {
     title: "Korean Fan",
     image: "kfan",
-    performers: ["Andrew Choi (choreo)", "Jessica Lee (choreo)", "Hailey Kim (choreo)", "Abigail Rhee", "Alaina Rhee", "Anlsey Lee", "Eric Montufar-Morales", "Esther Perez", "Jacky Ta", "Katie Auyeung", "Makayla Zheng", "Reina Xu"]
+    performers: ["Andrew Choi (choreo)", "Jessica Lee (choreo)", "Hailey Kim (choreo)", "Abigail Rhee", "Alaina Rhee", "Ansley Lee", "Eric Montufar-Morales", "Esther Perez", "Jacky Ta", "Katie Auyeung", "Makayla Zheng", "Reina Xu"]
   }, {
     title: "Lion",
     image: "lion",
-    performers: ["Edward Hao (choreo)", "Justin Lan (choreo)", "Richard Yang", "Kevin Si", "Lance Yeh", "Kelly Gan", "Jacqueline Chuang", "Allison Tan", "Sarah Gao"]
+    performers: ["Edward Hao (choreo)", "Justin Lan (choreo)", "Richard Yang", "A Phi Le", "Kevin Si", "Lance Yeh", "Kelly Gan", "Jacqueline Chuang", "Allison Tan", "Sarah Gao"]
   }, {
     title: "Samulnori",
     image: "samulnori",
@@ -2152,11 +2201,11 @@ const text = {
   }, {
     title: "Tinikling",
     image: "tinikling",
-    performers: ["Alex Fang (choreo)", "John Paul (JP) Pineda (choreo)", "Sophie Leong (choreo)", "Alicia Huang", "Alexandria Flojo", "Alice Xu", "Andrew Aviado", "Dwyneth Jade Calopez Guiterrez", "Grace Huang", "Hayne Song", "John Glaser", "Julie Baguio", "Junyoung Park", "Malaya Hill", "Noah Sagum", "William Li"]
+    performers: ["Alex Fang (choreo)", "John Paul (JP) Pineda (choreo)", "Sophie Leong (choreo)", "Alicia Huang", "Alexandria Flojo", "Alice Xu", "Andrew Aviado", "Dwyneth Jade Calopez Gutierrez", "Grace Huang", "Hayne Song", "John Glaser", "Julie Baguio", "Junyoung Park", "Malaya Hill", "Noah Sagum", "William Li"]
   }, {
     title: "Vietnamese Scarves",
     image: "vscarves",
-    performers: ["Charlotte Chen (choreo)", "Nikki Nguyen (choreo)", "Vy Nguyen (choreo)", "Alexis Nguyen", "Adeline Chen", "Cassie Phan", "Cece Ly", "Emma Shen", "Grace Kahler", "Jasmine Najari", "Kim Nguyen", "Mya Silveyra"]
+    performers: ["Charlotte Chen (choreo)", "Nikki Nguyen (choreo)", "Vy Nguyen (choreo)", "Alexis Nguyen", "Adeline Chen", "Cassie Phan", "Cece Ly", "Emma Shen", "Jasmine Najari", "Kim Nguyen", "Mya Silveyra"]
   }, {
     title: "Wushu",
     image: "wushu",
@@ -2180,22 +2229,18 @@ const text = {
       price: "0.00",
       soldOut: false,
     },*/
+    // {
+    //   title: "Long Sleeve Shirt",
+    //   images: [
+    //     { image: "shirt-boys", alt: "Long Sleeve" },
+    //     { image: "shirt-girls", alt: "Long Sleeve" },
+    //     { image: "shirt-tote-girls", alt: "Long Sleeve" },
+    //   ],
+    //   subImages: undefined,
+    //   price: "$26.00",
+    //   soldOut: false,
+    // },
     {
-      title: "Long Sleeve Shirt",
-      images: [{
-        image: "shirt-boys",
-        alt: "Long Sleeve"
-      }, {
-        image: "shirt-girls",
-        alt: "Long Sleeve"
-      }, {
-        image: "shirt-tote-girls",
-        alt: "Long Sleeve"
-      }],
-      subImages: undefined,
-      price: "$26.00",
-      soldOut: false
-    }, {
       title: "Tote Bag",
       images: [{
         image: "tote-bag",
@@ -2211,21 +2256,22 @@ const text = {
         alt: "LNYF Tote"
       }],
       subImages: undefined,
-      price: "$17.00",
+      price: "$12.00",
       soldOut: false
-    },
-    // {
-    //   title: "Sweatpants",
-    //   images: [
-    //     { image: "pants-pic", alt: "Sweatpants" },
-    //     { image: "pants-pic-2", alt: "Sweatpants" },
-    //   ],
-    //   subImages: undefined,
-    //   price: "$45.00",
-    //   soldOut: true,
-    // },
-    {
-      title: "Snake Pin",
+    }, {
+      title: "Sweatpants",
+      images: [{
+        image: "pants-pic",
+        alt: "Sweatpants"
+      }, {
+        image: "pants-pic-2",
+        alt: "Sweatpants"
+      }],
+      subImages: undefined,
+      price: "$30.00",
+      soldOut: false
+    }, {
+      title: "Horse Keychain",
       images: [{
         image: "pins",
         alt: "Pin"
@@ -2240,33 +2286,43 @@ const text = {
       price: "$7.00",
       soldOut: false
     }, {
-      title: "Short Sleeve T-Shirt",
+      title: "Cute LNYF Horse Sticker",
       images: [{
-        image: "t-shirt-1",
-        alt: "Short Sleeve"
+        image: "pins",
+        alt: "Pin"
       }, {
-        image: "t-shirt-2",
-        alt: "Short Sleeve"
+        image: "pins-1",
+        alt: "Pin"
       }, {
-        image: "t-shirt-3",
-        alt: "Short Sleeve"
+        image: "pins-2",
+        alt: "Pin"
       }],
       subImages: undefined,
-      price: "$14.00",
+      price: "$1.50",
       soldOut: false
-    }, {
-      title: "Coffee Mug",
-      images: [{
-        image: "mug-main",
-        alt: "Mug"
-      }, {
-        image: "mug-slides",
-        alt: "Mug"
-      }],
-      subImages: undefined,
-      price: "$14.00",
-      soldOut: false
-    }]
+    }
+    // {
+    //   title: "Short Sleeve T-Shirt",
+    //   images: [
+    //     { image: "t-shirt-1", alt: "Short Sleeve" },
+    //     { image: "t-shirt-2", alt: "Short Sleeve" },
+    //     { image: "t-shirt-3", alt: "Short Sleeve" },
+    //   ],
+    //   subImages: undefined,
+    //   price: "$14.00",
+    //   soldOut: false,
+    // },
+    // {
+    //   title: "Coffee Mug",
+    //   images: [
+    //     { image: "mug-main", alt: "Mug" },
+    //     { image: "mug-slides", alt: "Mug" },
+    //   ],
+    //   subImages: undefined,
+    //   price: "$14.00",
+    //   soldOut: false,
+    // },
+    ]
   },
   people: {
     bod: [{

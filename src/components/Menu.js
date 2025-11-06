@@ -3,13 +3,30 @@ import styled, { keyframes, css } from "styled-components";
 
 const Wrapper = styled.button`
   cursor: pointer;
-  border: none;
-  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
   padding: 0;
   position: relative;
-  height: 25px;
-  width: 35px;
-  margin-right: 30px;
+  height: 44px;
+  width: 44px;
+  border-radius: 14px;
+  margin-right: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px) scale(1.02);
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
   @media (min-width: 800px) {
     display: none;
   }
@@ -23,50 +40,53 @@ export const AnimateState = {
 
 const Bar = styled.span`
   position: absolute;
-  background: ${({ theme }) => theme.palette.secondarybackground};
-  left: 0;
-  height: 2px;
+  background: ${({ theme }) => theme.palette.font};
+  left: 50%;
+  height: 3px;
+  width: 28px;
+  margin-left: -14px;
+  border-radius: 999px;
+  transition: background 0.2s ease;
 `;
 
 const Bar1AnimationOpen = keyframes`
   0% {
-    top: 5.5px;
+    top: 14px;
   }
   50% {
-    top: 17.5px;
+    top: 22px;
     transform: rotate(0deg);
   }
   100% {
-    top: 17.5px;
+    top: 22px;
     transform: rotate(45deg);
   }
 `;
 const Bar1AnimationClosed = keyframes`
   0% {
-    top: 17.5px;
+    top: 22px;
     transform: rotate(45deg);
   }
   50% {
-    top: 17.5px;
+    top: 22px;
     transform: rotate(0deg);
   }
   100% {
-    top: 5.5px;
+    top: 14px;
   }
 `;
 
 const Bar1 = styled(Bar)`
-  top: 5.5px;
-  width: 40px;
+  top: 14px;
   ${({ animate }) => {
     if (animate !== AnimateState.INITIAL) {
       if (animate === AnimateState.CLOSED) {
         return css`
-          animation: ${Bar1AnimationClosed} 0.2s ease-in-out forwards;
+          animation: ${Bar1AnimationClosed} 0.25s ease-in-out forwards;
         `;
       } else {
         return css`
-          animation: ${Bar1AnimationOpen} 0.2s ease-in-out forwards;
+          animation: ${Bar1AnimationOpen} 0.25s ease-in-out forwards;
         `;
       }
     }
@@ -75,44 +95,43 @@ const Bar1 = styled(Bar)`
 
 const Bar2AnimationOpen = keyframes`
   0% {
-    top: 20.5px;
+    top: 30px;
   }
   50% {
-    top: 17.5px;
+    top: 22px;
     transform: rotate(0deg);
   }
   100% {
-    top: 17.5px;
+    top: 22px;
     transform: rotate(-45deg);
   }
 `;
 
 const Bar2AnimationClosed = keyframes`
   0% {
-    top: 17.5px;
+    top: 22px;
     transform: rotate(-45deg);
   }
   50% {
-    top: 17.5px;
+    top: 22px;
     transform: rotate(0deg);
   }
   100% {
-    top: 20.5px;
+    top: 30px;
   }
 `;
 
 const Bar2 = styled(Bar)`
-  top: 20.5px;
-  width: 40px;
+  top: 30px;
   ${({ animate }) => {
     if (animate !== AnimateState.INITIAL) {
       if (animate === AnimateState.CLOSED) {
         return css`
-          animation: ${Bar2AnimationClosed} 0.2s ease-in-out forwards;
+          animation: ${Bar2AnimationClosed} 0.25s ease-in-out forwards;
         `;
       } else {
         return css`
-          animation: ${Bar2AnimationOpen} 0.2s ease-in-out forwards;
+          animation: ${Bar2AnimationOpen} 0.25s ease-in-out forwards;
         `;
       }
     }

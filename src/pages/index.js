@@ -170,6 +170,7 @@ const EventPane = styled.div`
   border-radius: 20px;
           box-shadow: ${({ theme }) => theme.palette.background}4D 0px 19px 38px, ${({ theme }) => theme.palette.background}38 0px 15px 12px;
   transition: all .3s; 
+  padding: 15px 0;
   @media (max-width: 1000px) {
     width: 96vw;
   }
@@ -183,6 +184,8 @@ const EventBar = styled.div`
   display: -webkit-box;
   flex-direction: row;
   overflow-x: scroll;
+  overflow-y: visible;
+  padding: 10px 0;
   &::-webkit-scrollbar {
     width: 0.8em;
   }
@@ -203,15 +206,28 @@ const EventItem = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 10px;
+  padding: 25px 15px;
+  min-height: 150px;
   align-items: center;
   border: 2px solid ${theme.font};
   border-radius: 10px;
   color: ${theme.palette.font};
+  box-sizing: border-box;
+  overflow: visible;
 `;
 
 const EventTitle = styled(Typography)`
   text-align: center;
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.3;
+  padding: 0 5px;
+  font-size: clamp(18px, 3vw, 26px);
+  letter-spacing: normal;
 `;
 
 const EventDate = styled(Typography)`

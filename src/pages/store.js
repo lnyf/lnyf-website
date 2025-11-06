@@ -79,6 +79,15 @@ const Subtitle = styled(Typography)`
   margin: 2px 0px 8px;
 `;
 
+const BuyButton = styled(Button)`
+  margin-top: 10px;
+`;
+
+const StyledLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+`;
+
 const StorePage = ({ data }) => {
   const { imgData } = data;
   const { nodes } = imgData;
@@ -106,7 +115,7 @@ const StorePage = ({ data }) => {
                 <Button>Buy Drop 1</Button>
               </a>
             )}
-            {text.links.store2 && (
+            {/* {text.links.store2 && (
               <a
                 href={text.links.store2}
                 target="_blank"
@@ -114,7 +123,7 @@ const StorePage = ({ data }) => {
               >
                 <Button>Buy Drop 2</Button>
               </a>
-            )}
+            )} */}
             {text.store.caption && (
               <StyledCaption variant="caption">
                 {text.store.caption}
@@ -136,6 +145,15 @@ const StorePage = ({ data }) => {
               <StyledHeader variant="subtitle">{s.title}</StyledHeader>
               <Subtitle variant="caption">{s.subtitle}</Subtitle>
               <Typography variant="caption">{s.price}</Typography>
+              {s.link && !s.soldOut && (
+                <StyledLink
+                  href={s.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BuyButton>Buy Now</BuyButton>
+                </StyledLink>
+              )}
             </ImageContainer>
           ))}
         </Grid>

@@ -46,37 +46,72 @@ const StyledLink = styled(Link)`
 const NavOverlay = styled.div`
   position: fixed;
   z-index: 200;
-  top: 60px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  inset: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(77, 127, 132, 0.85); /* theme.palette.accent3 with opacity */
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border-radius: 0 0 24px 24px;
-  padding: 32px 0 32px 0;
+  padding: 96px 24px 48px;
+  background: radial-gradient(circle at top, rgba(19, 32, 44, 0.92), rgba(8, 13, 19, 0.88));
+  backdrop-filter: blur(18px) saturate(130%);
 `;
 
-const NavOverlayLink = styled(Typography)`
-  margin-bottom: 28px;
-  padding: 0 32px;
-  font-weight: 400;
-  font-size: 2.1rem;
+const NavOverlayContent = styled.div`
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+`;
+
+const NavOverlayItem = styled(Link)`
+  width: 100%;
+  text-decoration: none;
+  padding: 18px 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f7f7f5;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.45rem, 4.2vw, 2.25rem);
   letter-spacing: 0.08em;
-  color: #fff;
-  text-align: center;
-  border-radius: 12px;
-  transition: background 0.2s, color 0.2s, transform 0.2s;
-  
-  &:hover {
-    background: rgba(255,255,255,0.08);
-    color: #F4E27B; /* theme.palette.primary2 */
-    text-decoration: underline;
-    transform: scale(1.04);
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-right: 60px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+  box-shadow: 0 18px 45px rgba(8, 13, 19, 0.28);
+
+  &::after {
+    content: "→";
+    position: absolute;
+    right: 26px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-10px);
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: translateX(6px);
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+    color: ${({ theme }) => theme.palette.primary2};
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(3px);
+  }
+
+  @media (max-width: 480px) {
+    padding: 16px 20px;
+    padding-right: 56px;
   }
 `;
 
@@ -240,60 +275,40 @@ const Header = ({ transparent }) => {
     <div>
       {open && (
         <NavOverlay>
-          <Container>
-            <NavOverlayLink variant="h4">
-              <StyledLink to="/" onClick={onMenuClick}>
-                Home
-              </StyledLink>
-            </NavOverlayLink>
+          <NavOverlayContent>
+            <NavOverlayItem to="/" onClick={onMenuClick}>
+              Home
+            </NavOverlayItem>
             {text.schedule.active && (
-              <NavOverlayLink variant="h4">
-                <StyledLink to="/auditions" onClick={onMenuClick}>
-                  Auditions
-                </StyledLink>
-              </NavOverlayLink>
+              <NavOverlayItem to="/auditions" onClick={onMenuClick}>
+                Auditions
+              </NavOverlayItem>
             )}
-            {/* <NavOverlayLink variant="h4">
-              <StyledLink to="https://ci.ovationtix.com/35674/production/1219675" onClick={onMenuClick}>
-                BUY TICKETS
-              </StyledLink>
-            </NavOverlayLink> */}
-            <NavOverlayLink variant="h4">
-              <StyledLink to="/performances" onClick={onMenuClick}>
-                Performers
-              </StyledLink>
-            </NavOverlayLink>
-            <NavOverlayLink variant="h4">
-              <StyledLink to="/gallery" onClick={onMenuClick}>
-                Gallery
-              </StyledLink>
-            </NavOverlayLink>
-            <NavOverlayLink variant="h4">
-              <StyledLink to="/people" onClick={onMenuClick}>
-                Exec
-              </StyledLink>
-            </NavOverlayLink>
-            <NavOverlayLink variant="h4">
-              <StyledLink to="/philanthropy" onClick={onMenuClick}>
-                Philanthropy
-              </StyledLink>
-            </NavOverlayLink>
-            <NavOverlayLink variant="h4">
-              <StyledLink to="/events" onClick={onMenuClick}>
-                Events
-              </StyledLink>
-            </NavOverlayLink>
-            {/* <NavOverlayLink variant="h4">
-              <StyledLink to="/store" onClick={onMenuClick}>
-                Donate
-              </StyledLink>
-            </NavOverlayLink> */}
-            {/* <NavOverlayLink variant="h4">
-              <StyledLink to="/store" onClick={onMenuClick}>
-                Store
-              </StyledLink>
-            </NavOverlayLink> */}
-          </Container>
+            {/* <NavOverlayItem to="https://ci.ovationtix.com/35674/production/1219675" onClick={onMenuClick}>
+              BUY TICKETS
+            </NavOverlayItem> */}
+            <NavOverlayItem to="/performances" onClick={onMenuClick}>
+              Performers
+            </NavOverlayItem>
+            <NavOverlayItem to="/gallery" onClick={onMenuClick}>
+              Gallery
+            </NavOverlayItem>
+            <NavOverlayItem to="/people" onClick={onMenuClick}>
+              Exec
+            </NavOverlayItem>
+            <NavOverlayItem to="/philanthropy" onClick={onMenuClick}>
+              Philanthropy
+            </NavOverlayItem>
+            <NavOverlayItem to="/events" onClick={onMenuClick}>
+              Events
+            </NavOverlayItem>
+            {/* <NavOverlayItem to="/store" onClick={onMenuClick}>
+              Donate
+            </NavOverlayItem> */}
+            <NavOverlayItem to="/store" onClick={onMenuClick}>
+              Store
+            </NavOverlayItem>
+          </NavOverlayContent>
         </NavOverlay>
       )}
       <div style={{ ...navbarStyles, top: visible ? '0px' : '-60px' }}>
@@ -343,11 +358,11 @@ const Header = ({ transparent }) => {
               Donate
             </StyledLink>
           </NavBarLink> */}
-          {/* <NavBarLink variant="linkfont">
+          <NavBarLink variant="linkfont">
             <StyledLink to="/store">
               Store
             </StyledLink>
-          </NavBarLink> */}
+          </NavBarLink>
         </LinkSection>
       </div>
     </div>
@@ -377,9 +392,9 @@ const Layout = ({ children, transparent, noWaves }) => {
           {/* <Link to="/store" style={{ color: 'white', textDecoration: 'none' }}>
             <Typography variant="footerlink">Donate</Typography>
           </Link> */}
-          {/* <Link to="/store" style={{ color: 'white', textDecoration: 'none' }}>
+          <Link to="/store" style={{ color: 'white', textDecoration: 'none' }}>
             <Typography variant="footerlink" style={{ fontSize: '1.1rem', marginBottom: '1px'}}>Store</Typography>
-          </Link> */}
+          </Link>
           <Link to="/philanthropy" style={{ color: 'white', textDecoration: 'none' }}>
             <Typography variant="footerlink" style={{ fontSize: '1.1rem', marginBottom: '1px'}}>Philanthropy</Typography>
           </Link>
