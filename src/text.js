@@ -703,7 +703,7 @@ const text = {
           { image: "sticker-2", alt: "Sticker" },
         ],
         subImages: undefined,
-        price: "$5.00",
+        price: "$1.50",
         soldOut: false,
         link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
       },
