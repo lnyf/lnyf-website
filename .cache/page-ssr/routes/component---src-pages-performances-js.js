@@ -1147,10 +1147,15 @@ const StyledLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])
 })(["text-decoration:none;color:inherit;transition:all 0.3s ease;&:hover{text-decoration:underline;transform:translateY(-2px);}"]);
 const NavOverlay = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
   displayName: "Layout__NavOverlay"
-})(["position:fixed;z-index:200;top:60px;left:0px;right:0px;bottom:0px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(77,127,132,0.85);backdrop-filter:blur(12px);box-shadow:0 8px 32px 0 rgba(31,38,135,0.37);border-radius:0 0 24px 24px;padding:32px 0 32px 0;"]);
-const NavOverlayLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
-  displayName: "Layout__NavOverlayLink"
-})(["margin-bottom:28px;padding:0 32px;font-weight:400;font-size:2.1rem;letter-spacing:0.08em;color:#fff;text-align:center;border-radius:12px;transition:background 0.2s,color 0.2s,transform 0.2s;&:hover{background:rgba(255,255,255,0.08);color:#F4E27B;text-decoration:underline;transform:scale(1.04);}"]);
+})(["position:fixed;z-index:200;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:96px 24px 48px;background:radial-gradient(circle at top,rgba(19,32,44,0.92),rgba(8,13,19,0.88));backdrop-filter:blur(18px) saturate(130%);"]);
+const NavOverlayContent = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
+  displayName: "Layout__NavOverlayContent"
+})(["width:100%;max-width:420px;display:flex;flex-direction:column;gap:18px;"]);
+const NavOverlayItem = (0,styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link).withConfig({
+  displayName: "Layout__NavOverlayItem"
+})(["width:100%;text-decoration:none;padding:18px 24px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:#f7f7f5;font-family:\"Oswald\",sans-serif;font-weight:500;font-size:clamp(1.45rem,4.2vw,2.25rem);letter-spacing:0.08em;text-transform:uppercase;display:block;position:relative;overflow:hidden;padding-right:60px;transition:transform 0.2s ease,border-color 0.2s ease,background 0.2s ease,color 0.2s ease;box-shadow:0 18px 45px rgba(8,13,19,0.28);&::after{content:\"\u2192\";position:absolute;right:26px;top:50%;transform:translateY(-50%) translateX(-10px);font-size:1.2rem;opacity:0;transition:transform 0.2s ease,opacity 0.2s ease;}&:hover,&:focus-visible{transform:translateX(6px);border-color:rgba(255,255,255,0.35);background:rgba(255,255,255,0.08);color:", ";}&:hover::after,&:focus-visible::after{opacity:1;transform:translateY(-50%) translateX(3px);}@media (max-width:480px){padding:16px 20px;padding-right:56px;}"], ({
+  theme
+}) => theme.palette.primary2);
 const Page = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].main.withConfig({
   displayName: "Layout__Page"
 })(["display:flex;flex-direction:column;min-height:100vh;"]);
@@ -1244,47 +1249,34 @@ const Header = ({
     'background-color': `${_theme__WEBPACK_IMPORTED_MODULE_6__["default"].palette.background}73`,
     transition: 'top 0.6s'
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", null, open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlay, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
-    variant: "h4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", null, open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlay, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/",
     onClick: onMenuClick
-  }, "Home")), _text__WEBPACK_IMPORTED_MODULE_5__["default"].schedule.active && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
-    variant: "h4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+  }, "Home"), _text__WEBPACK_IMPORTED_MODULE_5__["default"].schedule.active && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/auditions",
     onClick: onMenuClick
-  }, "Auditions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
-    variant: "h4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+  }, "Auditions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/performances",
     onClick: onMenuClick
-  }, "Performers")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
-    variant: "h4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+  }, "Performers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/gallery",
     onClick: onMenuClick
-  }, "Gallery")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
-    variant: "h4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+  }, "Gallery"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/people",
     onClick: onMenuClick
-  }, "Exec")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
-    variant: "h4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+  }, "Exec"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/philanthropy",
     onClick: onMenuClick
-  }, "Philanthropy")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
-    variant: "h4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+  }, "Philanthropy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/events",
     onClick: onMenuClick
-  }, "Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayLink, {
-    variant: "h4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+  }, "Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
+    to: "/external-performances",
+    onClick: onMenuClick
+  }, "External Performances"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/store",
     onClick: onMenuClick
-  }, "Store")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", {
+  }, "Store"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", {
     style: {
       ...navbarStyles,
       top: visible ? '0px' : '-60px'
@@ -1314,7 +1306,15 @@ const Header = ({
     variant: "linkfont"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
     to: "/people"
-  }, "Exec")))));
+  }, "Exec")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
+    variant: "linkfont"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+    to: "/external-performances"
+  }, "External Performances")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
+    variant: "linkfont"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+    to: "/store"
+  }, "Store")))));
 };
 const Layout = ({
   children,
@@ -1380,6 +1380,18 @@ const Layout = ({
       marginBottom: '1px'
     }
   }, "Exec")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/store",
+    style: {
+      color: 'white',
+      textDecoration: 'none'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    variant: "footerlink",
+    style: {
+      fontSize: '1.1rem',
+      marginBottom: '1px'
+    }
+  }, "Store")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/philanthropy",
     style: {
       color: 'white',
@@ -1517,7 +1529,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].button.withConfig({
   displayName: "Menu__Wrapper"
-})(["cursor:pointer;border:none;background:transparent;padding:0;position:relative;height:25px;width:35px;margin-right:30px;@media (min-width:800px){display:none;}"]);
+})(["cursor:pointer;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.08);backdrop-filter:blur(16px);padding:0;position:relative;height:44px;width:44px;border-radius:14px;margin-right:22px;display:inline-flex;align-items:center;justify-content:center;transition:transform 0.2s ease,border-color 0.2s ease,background 0.2s ease;&:hover{transform:translateY(-2px) scale(1.02);border-color:rgba(255,255,255,0.35);background:rgba(255,255,255,0.12);}&:active{transform:scale(0.96);}@media (min-width:800px){display:none;}"]);
 const AnimateState = {
   INITIAL: "Initial",
   OPEN: "Open",
@@ -1525,36 +1537,36 @@ const AnimateState = {
 };
 const Bar = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
   displayName: "Menu__Bar"
-})(["position:absolute;background:", ";left:0;height:2px;"], ({
+})(["position:absolute;background:", ";left:50%;height:3px;width:28px;margin-left:-14px;border-radius:999px;transition:background 0.2s ease;"], ({
   theme
-}) => theme.palette.secondarybackground);
-const Bar1AnimationOpen = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.keyframes)(["0%{top:5.5px;}50%{top:17.5px;transform:rotate(0deg);}100%{top:17.5px;transform:rotate(45deg);}"]);
-const Bar1AnimationClosed = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.keyframes)(["0%{top:17.5px;transform:rotate(45deg);}50%{top:17.5px;transform:rotate(0deg);}100%{top:5.5px;}"]);
+}) => theme.palette.font);
+const Bar1AnimationOpen = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.keyframes)(["0%{top:14px;}50%{top:22px;transform:rotate(0deg);}100%{top:22px;transform:rotate(45deg);}"]);
+const Bar1AnimationClosed = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.keyframes)(["0%{top:22px;transform:rotate(45deg);}50%{top:22px;transform:rotate(0deg);}100%{top:14px;}"]);
 const Bar1 = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(Bar).withConfig({
   displayName: "Menu__Bar1"
-})(["top:5.5px;width:40px;", ""], ({
+})(["top:14px;", ""], ({
   animate
 }) => {
   if (animate !== AnimateState.INITIAL) {
     if (animate === AnimateState.CLOSED) {
-      return (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["animation:", " 0.2s ease-in-out forwards;"], Bar1AnimationClosed);
+      return (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["animation:", " 0.25s ease-in-out forwards;"], Bar1AnimationClosed);
     } else {
-      return (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["animation:", " 0.2s ease-in-out forwards;"], Bar1AnimationOpen);
+      return (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["animation:", " 0.25s ease-in-out forwards;"], Bar1AnimationOpen);
     }
   }
 });
-const Bar2AnimationOpen = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.keyframes)(["0%{top:20.5px;}50%{top:17.5px;transform:rotate(0deg);}100%{top:17.5px;transform:rotate(-45deg);}"]);
-const Bar2AnimationClosed = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.keyframes)(["0%{top:17.5px;transform:rotate(-45deg);}50%{top:17.5px;transform:rotate(0deg);}100%{top:20.5px;}"]);
+const Bar2AnimationOpen = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.keyframes)(["0%{top:30px;}50%{top:22px;transform:rotate(0deg);}100%{top:22px;transform:rotate(-45deg);}"]);
+const Bar2AnimationClosed = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.keyframes)(["0%{top:22px;transform:rotate(-45deg);}50%{top:22px;transform:rotate(0deg);}100%{top:30px;}"]);
 const Bar2 = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(Bar).withConfig({
   displayName: "Menu__Bar2"
-})(["top:20.5px;width:40px;", ""], ({
+})(["top:30px;", ""], ({
   animate
 }) => {
   if (animate !== AnimateState.INITIAL) {
     if (animate === AnimateState.CLOSED) {
-      return (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["animation:", " 0.2s ease-in-out forwards;"], Bar2AnimationClosed);
+      return (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["animation:", " 0.25s ease-in-out forwards;"], Bar2AnimationClosed);
     } else {
-      return (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["animation:", " 0.2s ease-in-out forwards;"], Bar2AnimationOpen);
+      return (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["animation:", " 0.25s ease-in-out forwards;"], Bar2AnimationOpen);
     }
   }
 });
@@ -2140,6 +2152,7 @@ const StyledHeader = (0,styled_components__WEBPACK_IMPORTED_MODULE_4__["default"
 //         subImages: { image: String, name: String }[],
 //         price: String,
 //         soldOut: Boolean,
+//         link: String | undefined,
 //       }[],
 //   },
 //   people: {
@@ -2178,7 +2191,7 @@ const text = {
     facebook: "https://www.facebook.com/WULNYF/",
     instagram: "https://www.instagram.com/wu.lnyf/?hl=en",
     youtube: "https://www.youtube.com/user/LNYF",
-    store: "https://commerce.cashnet.com/SULUNAR",
+    store: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
     store2: "https://docs.google.com/forms/d/e/1FAIpQLScCqjMIVtSPz-8_1roqnXly6q6xMPj0dJ_kQCcw_wQlGOX5uw/viewform?usp=dialog"
     //store: "https://docs.google.com/forms/d/e/1FAIpQLScHw56q-6mb2jUH9Wx5KhdkTjk4KWjdP0uwR0uTIa_9DWlXIw/viewform",
   },
@@ -2525,63 +2538,58 @@ const text = {
     {
       title: "Tote Bag",
       images: [{
-        image: "tote-bag",
+        image: "tote-1",
         alt: "LNYF Tote"
       }, {
-        image: "tote-bag-1",
+        image: "tote-2",
         alt: "LNYF Tote"
       }, {
-        image: "tote-bag-girls",
-        alt: "LNYF Tote"
-      }, {
-        image: "tote-bag-boys",
+        image: "tote-3",
         alt: "LNYF Tote"
       }],
       subImages: undefined,
       price: "$12.00",
-      soldOut: false
+      soldOut: false,
+      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0"
     }, {
       title: "Sweatpants",
       images: [{
-        image: "pants-pic",
+        image: "sweatpants-1",
         alt: "Sweatpants"
       }, {
-        image: "pants-pic-2",
+        image: "sweatpants-2",
         alt: "Sweatpants"
       }],
       subImages: undefined,
       price: "$30.00",
-      soldOut: false
+      soldOut: false,
+      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0"
     }, {
       title: "Horse Keychain",
       images: [{
-        image: "pins",
-        alt: "Pin"
+        image: "keychain-1",
+        alt: "Keychain"
       }, {
-        image: "pins-1",
-        alt: "Pin"
-      }, {
-        image: "pins-2",
-        alt: "Pin"
+        image: "keychain-2",
+        alt: "Keychain"
       }],
       subImages: undefined,
-      price: "$7.00",
-      soldOut: false
+      price: "$5.00",
+      soldOut: false,
+      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0"
     }, {
       title: "Cute LNYF Horse Sticker",
       images: [{
-        image: "pins",
-        alt: "Pin"
+        image: "sticker-1",
+        alt: "Sticker"
       }, {
-        image: "pins-1",
-        alt: "Pin"
-      }, {
-        image: "pins-2",
-        alt: "Pin"
+        image: "sticker-2",
+        alt: "Sticker"
       }],
       subImages: undefined,
       price: "$1.50",
-      soldOut: false
+      soldOut: false,
+      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0"
     }
     // {
     //   title: "Short Sleeve T-Shirt",

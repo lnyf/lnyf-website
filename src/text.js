@@ -117,7 +117,14 @@ const StyledHeader = styled(Typography)`
 //     active: Boolean,
 //     auditions: JSX.Element,
 //     makeups: JSX.Element
-//   }
+//   },
+//   externalPerformances: {
+//     info: String,
+//     photos: {
+//       image: String,
+//       caption: String,
+//     }[],
+//   },
 // };
 
 const text = {
@@ -127,6 +134,7 @@ const text = {
     youtube: "https://www.youtube.com/user/LNYF",
     store: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
     store2: "https://docs.google.com/forms/d/e/1FAIpQLScCqjMIVtSPz-8_1roqnXly6q6xMPj0dJ_kQCcw_wQlGOX5uw/viewform?usp=dialog",
+    externalPerformancesForm: "https://docs.google.com/forms/d/e/1FAIpQLSeRiYDlxX0G1_Ytdc_YPKfPy6UnbQG3PJIBZRhczCze7HSWUQ/viewform",
     //store: "https://docs.google.com/forms/d/e/1FAIpQLScHw56q-6mb2jUH9Wx5KhdkTjk4KWjdP0uwR0uTIa_9DWlXIw/viewform",
   },
   index: {
@@ -1683,6 +1691,15 @@ const text = {
         </Table>
       </>
     ),
+  },
+  externalPerformances: {
+    info: "LNYF performs at various external events throughout the year. We showcase East and Southeast Asian culture through performances at community events, festivals, and other venues at WashU and the St. Louis community.",
+    photos: [
+      { image: "Samu_ChuseokFest", caption: "Samulnori at the St. Louis Chuseok Festival" },
+      { image: "Tinikling_MFAS2024", caption: "Tinikling at the MFAS 2024 Conference at SLU" },
+      { image: "Cfan_vsaformal", caption: "Chinese Fan at the 2025 VSA Formal" },
+      { image: "lionyoyo_crown", caption: "Lion and Yoyo at the St. Louis Crown Center" },
+    ],
   },
 };
 

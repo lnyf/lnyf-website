@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-auditions-js": preferDefault(require("/Users/jp/Documents/lnyf-website/src/pages/auditions.js")),
   "component---src-pages-contact-js": preferDefault(require("/Users/jp/Documents/lnyf-website/src/pages/contact.js")),
   "component---src-pages-events-js": preferDefault(require("/Users/jp/Documents/lnyf-website/src/pages/events.js")),
+  "component---src-pages-external-performances-js": preferDefault(require("/Users/jp/Documents/lnyf-website/src/pages/external-performances.js")),
   "component---src-pages-gallery-js": preferDefault(require("/Users/jp/Documents/lnyf-website/src/pages/gallery.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/jp/Documents/lnyf-website/src/pages/index.js")),
   "component---src-pages-people-js": preferDefault(require("/Users/jp/Documents/lnyf-website/src/pages/people.js")),

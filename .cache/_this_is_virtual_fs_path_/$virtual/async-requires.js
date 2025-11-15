@@ -4,6 +4,7 @@ exports.components = {
   "component---src-pages-auditions-js": () => import("./../../../src/pages/auditions.js?export=default" /* webpackChunkName: "component---src-pages-auditions-js" */),
   "component---src-pages-contact-js": () => import("./../../../src/pages/contact.js?export=default" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-events-js": () => import("./../../../src/pages/events.js?export=default" /* webpackChunkName: "component---src-pages-events-js" */),
+  "component---src-pages-external-performances-js": () => import("./../../../src/pages/external-performances.js?export=default" /* webpackChunkName: "component---src-pages-external-performances-js" */),
   "component---src-pages-gallery-js": () => import("./../../../src/pages/gallery.js?export=default" /* webpackChunkName: "component---src-pages-gallery-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js?export=default" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-people-js": () => import("./../../../src/pages/people.js?export=default" /* webpackChunkName: "component---src-pages-people-js" */),

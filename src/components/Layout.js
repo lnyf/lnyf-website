@@ -302,6 +302,9 @@ const Header = ({ transparent }) => {
             <NavOverlayItem to="/events" onClick={onMenuClick}>
               Events
             </NavOverlayItem>
+            <NavOverlayItem to="/external-performances" onClick={onMenuClick}>
+              External Performances
+            </NavOverlayItem>
             {/* <NavOverlayItem to="/store" onClick={onMenuClick}>
               Donate
             </NavOverlayItem> */}
@@ -358,6 +361,11 @@ const Header = ({ transparent }) => {
               Donate
             </StyledLink>
           </NavBarLink> */}
+          <NavBarLink variant="linkfont">
+            <StyledLink to="/external-performances">
+              External Performances
+            </StyledLink>
+          </NavBarLink>
           <NavBarLink variant="linkfont">
             <StyledLink to="/store">
               Store
