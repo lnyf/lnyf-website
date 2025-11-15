@@ -1697,7 +1697,7 @@ const text = {
     photos: [
       { image: "Samu_ChuseokFest", caption: "Samulnori at the St. Louis Chuseok Festival" },
       { image: "Tinikling_MFAS2024", caption: "Tinikling at the MFAS 2024 Conference at SLU" },
-      { image: "Cfan_vsaformal", caption: "Chinese Fan at the 2025 VSA Formal" },
+      { image: "Cfan_vsaformal", caption: "Chinese Fan at the 2025 TSO Formal" },
       { image: "lionyoyo_crown", caption: "Lion and Yoyo at the St. Louis Crown Center" },
     ],
   },

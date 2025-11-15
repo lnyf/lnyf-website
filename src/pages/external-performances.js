@@ -324,11 +324,11 @@ const ExternalPerformancesPage = ({ data }) => {
             <FadeInOnScroll direction="up" delay={100} threshold={0.15}>
               <Card style={{ maxWidth: '900px', margin: '0 auto' }}>
                 <StyledHeader variant="h4">Request an External Performance</StyledHeader>
-                <InfoText variant="p" style={{ marginBottom: '15px' }}>
+                <InfoText variant="p" style={{ marginBottom: '0' }}>
                   Interested in having LNYF perform at your event? Fill out the form (linked) below.
                 </InfoText>
                 
-                <InfoText variant="p" style={{ marginTop: '10px', marginBottom: '20px' }}>
+                <InfoText variant="p" style={{ marginTop: '15px', marginBottom: '20px' }}>
                   <strong>Questions?</strong> Reach out to us at{" "}
                   <StyledLink href="mailto:perfcomm.lnyf@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>
                     perfcomm.lnyf@gmail.com
@@ -367,7 +367,7 @@ const ExternalPerformancesPage = ({ data }) => {
               objectFit="contain"
             />
             {selectedPhoto.caption && (
-              <Typography variant="p">Caption: {selectedPhoto.caption}</Typography>
+              <Typography variant="p">{selectedPhoto.caption}</Typography>
             )}
           </>
         )}
