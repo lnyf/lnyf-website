@@ -71,6 +71,18 @@ const InfoText = styled(Typography)`
   margin-bottom: 20px;
 `;
 
+const InfoTextNoMargin = styled(Typography)`
+  line-height: 1.6;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+`;
+
+const ContactText = styled(Typography)`
+  line-height: 1.6;
+  margin-top: 15px !important;
+  margin-bottom: 20px !important;
+`;
+
 const LinkContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -324,16 +336,16 @@ const ExternalPerformancesPage = ({ data }) => {
             <FadeInOnScroll direction="up" delay={100} threshold={0.15}>
               <Card style={{ maxWidth: '900px', margin: '0 auto' }}>
                 <StyledHeader variant="h4">Request an External Performance</StyledHeader>
-                <InfoText variant="p" style={{ marginBottom: '0' }}>
+                <InfoTextNoMargin variant="p">
                   Interested in having LNYF perform at your event? Fill out the form (linked) below.
-                </InfoText>
+                </InfoTextNoMargin>
                 
-                <InfoText variant="p" style={{ marginTop: '15px', marginBottom: '20px' }}>
+                <ContactText variant="p">
                   <strong>Questions?</strong> Reach out to us at{" "}
                   <StyledLink href="mailto:perfcomm.lnyf@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>
                     perfcomm.lnyf@gmail.com
                   </StyledLink>
-                </InfoText>
+                </ContactText>
                 
                 <FormButtonContainer style={{ marginBottom: '25px' }}>
                   <StyledLink
