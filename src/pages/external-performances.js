@@ -79,7 +79,7 @@ const InfoTextNoMargin = styled(Typography)`
 
 const ContactText = styled(Typography)`
   line-height: 1.6;
-  margin-top: 15px !important;
+  margin-top: 8px !important;
   margin-bottom: 20px !important;
 `;
 
@@ -116,8 +116,14 @@ const CarouselContainer = styled.div`
 const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
-  padding-bottom: 60%;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
+  background: ${({ theme }) => theme.palette.background};
+
+  @supports not (aspect-ratio: 3 / 2) {
+    height: 0;
+    padding-bottom: 66.66%;
+  }
 `;
 
 const CarouselImage = styled(StyledImage)`
@@ -257,6 +263,42 @@ const ExternalPerformancesPage = ({ data }) => {
     <Layout>
       <Seo title="External Performances" />
       <InnerPage title="External Performances">
+        <Section>
+          <FadeInOnScroll direction="up" delay={0} threshold={0.15}>
+            <Card style={{ maxWidth: '900px', margin: '0 auto' }}>
+              <StyledHeader variant="h4">Request an External Performance</StyledHeader>
+              <InfoTextNoMargin variant="p">
+                Interested in having LNYF perform at your event? Fill out the form (linked) below.
+                <br />
+                <br />
+                <strong>Questions?</strong> Reach out to us at{" "}
+                <StyledLink href="mailto:perfcomm.lnyf@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>
+                  perfcomm.lnyf@gmail.com
+                </StyledLink>
+              </InfoTextNoMargin>
+              
+              <FormButtonContainer style={{ marginBottom: '25px' }}>
+                <StyledLink
+                  href={text.links.externalPerformancesForm}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button>Open Form in New Tab</Button>
+                </StyledLink>
+              </FormButtonContainer>
+
+              <FormContainer>
+                <FormIframe
+                  src={text.links.externalPerformancesForm}
+                  title="External Performance Request Form"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </FormContainer>
+            </Card>
+          </FadeInOnScroll>
+        </Section>
+
         <TwoColumnGrid>
           <FadeInOnScroll direction="up" delay={0} threshold={0.2}>
             <Card>
@@ -331,43 +373,6 @@ const ExternalPerformancesPage = ({ data }) => {
               </FadeInOnScroll>
             </Section>
           )}
-
-          <Section>
-            <FadeInOnScroll direction="up" delay={100} threshold={0.15}>
-              <Card style={{ maxWidth: '900px', margin: '0 auto' }}>
-                <StyledHeader variant="h4">Request an External Performance</StyledHeader>
-                <InfoTextNoMargin variant="p">
-                  Interested in having LNYF perform at your event? Fill out the form (linked) below.
-                </InfoTextNoMargin>
-                
-                <ContactText variant="p">
-                  <strong>Questions?</strong> Reach out to us at{" "}
-                  <StyledLink href="mailto:perfcomm.lnyf@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>
-                    perfcomm.lnyf@gmail.com
-                  </StyledLink>
-                </ContactText>
-                
-                <FormButtonContainer style={{ marginBottom: '25px' }}>
-                  <StyledLink
-                    href={text.links.externalPerformancesForm}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button>Open Form in New Tab</Button>
-                  </StyledLink>
-                </FormButtonContainer>
-
-                <FormContainer>
-                  <FormIframe
-                    src={text.links.externalPerformancesForm}
-                    title="External Performance Request Form"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </FormContainer>
-              </Card>
-            </FadeInOnScroll>
-          </Section>
       </InnerPage>
 
       <ImageOverlay open={open} setOpen={setOpen}>
