@@ -1293,6 +1293,12 @@ const Header = ({
     to: "/auditions",
     onClick: onMenuClick
   }, "Auditions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
+    to: "https://ci.ovationtix.com/35674/production/1257574",
+    onClick: onMenuClick
+  }, "BUY TICKETS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
+    to: "/crew",
+    onClick: onMenuClick
+  }, "Stage Crew & Ushers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/performances",
     onClick: onMenuClick
   }, "Performers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
@@ -1311,6 +1317,9 @@ const Header = ({
     to: "/external-performances",
     onClick: onMenuClick
   }, "External Performances"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
+    to: "/history",
+    onClick: onMenuClick
+  }, "History"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/store",
     onClick: onMenuClick
   }, "Store"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", {
@@ -1334,6 +1343,14 @@ const Header = ({
   }, "Auditions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
     variant: "linkfont"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+    to: "https://ci.ovationtix.com/35674/production/1257574"
+  }, "BUY TICKETS NOW")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
+    variant: "linkfont"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+    to: "/crew"
+  }, "Stage Crew & Ushers")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
+    variant: "linkfont"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
     to: "/performances"
   }, "Performers")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
     variant: "linkfont"
@@ -1348,6 +1365,10 @@ const Header = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
     to: "/external-performances"
   }, "External Performances")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
+    variant: "linkfont"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
+    to: "/history"
+  }, "History")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
     variant: "linkfont"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
     to: "/store"
@@ -2061,36 +2082,87 @@ __webpack_require__.r(__webpack_exports__);
 const Section = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "external-performances__Section"
 })(["margin-bottom:40px;"]);
+const Card = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__Card"
+})(["background:", ";border:", ";box-shadow:", ";border-radius:12px;padding:30px;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;height:100%;&:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.15);}"], ({
+  theme
+}) => theme.palette.background, ({
+  theme
+}) => theme.decoration.border, ({
+  theme
+}) => theme.decoration.boxShadow);
+const TwoColumnGrid = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__TwoColumnGrid"
+})(["display:grid;grid-template-columns:1fr;gap:30px;margin-bottom:40px;align-items:stretch;@media (min-width:900px){grid-template-columns:1fr 1fr;}"]);
+const ThreeColumnGrid = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__ThreeColumnGrid"
+})(["display:grid;grid-template-columns:1fr;gap:30px;margin-bottom:40px;@media (min-width:700px){grid-template-columns:1fr 1fr;}@media (min-width:1100px){grid-template-columns:1fr 1fr 1fr;}"]);
 const StyledHeader = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_7__["default"]).withConfig({
   displayName: "external-performances__StyledHeader"
-})(["margin-top:20px;margin-bottom:15px;"]);
+})(["margin-bottom:15px;color:", ";"], ({
+  theme
+}) => theme.palette.secondary1);
 const InfoText = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_7__["default"]).withConfig({
   displayName: "external-performances__InfoText"
-})(["margin-bottom:20px;line-height:1.6;"]);
+})(["line-height:1.6;margin-bottom:20px;"]);
+const InfoTextNoMargin = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_7__["default"]).withConfig({
+  displayName: "external-performances__InfoTextNoMargin"
+})(["line-height:1.6;margin-bottom:0 !important;margin-top:0 !important;"]);
+const ContactText = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_7__["default"]).withConfig({
+  displayName: "external-performances__ContactText"
+})(["line-height:1.6;margin-top:8px !important;margin-bottom:20px !important;"]);
 const LinkContainer = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "external-performances__LinkContainer"
-})(["margin:20px 0;display:flex;flex-wrap:wrap;gap:15px;"]);
+})(["display:flex;flex-wrap:wrap;gap:15px;margin-top:15px;"]);
 const StyledLink = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].a.withConfig({
   displayName: "external-performances__StyledLink"
 })(["text-decoration:none;color:inherit;"]);
-const PhotoGrid = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
-  displayName: "external-performances__PhotoGrid"
-})(["display:grid;grid-gap:20px;margin-bottom:20px;@media (min-width:500px){grid-template-columns:1fr 1fr;}@media (min-width:800px){grid-template-columns:1fr 1fr 1fr;}@media (min-width:1000px){grid-template-columns:1fr 1fr 1fr 1fr;}"]);
-const ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
-  displayName: "external-performances__ImageContainer"
-})(["display:flex;flex-direction:column;align-items:center;text-align:center;"]);
-const ImageThumbnail = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_StyledImage__WEBPACK_IMPORTED_MODULE_6__["default"]).withConfig({
-  displayName: "external-performances__ImageThumbnail"
-})(["height:0px;padding-bottom:75%;cursor:pointer;"]);
-const ImageCaption = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_7__["default"]).withConfig({
-  displayName: "external-performances__ImageCaption"
-})(["margin-top:10px;font-size:0.9rem;"]);
+const IconContainer = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__IconContainer"
+})(["font-size:3rem;margin-bottom:15px;color:", ";"], ({
+  theme
+}) => theme.palette.secondary1);
+const CarouselContainer = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__CarouselContainer"
+})(["position:relative;width:100%;max-width:900px;margin:0 auto;border:", ";box-shadow:", ";border-radius:12px;overflow:hidden;background:", ";"], ({
+  theme
+}) => theme.decoration.border, ({
+  theme
+}) => theme.decoration.boxShadow, ({
+  theme
+}) => theme.palette.background);
+const ImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__ImageWrapper"
+})(["position:relative;width:100%;aspect-ratio:3 / 2;overflow:hidden;background:", ";@supports not (aspect-ratio:3 / 2){height:0;padding-bottom:66.66%;}"], ({
+  theme
+}) => theme.palette.background);
+const CarouselImage = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_StyledImage__WEBPACK_IMPORTED_MODULE_6__["default"]).withConfig({
+  displayName: "external-performances__CarouselImage"
+})(["position:absolute;top:0;left:0;width:100%;height:100%;"]);
+const IconWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__IconWrapper"
+})(["pointer-events:none;position:absolute;left:0;top:0;bottom:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:15px;z-index:10;"]);
+const ArrowIcon = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__ArrowIcon"
+})(["pointer-events:all;cursor:pointer;background:rgba(0,0,0,0.5);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;transition:background 0.3s ease;&:hover{background:rgba(0,0,0,0.7);}@media (max-width:600px){width:35px;height:35px;}"]);
+const StyledArrowIcon = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].i.withConfig({
+  displayName: "external-performances__StyledArrowIcon"
+})(["color:white;font-size:20px;text-shadow:0 0 3px rgba(0,0,0,0.8);@media (max-width:600px){font-size:18px;}"]);
+const CaptionOverlay = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "external-performances__CaptionOverlay"
+})(["position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0));color:white;padding:30px 20px 20px;opacity:0;transition:opacity 0.3s ease;pointer-events:none;z-index:5;"]);
+const ImageWrapperWithHover = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(ImageWrapper).withConfig({
+  displayName: "external-performances__ImageWrapperWithHover"
+})(["&:hover ", "{opacity:1;}"], CaptionOverlay);
+const CaptionText = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_7__["default"]).withConfig({
+  displayName: "external-performances__CaptionText"
+})(["color:white;text-shadow:0 1px 3px rgba(0,0,0,0.8);margin:0;"]);
 const OverlayImage = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_12__.GatsbyImage).withConfig({
   displayName: "external-performances__OverlayImage"
 })(["align-self:center;margin-bottom:20px;"]);
 const FormContainer = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "external-performances__FormContainer"
-})(["margin:30px 0;border:", ";box-shadow:", ";border-radius:8px;overflow:hidden;background:", ";"], ({
+})(["margin:0;border:", ";box-shadow:", ";border-radius:8px;overflow:hidden;background:", ";"], ({
   theme
 }) => theme.decoration.border, ({
   theme
@@ -2102,20 +2174,7 @@ const FormIframe = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].if
 })(["width:100%;min-height:800px;border:none;display:block;"]);
 const FormButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "external-performances__FormButtonContainer"
-})(["display:flex;gap:15px;margin-top:20px;flex-wrap:wrap;"]);
-const GoogleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSeRiYDlxX0G1_Ytdc_YPKfPy6UnbQG3PJIBZRhczCze7HSWUQ/viewform";
-
-// Template data - replace with your actual information
-const externalPerformancesData = {
-  info: "LNYF performs at various external events throughout the year. We showcase our cultural performances at community events, festivals, and other venues. [Replace this with your actual information about external performances.]",
-  youtubeLink: _text__WEBPACK_IMPORTED_MODULE_9__["default"].links.youtube || "https://www.youtube.com/user/LNYF",
-  photos: [
-    // Template - replace with your actual photo data
-    // { image: "external-1", caption: "External Performance 1" },
-    // { image: "external-2", caption: "External Performance 2" },
-    // { image: "external-3", caption: "External Performance 3" },
-  ]
-};
+})(["display:flex;gap:15px;flex-wrap:wrap;justify-content:center;"]);
 const ExternalPerformancesPage = ({
   data
 }) => {
@@ -2127,6 +2186,10 @@ const ExternalPerformancesPage = ({
   } = imgData;
   const imgDataMap = (0,_utils_convertImgArrToMap__WEBPACK_IMPORTED_MODULE_10__["default"])(nodes);
   const {
+    0: currentPhotoIndex,
+    1: setCurrentPhotoIndex
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
+  const {
     0: open,
     1: setOpen
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
@@ -2134,6 +2197,13 @@ const ExternalPerformancesPage = ({
     0: selectedPhoto,
     1: setSelectedPhoto
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const photos = _text__WEBPACK_IMPORTED_MODULE_9__["default"].externalPerformances.photos;
+  const handleNext = () => {
+    setCurrentPhotoIndex(prevIndex => (prevIndex + 1) % photos.length);
+  };
+  const handlePrev = () => {
+    setCurrentPhotoIndex(prevIndex => prevIndex === 0 ? photos.length - 1 : prevIndex - 1);
+  };
   const handlePhotoClick = photo => {
     setSelectedPhoto(photo);
     setOpen(true);
@@ -2142,46 +2212,93 @@ const ExternalPerformancesPage = ({
     title: "External Performances"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_InnerPage__WEBPACK_IMPORTED_MODULE_3__["default"], {
     title: "External Performances"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FadeInOnScroll__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Section, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FadeInOnScroll__WEBPACK_IMPORTED_MODULE_8__["default"], {
     direction: "up",
-    delay: 0
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Section, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
+    delay: 0,
+    threshold: 0.15
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Card, {
+    style: {
+      maxWidth: '900px',
+      margin: '0 auto'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
     variant: "h4"
-  }, "About External Performances"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InfoText, {
+  }, "Request an External Performance"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InfoTextNoMargin, {
     variant: "p"
-  }, externalPerformancesData.info)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Section, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
-    variant: "h4"
-  }, "Watch Our Performances"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(LinkContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledLink, {
-    href: externalPerformancesData.youtubeLink,
-    target: "_blank",
-    rel: "noopener noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], null, "Visit Our YouTube Channel")))), externalPerformancesData.photos.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Section, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
-    variant: "h4"
-  }, "Photo Gallery"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PhotoGrid, null, externalPerformancesData.photos.map((photo, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FadeInOnScroll__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    key: i,
-    direction: "up",
-    delay: i * 50
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ImageContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ImageThumbnail, {
-    onClick: () => handlePhotoClick(photo),
-    image: (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_12__.getImage)(imgDataMap[photo.image]),
-    alt: photo.caption,
-    clickable: "true"
-  }), photo.caption && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ImageCaption, {
-    variant: "caption"
-  }, photo.caption)))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Section, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
-    variant: "h4"
-  }, "Request an External Performance"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InfoText, {
-    variant: "p"
-  }, "Interested in having LNYF perform at your event? Fill out the form below or open it in a new tab."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(FormButtonContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledLink, {
-    href: GoogleFormLink,
+  }, "Interested in having LNYF perform at your event? Fill out the form (linked) below.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Questions?"), " Reach out to us at", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledLink, {
+    href: "mailto:perfcomm.lnyf@gmail.com",
+    style: {
+      color: 'inherit',
+      textDecoration: 'underline'
+    }
+  }, "perfcomm.lnyf@gmail.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(FormButtonContainer, {
+    style: {
+      marginBottom: '25px'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledLink, {
+    href: _text__WEBPACK_IMPORTED_MODULE_9__["default"].links.externalPerformancesForm,
     target: "_blank",
     rel: "noopener noreferrer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], null, "Open Form in New Tab"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(FormContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(FormIframe, {
-    src: GoogleFormLink,
+    src: _text__WEBPACK_IMPORTED_MODULE_9__["default"].links.externalPerformancesForm,
     title: "External Performance Request Form",
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     allowFullScreen: true
-  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ImageOverlay__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TwoColumnGrid, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FadeInOnScroll__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    direction: "up",
+    delay: 0,
+    threshold: 0.2
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Card, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(IconContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "fas fa-info-circle"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
+    variant: "h4"
+  }, "About External Performances"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InfoText, {
+    variant: "p"
+  }, _text__WEBPACK_IMPORTED_MODULE_9__["default"].externalPerformances.info))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FadeInOnScroll__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    direction: "up",
+    delay: 150,
+    threshold: 0.2
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Card, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(IconContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
+    className: "fab fa-youtube"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
+    variant: "h4"
+  }, "Watch Our Performances"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(InfoText, {
+    variant: "p"
+  }, "Check out our YouTube channel to see recordings of our past performances."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(LinkContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledLink, {
+    href: _text__WEBPACK_IMPORTED_MODULE_9__["default"].links.youtube,
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button__WEBPACK_IMPORTED_MODULE_1__["default"], null, "Visit Our YouTube Channel")))))), photos.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Section, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FadeInOnScroll__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    direction: "up",
+    delay: 0,
+    threshold: 0.15
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
+    variant: "h3",
+    style: {
+      marginBottom: '30px',
+      textAlign: 'center'
+    }
+  }, "Past External Performances")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FadeInOnScroll__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    direction: "up",
+    delay: 200,
+    threshold: 0.15
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(CarouselContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ImageWrapperWithHover, {
+    onClick: () => handlePhotoClick(photos[currentPhotoIndex])
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(CarouselImage, {
+    image: (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_12__.getImage)(imgDataMap[photos[currentPhotoIndex].image]),
+    alt: photos[currentPhotoIndex].caption || "External Performance",
+    clickable: "true"
+  }), photos[currentPhotoIndex].caption && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(CaptionOverlay, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(CaptionText, {
+    variant: "p"
+  }, photos[currentPhotoIndex].caption))), photos.length > 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(IconWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ArrowIcon, {
+    onClick: handlePrev
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledArrowIcon, {
+    className: "fas fa-chevron-left"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ArrowIcon, {
+    onClick: handleNext
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledArrowIcon, {
+    className: "fas fa-chevron-right"
+  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ImageOverlay__WEBPACK_IMPORTED_MODULE_2__["default"], {
     open: open,
     setOpen: setOpen
   }, selectedPhoto && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(OverlayImage, {
@@ -2190,7 +2307,7 @@ const ExternalPerformancesPage = ({
     objectFit: "contain"
   }), selectedPhoto.caption && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_7__["default"], {
     variant: "p"
-  }, "Caption: ", selectedPhoto.caption))));
+  }, selectedPhoto.caption))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ExternalPerformancesPage);
 const query = "516919204";
@@ -2313,7 +2430,24 @@ const StyledHeader = (0,styled_components__WEBPACK_IMPORTED_MODULE_4__["default"
 //     active: Boolean,
 //     auditions: JSX.Element,
 //     makeups: JSX.Element
-//   }
+//   },
+//   externalPerformances: {
+//     info: String,
+//     photos: {
+//       image: String,
+//       caption: String,
+//     }[],
+//   },
+//   history: {
+//     timeline: {
+//       year: String | undefined, // Use year OR period
+//       period: String | undefined, // Use period OR year
+//       title: String,
+//       description: String | undefined, // Required if no image
+//       image: String | undefined, // Optional: image name
+//       imageCaption: String | undefined, // Optional: caption for image
+//     }[],
+//   },
 // };
 
 const text = {
@@ -2322,7 +2456,10 @@ const text = {
     instagram: "https://www.instagram.com/wu.lnyf/?hl=en",
     youtube: "https://www.youtube.com/user/LNYF",
     store: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
-    store2: "https://docs.google.com/forms/d/e/1FAIpQLScCqjMIVtSPz-8_1roqnXly6q6xMPj0dJ_kQCcw_wQlGOX5uw/viewform?usp=dialog"
+    store2: "https://docs.google.com/forms/d/e/1FAIpQLScCqjMIVtSPz-8_1roqnXly6q6xMPj0dJ_kQCcw_wQlGOX5uw/viewform?usp=dialog",
+    externalPerformancesForm: "https://docs.google.com/forms/d/e/1FAIpQLSeRiYDlxX0G1_Ytdc_YPKfPy6UnbQG3PJIBZRhczCze7HSWUQ/viewform",
+    usherForm: "https://docs.google.com/forms/d/e/1FAIpQLScMSTqyzn7hWZo2K76uCXTM4f9ewOHQ3066u4xcgvWHsP9YZA/viewform",
+    stageCrewForm: "https://docs.google.com/forms/d/e/1FAIpQLSdFcIttqcgUfXCGSx_HySW1vEDFMt-D_bNS4NUEeerq1lwmTg/viewform"
     //store: "https://docs.google.com/forms/d/e/1FAIpQLScHw56q-6mb2jUH9Wx5KhdkTjk4KWjdP0uwR0uTIa_9DWlXIw/viewform",
   },
   index: {
@@ -2344,184 +2481,191 @@ const text = {
     philanthropyLink: "https://earthdancefarms.org/"
   },
   events: [
-  // {
-  //   month: "Aug",
-  //   day: "29",
-  //   title: "Activities Fair",
-  //   caption: "3-5 PM @ Mudd Field",
-  //   description:
-  //     "Come find the LNYF booth and sign up to be on our mailing list!",
-  // },
-  // {
-  //   month: "Aug",
-  //   day: "31",
-  //   title: "Choreo Apps",
-  //   caption: "Due 11:59 pm",
-  //   description:
-  //     "Apply to choreograph a dance in the upcoming 2026 show!",
-  //   link: "https://docs.google.com/document/d/1fPwDiHwoEnvHn7a3U0Pa0dJshJN13q4eGg8ZCsJtBxc/edit?tab=t.0",
-  // },
-  // {
-  //   month: "Sept",
-  //   day: "7",
-  //   title: "General Body Meeting",
-  //   caption: "TBA Time @ Ursa's",
-  //   description:
-  //     "Come join our first GBM to find out more about how we celebrate Lunar New Year through performance, fundraising, and other events!",
-  // },
-  // {
-  //   month: "Sept",
-  //   day: "12",
-  //   title: "LNYF @ AMC's Mid-Autumn Festival",
-  //   caption: "3-5 PM @ Ursa's",
-  //   description:
-  //     "Come to the LNYF Booth to play games and learn more about LNYF!",
-  // },
-  // {
-  //   month: "Sept",
-  //   day: "8-12",
-  //   title: "Act Workshops",
-  //   caption: "More info on the LNYF's Instagram!",
-  //   description:
-  //     "Explore different LNYF 2026 Acts!",
-  // },
-  // {
-  //   month: "Sept",
-  //   day: "13-14",
-  //   title: "Auditions",
-  //   caption: "More info on the Auditions Page and LNYF's Instagram!",
-  //   description:
-  //     "Try out to become a performer at LNYF 2026!",
-  // },
-  // {
-  //   month: "Sept",
-  //   day: "15-19",
-  //   title: "Make-Up Auditions",
-  //   caption: "More info on the Auditions Page and LNYF's Instagram!",
-  //   description:
-  //     "In case you missed it, or for a second chance!",
-  // }, 
-  // {
-  //   month: "Sept",
-  //   day: "24",
-  //   title: "Sides of Seoul Fundraiser",
-  //   caption: "6-8 PM @ BD",
-  //   description:
-  //     "Help us raise money for our philanthropy!",
-  // }, 
-  // {
-  //   month: "Sept",
-  //   day: "25",
-  //   title: "Sides of Seoul Fundraiser",
-  //   caption: "11AM-2 PM @ DUC",
-  //   description:
-  //     "Help us raise money for our philanthropy!",
-  // }, 
-  // {
-  //   month: "Oct",
-  //   day: "11",
-  //   title: "EarthDance Volunteering",
-  //   caption: "10AM-1PM @ TBD",
-  //   description:
-  //     "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
-  // },
-  // {
-  //   month: "Oct",
-  //   day: "12",
-  //   title: "EarthDance Volunteering",
-  //   caption: "10AM-1PM @ TBD",
-  //   description:
-  //   "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
-  // },
-  // {
-  //   month: "Oct",
-  //   day: "19",
-  //   title: "Performer Social",
-  //   caption: "3-4:30 PM @ Mudd MPR",
-  //   description:
-  //     "Join your fellow performers for a night of fun activities and delicious food!",
-  // },
-  // {
-  //   month: "Oct",
-  //   day: "22",
-  //   title: "PUSO x LNYF Fundraiser",
-  //   caption: "6-8 PM @ BD",
-  //   description:
-  //     "Help us raise money for our philanthropy!",
-  // }, 
-  // {
-  //   month: "Oct",
-  //   day: "23",
-  //   title: "PUSO x LNYF Fundraiser",
-  //   caption: "11AM-2 PM @ DUC",
-  //   description:
-  //     "Help us raise money for our philanthropy!",
-  // }, 
-  {
-    month: "Nov",
-    day: "9",
-    title: "Performer Banquet",
-    caption: "4-9 PM @ Umrath Lounge",
-    description: "Join your fellow performers for a night of fun activities and delicious food!"
-  }, {
-    month: "Dec",
-    day: "3",
-    title: "Candy Fundraiser",
-    caption: "6-8 PM @ BD",
-    description: "Help us raise money for our philanthropy!"
-  }, {
-    month: "Dec",
-    day: "4",
-    title: "Candy Fundraiser",
-    caption: "11AM-2PM @ DUC",
-    description: "Help us raise money for our philanthropy!"
-  }, {
-    month: "Dec",
-    day: "8",
-    title: "Clementine's Benefit Night",
-    caption: "6-8 PM @ TBD",
-    description: "Visit the TBD Clementine's location anytime during 6-8PM and proceeds will go towards our philanthropy!"
-  }
-  // {
-  //   month: "Nov",
-  //   day: "11",
-  //   title: "Philanth. MedQ Event",
-  //   caption: "6 PM @ Seigle 303",
-  //   description:
-  //     "Join us for SQSH's MEDQ Philanthropy Event to learn more about the LGBTQ+ community in healthcare!",
-  // },
-  // {
-  //   month: "Jan",
-  //   day: "25",
-  //   title: "AMC Fireworks",
-  //   caption: "7 pm",
-  //   description:
-  //     "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
-  // },
-  // {
-  //   month: "Jan",
-  //   day: "31",
-  //   title: "LNYF Show 1",
-  //   caption: "7 pm",
-  //   description:
-  //     "Come watch our show. Find more info on our instagram!",
-  // },
-  // {
-  //   month: "Feb",
-  //   day: "1",
-  //   title: "LNYF Shows 2 & 3",
-  //   caption: "2 & 7 pm",
-  //   description:
-  //     "Come watch our show. Find more info on our instagram!",
-  // }
-  // {
-  //   month: "April",
-  //   day: "24",
-  //   title: "Choreo Info Session Panel",
-  //   caption: "7-8 PM @ DUC 234",
-  //   description:
-  //     "Come to learn more!",
-  // },
+    // {
+    //   month: "Aug",
+    //   day: "29",
+    //   title: "Activities Fair",
+    //   caption: "3-5 PM @ Mudd Field",
+    //   description:
+    //     "Come find the LNYF booth and sign up to be on our mailing list!",
+    // },
+    // {
+    //   month: "Aug",
+    //   day: "31",
+    //   title: "Choreo Apps",
+    //   caption: "Due 11:59 pm",
+    //   description:
+    //     "Apply to choreograph a dance in the upcoming 2026 show!",
+    //   link: "https://docs.google.com/document/d/1fPwDiHwoEnvHn7a3U0Pa0dJshJN13q4eGg8ZCsJtBxc/edit?tab=t.0",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "7",
+    //   title: "General Body Meeting",
+    //   caption: "TBA Time @ Ursa's",
+    //   description:
+    //     "Come join our first GBM to find out more about how we celebrate Lunar New Year through performance, fundraising, and other events!",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "12",
+    //   title: "LNYF @ AMC's Mid-Autumn Festival",
+    //   caption: "3-5 PM @ Ursa's",
+    //   description:
+    //     "Come to the LNYF Booth to play games and learn more about LNYF!",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "8-12",
+    //   title: "Act Workshops",
+    //   caption: "More info on the LNYF's Instagram!",
+    //   description:
+    //     "Explore different LNYF 2026 Acts!",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "13-14",
+    //   title: "Auditions",
+    //   caption: "More info on the Auditions Page and LNYF's Instagram!",
+    //   description:
+    //     "Try out to become a performer at LNYF 2026!",
+    // },
+    // {
+    //   month: "Sept",
+    //   day: "15-19",
+    //   title: "Make-Up Auditions",
+    //   caption: "More info on the Auditions Page and LNYF's Instagram!",
+    //   description:
+    //     "In case you missed it, or for a second chance!",
+    // }, 
+    // {
+    //   month: "Sept",
+    //   day: "24",
+    //   title: "Sides of Seoul Fundraiser",
+    //   caption: "6-8 PM @ BD",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // }, 
+    // {
+    //   month: "Sept",
+    //   day: "25",
+    //   title: "Sides of Seoul Fundraiser",
+    //   caption: "11AM-2 PM @ DUC",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // }, 
+    // {
+    //   month: "Oct",
+    //   day: "11",
+    //   title: "EarthDance Volunteering",
+    //   caption: "10AM-1PM @ TBD",
+    //   description:
+    //     "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+    // },
+    // {
+    //   month: "Oct",
+    //   day: "12",
+    //   title: "EarthDance Volunteering",
+    //   caption: "10AM-1PM @ TBD",
+    //   description:
+    //   "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+    // },
+    // {
+    //   month: "Oct",
+    //   day: "19",
+    //   title: "Performer Social",
+    //   caption: "3-4:30 PM @ Mudd MPR",
+    //   description:
+    //     "Join your fellow performers for a night of fun activities and delicious food!",
+    // },
+    // {
+    //   month: "Oct",
+    //   day: "22",
+    //   title: "PUSO x LNYF Fundraiser",
+    //   caption: "6-8 PM @ BD",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // }, 
+    // {
+    //   month: "Oct",
+    //   day: "23",
+    //   title: "PUSO x LNYF Fundraiser",
+    //   caption: "11AM-2 PM @ DUC",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // }, 
+    // {
+    //   month: "Nov",
+    //   day: "9",
+    //   title: "Performer Banquet",
+    //   caption: "4-9 PM @ Umrath Lounge",
+    //   description:
+    //     "Join your fellow performers for a night of fun activities and delicious food!",
+    // },
+    // {
+    //   month: "Dec",
+    //   day: "3",
+    //   title: "Candy Fundraiser",
+    //   caption: "6-8 PM @ BD",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // },
+    // {
+    //   month: "Dec",
+    //   day: "4",
+    //   title: "Candy Fundraiser",
+    //   caption: "11AM-2PM @ DUC",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // },
+    // {
+    //   month: "Dec",
+    //   day: "8",
+    //   title: "Clementine's Benefit Night",
+    //   caption: "6-8 PM @ TBD",
+    //   description:
+    //     "Visit the TBD Clementine's location anytime during 6-8PM and proceeds will go towards our philanthropy!",
+    // },
+    // {
+    //   month: "Nov",
+    //   day: "11",
+    //   title: "Philanth. MedQ Event",
+    //   caption: "6 PM @ Seigle 303",
+    //   description:
+    //     "Join us for SQSH's MEDQ Philanthropy Event to learn more about the LGBTQ+ community in healthcare!",
+    // },
+    // {
+    //   month: "Jan",
+    //   day: "25",
+    //   title: "AMC Fireworks",
+    //   caption: "7 pm",
+    //   description:
+    //     "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
+    // },
+    // {
+    //   month: "Jan",
+    //   day: "31",
+    //   title: "LNYF Show 1",
+    //   caption: "7 pm",
+    //   description:
+    //     "Come watch our show. Find more info on our instagram!",
+    // },
+    // {
+    //   month: "Feb",
+    //   day: "1",
+    //   title: "LNYF Shows 2 & 3",
+    //   caption: "2 & 7 pm",
+    //   description:
+    //     "Come watch our show. Find more info on our instagram!",
+    // }
+    // {
+    //   month: "April",
+    //   day: "24",
+    //   title: "Choreo Info Session Panel",
+    //   caption: "7-8 PM @ DUC 234",
+    //   description:
+    //     "Come to learn more!",
+    // },
   ],
   philanthropy: {
     2026: {
@@ -3578,6 +3722,141 @@ const text = {
     }, "Wednesday 9/18"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "6PM - 8PM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Mudd MPR"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Umbrella")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "8PM - 10PM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Mudd MPR"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Yoyo")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "10PM - 12AM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Mudd MPR"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "K-Fan")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "10PM - 12AM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "McMillan Cafe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Standing Drum")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", {
       rowspan: "3"
     }, "Thursday 9/19"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "8PM - 10PM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Malli 302/303"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Samulnori")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "10PM - 12AM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "McMillan Cafe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Lion")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "10PM - 12AM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Mudd MPR"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Watersleeves")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Friday 9/20"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "6PM - 8PM"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Olin 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("td", null, "Lion (Callbacks)"))))
+  },
+  externalPerformances: {
+    info: "LNYF performs at various external events throughout the year. We showcase East and Southeast Asian culture through performances at community events, festivals, and other venues at WashU and the St. Louis community.",
+    photos: [{
+      image: "Samu_ChuseokFest",
+      caption: "Samulnori at the St. Louis Chuseok Festival"
+    }, {
+      image: "Tinikling_MFAS2024",
+      caption: "Tinikling at the MFAS 2024 Conference at SLU"
+    }, {
+      image: "Cfan_vsaformal",
+      caption: "Chinese Fan at the 2025 TSO Formal"
+    }, {
+      image: "lionyoyo_crown",
+      caption: "Lion and Yoyo at the St. Louis Crown Center"
+    }]
+  },
+  history: {
+    timeline: [
+    // Each item can have either text (title + description) OR an image
+    {
+      year: "1996",
+      // or period: "2008 - 2018"
+      title: "LNYF Founded",
+      description: "Founded as Chinese New Year Festival under the Chinese Student Association (CSA)",
+      image: undefined,
+      // Optional: image name if you want to show an image instead of text
+      imageCaption: undefined // Optional: caption for the image
+    }, {
+      year: "2000",
+      title: "Making it Big",
+      description: "First time performing at WashU's Edison Theatre!",
+      image: "history-image-1",
+      // Optional: image name
+      imageCaption: "Optional caption"
+    }, {
+      year: "2005",
+      // or period: "2008 - 2018"
+      title: "Inclusivity",
+      description: "CNYF was renamed to Lunar New Year Festival (LNYF) to be inclusive of all Asian cultures.",
+      image: undefined,
+      // Optional: image name if you want to show an image instead of text
+      imageCaption: undefined // Optional: caption for the image
+    }, {
+      year: "2011: Reflections",
+      title: "Fireworks!",
+      description: "LNYF's first show with fireworks in collaboration with the Asian Multicutural Council (AMC at the time)!",
+      image: "history-image-1",
+      // Optional: image name
+      imageCaption: "Optional caption"
+    }, {
+      year: "2013: Across the Water",
+      title: undefined,
+      description: undefined,
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2014: Strength in Motion",
+      title: undefined,
+      description: undefined,
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2015: To Lead With Heart",
+      title: undefined,
+      description: undefined,
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2016: Journey Home",
+      title: undefined,
+      description: undefined,
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2017: Rise",
+      title: undefined,
+      description: "Philanthropy: Beyond Housing",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2018: Side by Side",
+      title: undefined,
+      description: "Philanthropy: Food Outreach",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2019: Strength Within",
+      title: undefined,
+      description: "Philanthropy: Kingdom House (LifeWise STL)",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2020: Emerge",
+      title: undefined,
+      description: "Philanthropy: Variety – the Children’s Charity",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2021: Unwavering",
+      title: undefined,
+      description: "Philanthropy: Foster & Adoptive Care Coalition",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2022: Bold Strides",
+      title: undefined,
+      description: "Philanthropy: Haven of Grace",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2023: Chasing Dreams",
+      title: undefined,
+      description: "Philanthropy: Caring for Kids",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2024: Radiance",
+      title: undefined,
+      description: "Philanthropy: Prison Performing Arts",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2025: Interwoven",
+      title: undefined,
+      description: "Philanthropy: SQSH (St. Louis Queer Support Helpline)",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2026: Boundless Horizons",
+      title: undefined,
+      description: "Philanthropy: EarthDance",
+      image: undefined,
+      imageCaption: undefined
+    }]
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (text);

@@ -17,9 +17,7 @@
 
 ## Publishing changes
 
-- Run `gatsby build` in root directory.
-- Compress all files in `public` directory.
-- Delete all files in `public_html` directory at cPanel at `lnyf.wustl.edu:2083`
-- Upload .zip file to `public_html` directory at cPanel at `lnyf.wustl.edu:2083`.
-- Extract .zip file within `public_html` directory using cPanel tools.
-- Check in your changes to the git repository!
+- Ensure you're in `main` branch.
+- Commit & push changes.
+- Committing changes to the `main` branch automatically initiates deployment.
+- Deployment takes about 12 minutes then the website will be updated.

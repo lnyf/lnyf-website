@@ -125,6 +125,16 @@ const StyledHeader = styled(Typography)`
 //       caption: String,
 //     }[],
 //   },
+//   history: {
+//     timeline: {
+//       year: String | undefined, // Use year OR period
+//       period: String | undefined, // Use period OR year
+//       title: String,
+//       description: String | undefined, // Required if no image
+//       image: String | undefined, // Optional: image name
+//       imageCaption: String | undefined, // Optional: caption for image
+//     }[],
+//   },
 // };
 
 const text = {
@@ -135,6 +145,8 @@ const text = {
     store: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
     store2: "https://docs.google.com/forms/d/e/1FAIpQLScCqjMIVtSPz-8_1roqnXly6q6xMPj0dJ_kQCcw_wQlGOX5uw/viewform?usp=dialog",
     externalPerformancesForm: "https://docs.google.com/forms/d/e/1FAIpQLSeRiYDlxX0G1_Ytdc_YPKfPy6UnbQG3PJIBZRhczCze7HSWUQ/viewform",
+    usherForm: "https://docs.google.com/forms/d/e/1FAIpQLScMSTqyzn7hWZo2K76uCXTM4f9ewOHQ3066u4xcgvWHsP9YZA/viewform",
+    stageCrewForm: "https://docs.google.com/forms/d/e/1FAIpQLSdFcIttqcgUfXCGSx_HySW1vEDFMt-D_bNS4NUEeerq1lwmTg/viewform",
     //store: "https://docs.google.com/forms/d/e/1FAIpQLScHw56q-6mb2jUH9Wx5KhdkTjk4KWjdP0uwR0uTIa_9DWlXIw/viewform",
   },
   index: {
@@ -291,38 +303,38 @@ const text = {
     //   description:
     //     "Help us raise money for our philanthropy!",
     // }, 
-    {
-      month: "Nov",
-      day: "9",
-      title: "Performer Banquet",
-      caption: "4-9 PM @ Umrath Lounge",
-      description:
-        "Join your fellow performers for a night of fun activities and delicious food!",
-    },
-    {
-      month: "Dec",
-      day: "3",
-      title: "Candy Fundraiser",
-      caption: "6-8 PM @ BD",
-      description:
-        "Help us raise money for our philanthropy!",
-    },
-    {
-      month: "Dec",
-      day: "4",
-      title: "Candy Fundraiser",
-      caption: "11AM-2PM @ DUC",
-      description:
-        "Help us raise money for our philanthropy!",
-    },
-    {
-      month: "Dec",
-      day: "8",
-      title: "Clementine's Benefit Night",
-      caption: "6-8 PM @ TBD",
-      description:
-        "Visit the TBD Clementine's location anytime during 6-8PM and proceeds will go towards our philanthropy!",
-    },
+    // {
+    //   month: "Nov",
+    //   day: "9",
+    //   title: "Performer Banquet",
+    //   caption: "4-9 PM @ Umrath Lounge",
+    //   description:
+    //     "Join your fellow performers for a night of fun activities and delicious food!",
+    // },
+    // {
+    //   month: "Dec",
+    //   day: "3",
+    //   title: "Candy Fundraiser",
+    //   caption: "6-8 PM @ BD",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // },
+    // {
+    //   month: "Dec",
+    //   day: "4",
+    //   title: "Candy Fundraiser",
+    //   caption: "11AM-2PM @ DUC",
+    //   description:
+    //     "Help us raise money for our philanthropy!",
+    // },
+    // {
+    //   month: "Dec",
+    //   day: "8",
+    //   title: "Clementine's Benefit Night",
+    //   caption: "6-8 PM @ TBD",
+    //   description:
+    //     "Visit the TBD Clementine's location anytime during 6-8PM and proceeds will go towards our philanthropy!",
+    // },
     // {
     //   month: "Nov",
     //   day: "11",
@@ -1699,6 +1711,137 @@ const text = {
       { image: "Tinikling_MFAS2024", caption: "Tinikling at the MFAS 2024 Conference at SLU" },
       { image: "Cfan_vsaformal", caption: "Chinese Fan at the 2025 TSO Formal" },
       { image: "lionyoyo_crown", caption: "Lion and Yoyo at the St. Louis Crown Center" },
+    ],
+  },
+  history: {
+    timeline: [
+      // Each item can have either text (title + description) OR an image
+      {
+        year: "1996", // or period: "2008 - 2018"
+        title: "LNYF Founded",
+        description: "Founded as Chinese New Year Festival under the Chinese Student Association (CSA)",
+        image: undefined, // Optional: image name if you want to show an image instead of text
+        imageCaption: undefined, // Optional: caption for the image
+      },
+      {
+        year: "2000",
+        title: "Making it Big",
+        description: "First time performing at WashU's Edison Theatre!",
+        image: "history-image-1", // Optional: image name
+        imageCaption: "Optional caption",
+      },
+      {
+        year: "2005", // or period: "2008 - 2018"
+        title: "Inclusivity",
+        description: "CNYF was renamed to Lunar New Year Festival (LNYF) to be inclusive of all Asian cultures.",
+        image: undefined, // Optional: image name if you want to show an image instead of text
+        imageCaption: undefined, // Optional: caption for the image
+      },
+      {
+        year: "2011: Reflections",
+        title: "Fireworks!",
+        description: "LNYF's first show with fireworks in collaboration with the Asian Multicutural Council (AMC at the time)!",
+        image: "history-image-1", // Optional: image name
+        imageCaption: "Optional caption",
+      },
+      {
+        year: "2013: Across the Water",
+        title: undefined,
+        description: undefined,
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2014: Strength in Motion",
+        title: undefined,
+        description: undefined,
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2015: To Lead With Heart",
+        title: undefined,
+        description: undefined,
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2016: Journey Home",
+        title: undefined,
+        description: undefined,
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2017: Rise",
+        title: undefined,
+        description: "Philanthropy: Beyond Housing",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2018: Side by Side",
+        title: undefined,
+        description: "Philanthropy: Food Outreach",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2019: Strength Within",
+        title: undefined,
+        description: "Philanthropy: Kingdom House (LifeWise STL)",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2020: Emerge",
+        title: undefined,
+        description: "Philanthropy: Variety – the Children’s Charity",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2021: Unwavering",
+        title: undefined,
+        description: "Philanthropy: Foster & Adoptive Care Coalition",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2022: Bold Strides",
+        title: undefined,
+        description: "Philanthropy: Haven of Grace",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2023: Chasing Dreams",
+        title: undefined,
+        description: "Philanthropy: Caring for Kids",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2024: Radiance",
+        title: undefined,
+        description: "Philanthropy: Prison Performing Arts",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2025: Interwoven",
+        title: undefined,
+        description: "Philanthropy: SQSH (St. Louis Queer Support Helpline)",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2026: Boundless Horizons",
+        title: undefined,
+        description: "Philanthropy: EarthDance",
+        image: undefined,
+        imageCaption: undefined,
+      },
     ],
   },
 };

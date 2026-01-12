@@ -284,9 +284,12 @@ const Header = ({ transparent }) => {
                 Auditions
               </NavOverlayItem>
             )}
-            {/* <NavOverlayItem to="https://ci.ovationtix.com/35674/production/1219675" onClick={onMenuClick}>
+            <NavOverlayItem to="https://ci.ovationtix.com/35674/production/1257574" onClick={onMenuClick}>
               BUY TICKETS
-            </NavOverlayItem> */}
+            </NavOverlayItem>
+            <NavOverlayItem to="/crew" onClick={onMenuClick}>
+              Stage Crew & Ushers
+            </NavOverlayItem>
             <NavOverlayItem to="/performances" onClick={onMenuClick}>
               Performers
             </NavOverlayItem>
@@ -304,6 +307,9 @@ const Header = ({ transparent }) => {
             </NavOverlayItem>
             <NavOverlayItem to="/external-performances" onClick={onMenuClick}>
               External Performances
+            </NavOverlayItem>
+            <NavOverlayItem to="/history" onClick={onMenuClick}>
+              History
             </NavOverlayItem>
             {/* <NavOverlayItem to="/store" onClick={onMenuClick}>
               Donate
@@ -336,11 +342,16 @@ const Header = ({ transparent }) => {
               </StyledLink>
             </NavBarLink>
           )}
-          {/* <NavBarLink variant="linkfont">
-            <StyledLink to="https://ci.ovationtix.com/35674/production/1219675">
+          <NavBarLink variant="linkfont">
+            <StyledLink to="https://ci.ovationtix.com/35674/production/1257574">
               BUY TICKETS NOW
             </StyledLink>
-          </NavBarLink> */}
+          </NavBarLink>
+          <NavBarLink variant="linkfont">
+            <StyledLink to="/crew">
+            Stage Crew & Ushers
+            </StyledLink>
+          </NavBarLink>
           <NavBarLink variant="linkfont">
             <StyledLink to="/performances">
               Performers
@@ -364,6 +375,11 @@ const Header = ({ transparent }) => {
           <NavBarLink variant="linkfont">
             <StyledLink to="/external-performances">
               External Performances
+            </StyledLink>
+          </NavBarLink>
+          <NavBarLink variant="linkfont">
+            <StyledLink to="/history">
+              History
             </StyledLink>
           </NavBarLink>
           <NavBarLink variant="linkfont">
