@@ -343,30 +343,44 @@ const text = {
     //   description:
     //     "Join us for SQSH's MEDQ Philanthropy Event to learn more about the LGBTQ+ community in healthcare!",
     // },
-    // {
-    //   month: "Jan",
-    //   day: "25",
-    //   title: "AMC Fireworks",
-    //   caption: "7 pm",
-    //   description:
-    //     "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
-    // },
-    // {
-    //   month: "Jan",
-    //   day: "31",
-    //   title: "LNYF Show 1",
-    //   caption: "7 pm",
-    //   description:
-    //     "Come watch our show. Find more info on our instagram!",
-    // },
-    // {
-    //   month: "Feb",
-    //   day: "1",
-    //   title: "LNYF Shows 2 & 3",
-    //   caption: "2 & 7 pm",
-    //   description:
-    //     "Come watch our show. Find more info on our instagram!",
-    // }
+    {
+      month: "Jan",
+      day: "16",
+      title: "Activities Fair",
+      caption: "3-5 pm",
+      description:
+        "Learn more about LNYF and how you can get involved!",
+    },
+    {
+      month: "Jan",
+      day: "17",
+      title: "AMC Fireworks",
+      caption: "6-8 pm",
+      description:
+        "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
+    },
+    {
+      month: "Jan",
+      day: "21",
+      title: "Rose Pre Order Form Drops",
+      description: "Pre order a rose for specific perfomers of the show!",
+    },
+    {
+      month: "Feb",
+      day: "6",
+      title: "LNYF Show 1",
+      caption: "7 pm",
+      description:
+        "Come watch our show. Find more info on our instagram!",
+    },
+    {
+      month: "Feb",
+      day: "1",
+      title: "LNYF Shows 2 & 3",
+      caption: "2 & 7 pm",
+      description:
+        "Come watch our show. Find more info on our instagram!",
+    }
     // {
     //   month: "April",
     //   day: "24",
@@ -648,7 +662,6 @@ const text = {
         "Joye Zheng",
         "Nevin Song",
         "Madison Wang",
-        "Peter Chang",
         "Ran Duan",
         "R. Dehao Tieh",
         "Ryan Lin",
