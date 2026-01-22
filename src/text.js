@@ -343,27 +343,52 @@ const text = {
     //   description:
     //     "Join us for SQSH's MEDQ Philanthropy Event to learn more about the LGBTQ+ community in healthcare!",
     // },
+    // {
+    //   month: "Jan",
+    //   day: "16",
+    //   title: "Activities Fair",
+    //   caption: "3-5 pm",
+    //   description:
+    //     "Learn more about LNYF and how you can get involved!",
+    // },
+    // {
+    //   month: "Jan",
+    //   day: "17",
+    //   title: "AMC Fireworks",
+    //   caption: "6-8 pm",
+    //   description:
+    //     "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
+    // },
+    // {
+      {
+        month: "Jan",
+        day: "24",
+        title: "Merch Drop 2",
+        caption: "",
+        description:
+          "LNYF's second round of merch releases!",
+      },
     {
-      month: "Jan",
-      day: "16",
-      title: "Activities Fair",
-      caption: "3-5 pm",
+      month: "Feb",
+      day: "1",
+      title: "Nami Ramen Benefit Night",
+      caption: "@ Skinker Nami Ramen",
       description:
-        "Learn more about LNYF and how you can get involved!",
+        "Visit the Skinker Nami Ramen location anytime and proceeds will go towards our philanthropy!",
     },
     {
-      month: "Jan",
-      day: "17",
-      title: "AMC Fireworks",
-      caption: "6-8 pm",
+      month: "Feb",
+      day: "5",
+      title: "Sum Tea Benefit Night",
+      caption: "@ Sum Tea on Olive",
       description:
-        "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
+        "Visit the Sum Tea on Olive anytime and proceeds will go towards our philanthropy!",
     },
     {
-      month: "Jan",
-      day: "21",
-      title: "Rose Pre Order Form Drops",
-      description: "Pre order a rose for specific perfomers of the show!",
+      month: "Feb",
+      day: "4",
+      title: "Rose Pre Order Form Closes",
+      description: "Pre order a rose for specific perfomers of the show! Form: https://forms.gle/etRoDKtpwmS8BLod9",
     },
     {
       month: "Feb",
@@ -375,7 +400,7 @@ const text = {
     },
     {
       month: "Feb",
-      day: "1",
+      day: "7",
       title: "LNYF Shows 2 & 3",
       caption: "2 & 7 pm",
       description:
