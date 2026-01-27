@@ -362,7 +362,7 @@ const text = {
     // {
       {
         month: "Jan",
-        day: "24",
+        day: "28",
         title: "Merch Drop 2",
         caption: "",
         description:
