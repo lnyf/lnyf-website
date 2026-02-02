@@ -347,11 +347,11 @@ const Header = ({ transparent }) => {
               BUY TICKETS NOW
             </StyledLink>
           </NavBarLink>
-          <NavBarLink variant="linkfont">
+          {/* <NavBarLink variant="linkfont">
             <StyledLink to="/crew">
             Stage Crew & Ushers
             </StyledLink>
-          </NavBarLink>
+          </NavBarLink> */}
           <NavBarLink variant="linkfont">
             <StyledLink to="/performances">
               Performers
