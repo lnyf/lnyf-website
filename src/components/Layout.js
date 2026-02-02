@@ -287,9 +287,9 @@ const Header = ({ transparent }) => {
             <NavOverlayItem to="https://ci.ovationtix.com/35674/production/1257574" onClick={onMenuClick}>
               BUY TICKETS
             </NavOverlayItem>
-            <NavOverlayItem to="/crew" onClick={onMenuClick}>
+            {/* <NavOverlayItem to="/crew" onClick={onMenuClick}>
               Stage Crew & Ushers
-            </NavOverlayItem>
+            </NavOverlayItem> */}
             <NavOverlayItem to="/performances" onClick={onMenuClick}>
               Performers
             </NavOverlayItem>
