@@ -284,9 +284,9 @@ const Header = ({ transparent }) => {
                 Auditions
               </NavOverlayItem>
             )}
-            <NavOverlayItem to="https://ci.ovationtix.com/35674/production/1257574" onClick={onMenuClick}>
+            {/* <NavOverlayItem to="https://ci.ovationtix.com/35674/production/1257574" onClick={onMenuClick}>
               BUY TICKETS
-            </NavOverlayItem>
+            </NavOverlayItem> */}
             {/* <NavOverlayItem to="/crew" onClick={onMenuClick}>
               Stage Crew & Ushers
             </NavOverlayItem> */}
@@ -342,11 +342,11 @@ const Header = ({ transparent }) => {
               </StyledLink>
             </NavBarLink>
           )}
-          <NavBarLink variant="linkfont">
+          {/* <NavBarLink variant="linkfont">
             <StyledLink to="https://ci.ovationtix.com/35674/production/1257574">
               BUY TICKETS NOW
             </StyledLink>
-          </NavBarLink>
+          </NavBarLink> */}
           {/* <NavBarLink variant="linkfont">
             <StyledLink to="/crew">
             Stage Crew & Ushers
