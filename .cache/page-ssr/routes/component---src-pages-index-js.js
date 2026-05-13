@@ -1093,12 +1093,6 @@ const Header = ({
     to: "/auditions",
     onClick: onMenuClick
   }, "Auditions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
-    to: "https://ci.ovationtix.com/35674/production/1257574",
-    onClick: onMenuClick
-  }, "BUY TICKETS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
-    to: "/crew",
-    onClick: onMenuClick
-  }, "Stage Crew & Ushers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
     to: "/performances",
     onClick: onMenuClick
   }, "Performers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
@@ -1141,14 +1135,6 @@ const Header = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
     to: "/auditions"
   }, "Auditions")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
-    variant: "linkfont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
-    to: "https://ci.ovationtix.com/35674/production/1257574"
-  }, "BUY TICKETS NOW")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
-    variant: "linkfont"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
-    to: "/crew"
-  }, "Stage Crew & Ushers")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavBarLink, {
     variant: "linkfont"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(StyledLink, {
     to: "/performances"
@@ -2444,11 +2430,11 @@ const text = {
     facebook: "https://www.facebook.com/WULNYF/",
     instagram: "https://www.instagram.com/wu.lnyf/?hl=en",
     youtube: "https://www.youtube.com/user/LNYF",
-    store: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
-    store2: "https://docs.google.com/forms/d/e/1FAIpQLScCqjMIVtSPz-8_1roqnXly6q6xMPj0dJ_kQCcw_wQlGOX5uw/viewform?usp=dialog",
-    externalPerformancesForm: "https://docs.google.com/forms/d/e/1FAIpQLSeRiYDlxX0G1_Ytdc_YPKfPy6UnbQG3PJIBZRhczCze7HSWUQ/viewform",
-    usherForm: "https://docs.google.com/forms/d/e/1FAIpQLScMSTqyzn7hWZo2K76uCXTM4f9ewOHQ3066u4xcgvWHsP9YZA/viewform",
-    stageCrewForm: "https://docs.google.com/forms/d/e/1FAIpQLSdFcIttqcgUfXCGSx_HySW1vEDFMt-D_bNS4NUEeerq1lwmTg/viewform"
+    // store: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
+    store2: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0",
+    externalPerformancesForm: "https://docs.google.com/forms/d/e/1FAIpQLSeRiYDlxX0G1_Ytdc_YPKfPy6UnbQG3PJIBZRhczCze7HSWUQ/viewform"
+    // usherForm: "https://docs.google.com/forms/d/e/1FAIpQLScMSTqyzn7hWZo2K76uCXTM4f9ewOHQ3066u4xcgvWHsP9YZA/viewform",
+    // stageCrewForm: "https://docs.google.com/forms/d/e/1FAIpQLSdFcIttqcgUfXCGSx_HySW1vEDFMt-D_bNS4NUEeerq1lwmTg/viewform",
     //store: "https://docs.google.com/forms/d/e/1FAIpQLScHw56q-6mb2jUH9Wx5KhdkTjk4KWjdP0uwR0uTIa_9DWlXIw/viewform",
   },
   index: {
@@ -2470,191 +2456,220 @@ const text = {
     philanthropyLink: "https://earthdancefarms.org/"
   },
   events: [
-    // {
-    //   month: "Aug",
-    //   day: "29",
-    //   title: "Activities Fair",
-    //   caption: "3-5 PM @ Mudd Field",
-    //   description:
-    //     "Come find the LNYF booth and sign up to be on our mailing list!",
-    // },
-    // {
-    //   month: "Aug",
-    //   day: "31",
-    //   title: "Choreo Apps",
-    //   caption: "Due 11:59 pm",
-    //   description:
-    //     "Apply to choreograph a dance in the upcoming 2026 show!",
-    //   link: "https://docs.google.com/document/d/1fPwDiHwoEnvHn7a3U0Pa0dJshJN13q4eGg8ZCsJtBxc/edit?tab=t.0",
-    // },
-    // {
-    //   month: "Sept",
-    //   day: "7",
-    //   title: "General Body Meeting",
-    //   caption: "TBA Time @ Ursa's",
-    //   description:
-    //     "Come join our first GBM to find out more about how we celebrate Lunar New Year through performance, fundraising, and other events!",
-    // },
-    // {
-    //   month: "Sept",
-    //   day: "12",
-    //   title: "LNYF @ AMC's Mid-Autumn Festival",
-    //   caption: "3-5 PM @ Ursa's",
-    //   description:
-    //     "Come to the LNYF Booth to play games and learn more about LNYF!",
-    // },
-    // {
-    //   month: "Sept",
-    //   day: "8-12",
-    //   title: "Act Workshops",
-    //   caption: "More info on the LNYF's Instagram!",
-    //   description:
-    //     "Explore different LNYF 2026 Acts!",
-    // },
-    // {
-    //   month: "Sept",
-    //   day: "13-14",
-    //   title: "Auditions",
-    //   caption: "More info on the Auditions Page and LNYF's Instagram!",
-    //   description:
-    //     "Try out to become a performer at LNYF 2026!",
-    // },
-    // {
-    //   month: "Sept",
-    //   day: "15-19",
-    //   title: "Make-Up Auditions",
-    //   caption: "More info on the Auditions Page and LNYF's Instagram!",
-    //   description:
-    //     "In case you missed it, or for a second chance!",
-    // }, 
-    // {
-    //   month: "Sept",
-    //   day: "24",
-    //   title: "Sides of Seoul Fundraiser",
-    //   caption: "6-8 PM @ BD",
-    //   description:
-    //     "Help us raise money for our philanthropy!",
-    // }, 
-    // {
-    //   month: "Sept",
-    //   day: "25",
-    //   title: "Sides of Seoul Fundraiser",
-    //   caption: "11AM-2 PM @ DUC",
-    //   description:
-    //     "Help us raise money for our philanthropy!",
-    // }, 
-    // {
-    //   month: "Oct",
-    //   day: "11",
-    //   title: "EarthDance Volunteering",
-    //   caption: "10AM-1PM @ TBD",
-    //   description:
-    //     "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
-    // },
-    // {
-    //   month: "Oct",
-    //   day: "12",
-    //   title: "EarthDance Volunteering",
-    //   caption: "10AM-1PM @ TBD",
-    //   description:
-    //   "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
-    // },
-    // {
-    //   month: "Oct",
-    //   day: "19",
-    //   title: "Performer Social",
-    //   caption: "3-4:30 PM @ Mudd MPR",
-    //   description:
-    //     "Join your fellow performers for a night of fun activities and delicious food!",
-    // },
-    // {
-    //   month: "Oct",
-    //   day: "22",
-    //   title: "PUSO x LNYF Fundraiser",
-    //   caption: "6-8 PM @ BD",
-    //   description:
-    //     "Help us raise money for our philanthropy!",
-    // }, 
-    // {
-    //   month: "Oct",
-    //   day: "23",
-    //   title: "PUSO x LNYF Fundraiser",
-    //   caption: "11AM-2 PM @ DUC",
-    //   description:
-    //     "Help us raise money for our philanthropy!",
-    // }, 
-    // {
-    //   month: "Nov",
-    //   day: "9",
-    //   title: "Performer Banquet",
-    //   caption: "4-9 PM @ Umrath Lounge",
-    //   description:
-    //     "Join your fellow performers for a night of fun activities and delicious food!",
-    // },
-    // {
-    //   month: "Dec",
-    //   day: "3",
-    //   title: "Candy Fundraiser",
-    //   caption: "6-8 PM @ BD",
-    //   description:
-    //     "Help us raise money for our philanthropy!",
-    // },
-    // {
-    //   month: "Dec",
-    //   day: "4",
-    //   title: "Candy Fundraiser",
-    //   caption: "11AM-2PM @ DUC",
-    //   description:
-    //     "Help us raise money for our philanthropy!",
-    // },
-    // {
-    //   month: "Dec",
-    //   day: "8",
-    //   title: "Clementine's Benefit Night",
-    //   caption: "6-8 PM @ TBD",
-    //   description:
-    //     "Visit the TBD Clementine's location anytime during 6-8PM and proceeds will go towards our philanthropy!",
-    // },
-    // {
-    //   month: "Nov",
-    //   day: "11",
-    //   title: "Philanth. MedQ Event",
-    //   caption: "6 PM @ Seigle 303",
-    //   description:
-    //     "Join us for SQSH's MEDQ Philanthropy Event to learn more about the LGBTQ+ community in healthcare!",
-    // },
-    // {
-    //   month: "Jan",
-    //   day: "25",
-    //   title: "AMC Fireworks",
-    //   caption: "7 pm",
-    //   description:
-    //     "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
-    // },
-    // {
-    //   month: "Jan",
-    //   day: "31",
-    //   title: "LNYF Show 1",
-    //   caption: "7 pm",
-    //   description:
-    //     "Come watch our show. Find more info on our instagram!",
-    // },
-    // {
-    //   month: "Feb",
-    //   day: "1",
-    //   title: "LNYF Shows 2 & 3",
-    //   caption: "2 & 7 pm",
-    //   description:
-    //     "Come watch our show. Find more info on our instagram!",
-    // }
-    // {
-    //   month: "April",
-    //   day: "24",
-    //   title: "Choreo Info Session Panel",
-    //   caption: "7-8 PM @ DUC 234",
-    //   description:
-    //     "Come to learn more!",
-    // },
+  // {
+  //   month: "Aug",
+  //   day: "29",
+  //   title: "Activities Fair",
+  //   caption: "3-5 PM @ Mudd Field",
+  //   description:
+  //     "Come find the LNYF booth and sign up to be on our mailing list!",
+  // },
+  // {
+  //   month: "Aug",
+  //   day: "31",
+  //   title: "Choreo Apps",
+  //   caption: "Due 11:59 pm",
+  //   description:
+  //     "Apply to choreograph a dance in the upcoming 2026 show!",
+  //   link: "https://docs.google.com/document/d/1fPwDiHwoEnvHn7a3U0Pa0dJshJN13q4eGg8ZCsJtBxc/edit?tab=t.0",
+  // },
+  // {
+  //   month: "Sept",
+  //   day: "7",
+  //   title: "General Body Meeting",
+  //   caption: "TBA Time @ Ursa's",
+  //   description:
+  //     "Come join our first GBM to find out more about how we celebrate Lunar New Year through performance, fundraising, and other events!",
+  // },
+  // {
+  //   month: "Sept",
+  //   day: "12",
+  //   title: "LNYF @ AMC's Mid-Autumn Festival",
+  //   caption: "3-5 PM @ Ursa's",
+  //   description:
+  //     "Come to the LNYF Booth to play games and learn more about LNYF!",
+  // },
+  // {
+  //   month: "Sept",
+  //   day: "8-12",
+  //   title: "Act Workshops",
+  //   caption: "More info on the LNYF's Instagram!",
+  //   description:
+  //     "Explore different LNYF 2026 Acts!",
+  // },
+  // {
+  //   month: "Sept",
+  //   day: "13-14",
+  //   title: "Auditions",
+  //   caption: "More info on the Auditions Page and LNYF's Instagram!",
+  //   description:
+  //     "Try out to become a performer at LNYF 2026!",
+  // },
+  // {
+  //   month: "Sept",
+  //   day: "15-19",
+  //   title: "Make-Up Auditions",
+  //   caption: "More info on the Auditions Page and LNYF's Instagram!",
+  //   description:
+  //     "In case you missed it, or for a second chance!",
+  // }, 
+  // {
+  //   month: "Sept",
+  //   day: "24",
+  //   title: "Sides of Seoul Fundraiser",
+  //   caption: "6-8 PM @ BD",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // }, 
+  // {
+  //   month: "Sept",
+  //   day: "25",
+  //   title: "Sides of Seoul Fundraiser",
+  //   caption: "11AM-2 PM @ DUC",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // }, 
+  // {
+  //   month: "Oct",
+  //   day: "11",
+  //   title: "EarthDance Volunteering",
+  //   caption: "10AM-1PM @ TBD",
+  //   description:
+  //     "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+  // },
+  // {
+  //   month: "Oct",
+  //   day: "12",
+  //   title: "EarthDance Volunteering",
+  //   caption: "10AM-1PM @ TBD",
+  //   description:
+  //   "Find more info about our volunteering event with EarthDance on our Instagram @wu.lnyf and see how you can get involved!",
+  // },
+  // {
+  //   month: "Oct",
+  //   day: "19",
+  //   title: "Performer Social",
+  //   caption: "3-4:30 PM @ Mudd MPR",
+  //   description:
+  //     "Join your fellow performers for a night of fun activities and delicious food!",
+  // },
+  // {
+  //   month: "Oct",
+  //   day: "22",
+  //   title: "PUSO x LNYF Fundraiser",
+  //   caption: "6-8 PM @ BD",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // }, 
+  // {
+  //   month: "Oct",
+  //   day: "23",
+  //   title: "PUSO x LNYF Fundraiser",
+  //   caption: "11AM-2 PM @ DUC",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // }, 
+  // {
+  //   month: "Nov",
+  //   day: "9",
+  //   title: "Performer Banquet",
+  //   caption: "4-9 PM @ Umrath Lounge",
+  //   description:
+  //     "Join your fellow performers for a night of fun activities and delicious food!",
+  // },
+  // {
+  //   month: "Dec",
+  //   day: "3",
+  //   title: "Candy Fundraiser",
+  //   caption: "6-8 PM @ BD",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // },
+  // {
+  //   month: "Dec",
+  //   day: "4",
+  //   title: "Candy Fundraiser",
+  //   caption: "11AM-2PM @ DUC",
+  //   description:
+  //     "Help us raise money for our philanthropy!",
+  // },
+  // {
+  //   month: "Dec",
+  //   day: "8",
+  //   title: "Clementine's Benefit Night",
+  //   caption: "6-8 PM @ TBD",
+  //   description:
+  //     "Visit the TBD Clementine's location anytime during 6-8PM and proceeds will go towards our philanthropy!",
+  // },
+  // {
+  //   month: "Nov",
+  //   day: "11",
+  //   title: "Philanth. MedQ Event",
+  //   caption: "6 PM @ Seigle 303",
+  //   description:
+  //     "Join us for SQSH's MEDQ Philanthropy Event to learn more about the LGBTQ+ community in healthcare!",
+  // },
+  // {
+  //   month: "Jan",
+  //   day: "16",
+  //   title: "Activities Fair",
+  //   caption: "3-5 pm",
+  //   description:
+  //     "Learn more about LNYF and how you can get involved!",
+  // },
+  // {
+  //   month: "Jan",
+  //   day: "17",
+  //   title: "AMC Fireworks",
+  //   caption: "6-8 pm",
+  //   description:
+  //     "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
+  // },
+  // {
+  {
+    month: "Jan",
+    day: "28",
+    title: "Merch Drop 2",
+    caption: "",
+    description: "LNYF's second round of merch releases!"
+  }, {
+    month: "Feb",
+    day: "1",
+    title: "Nami Ramen Benefit Night",
+    caption: "@ Skinker Nami Ramen",
+    description: "Visit the Skinker Nami Ramen location anytime and proceeds will go towards our philanthropy!"
+  }, {
+    month: "Feb",
+    day: "5",
+    title: "Sum Tea Benefit Night",
+    caption: "@ Sum Tea on Olive",
+    description: "Visit the Sum Tea on Olive anytime and proceeds will go towards our philanthropy!"
+  }, {
+    month: "Feb",
+    day: "4",
+    title: "Rose Pre Order Form Closes",
+    description: "Pre order a rose for specific perfomers of the show! Form: https://forms.gle/etRoDKtpwmS8BLod9"
+  }, {
+    month: "Feb",
+    day: "6",
+    title: "LNYF Show 1",
+    caption: "7 pm",
+    description: "Come watch our show. Find more info on our instagram!"
+  }, {
+    month: "Feb",
+    day: "7",
+    title: "LNYF Shows 2 & 3",
+    caption: "2 & 7 pm",
+    description: "Come watch our show. Find more info on our instagram!"
+  }
+  // {
+  //   month: "April",
+  //   day: "24",
+  //   title: "Choreo Info Session Panel",
+  //   caption: "7-8 PM @ DUC 234",
+  //   description:
+  //     "Come to learn more!",
+  // },
   ],
   philanthropy: {
     2026: {
@@ -2771,7 +2786,7 @@ const text = {
   }, {
     title: "Yoyo",
     image: "yoyo",
-    performers: ["David Zhu (choreo)", "Reina Xu (choreo)", "Sharon Shen (choreo)", "Allison Chang", "Brandon Lin", "Ivy Huang", "Jessie Shi", "Joye Zheng", "Nevin Song", "Madison Wang", "Peter Chang", "Ran Duan", "R. Dehao Tieh", "Ryan Lin", "Thanh Lung", "Vincent Lim"]
+    performers: ["David Zhu (choreo)", "Reina Xu (choreo)", "Sharon Shen (choreo)", "Allison Chang", "Brandon Lin", "Ivy Huang", "Jessie Shi", "Joye Zheng", "Nevin Song", "Madison Wang", "Ran Duan", "R. Dehao Tieh", "Ryan Lin", "Thanh Lung", "Vincent Lim"]
   }],
   store: {
     // "The store is closed temporarily. Please check back soon. Apologies for any inconvenience.""
@@ -2798,84 +2813,82 @@ const text = {
     //   price: "$26.00",
     //   soldOut: false,
     // },
+    // {
+    //   title: "Tote Bag",
+    //   images: [
+    //     { image: "tote-1", alt: "LNYF Tote" },
+    //     { image: "tote-2", alt: "LNYF Tote" },
+    //     { image: "tote-3", alt: "LNYF Tote" },
+    //   ],
+    //   subImages: undefined,
+    //   price: "$12.00",
+    //   soldOut: false,
+    //   link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
+    // },
+    // {
+    //   title: "Sweatpants",
+    //   images: [
+    //     { image: "sweatpants-1", alt: "Sweatpants" },
+    //     { image: "sweatpants-2", alt: "Sweatpants" },
+    //   ],
+    //   subImages: undefined,
+    //   price: "$30.00",
+    //   soldOut: false,
+    //   link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
+    // },
+    // {
+    //   title: "Horse Keychain",
+    //   images: [
+    //     { image: "keychain-1", alt: "Keychain" },
+    //     { image: "keychain-2", alt: "Keychain" },
+    //   ],
+    //   subImages: undefined,
+    //   price: "$5.00",
+    //   soldOut: false,
+    //   link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
+    // },
+    // {
+    //   title: "Cute LNYF Horse Sticker",
+    //   images: [
+    //     { image: "sticker-1", alt: "Sticker" },
+    //     { image: "sticker-2", alt: "Sticker" },
+    //   ],
+    //   subImages: undefined,
+    //   price: "$1.50",
+    //   soldOut: false,
+    //   link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
+    // },
     {
-      title: "Tote Bag",
+      title: "Short Sleeve T-Shirt",
       images: [{
-        image: "tote-1",
-        alt: "LNYF Tote"
-      }, {
-        image: "tote-2",
-        alt: "LNYF Tote"
-      }, {
-        image: "tote-3",
-        alt: "LNYF Tote"
+        image: "lnyf-shirt",
+        alt: "Short Sleeve"
       }],
       subImages: undefined,
-      price: "$12.00",
+      price: "$15.00",
       soldOut: false,
-      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0"
+      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0"
     }, {
-      title: "Sweatpants",
+      title: "Shot Glass",
       images: [{
-        image: "sweatpants-1",
-        alt: "Sweatpants"
-      }, {
-        image: "sweatpants-2",
-        alt: "Sweatpants"
+        image: "lnyf-shot-glass",
+        alt: "Shot Glass"
       }],
       subImages: undefined,
-      price: "$30.00",
+      price: "$16.00",
       soldOut: false,
-      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0"
+      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0"
     }, {
-      title: "Horse Keychain",
+      title: "Hat",
       images: [{
-        image: "keychain-1",
-        alt: "Keychain"
-      }, {
-        image: "keychain-2",
-        alt: "Keychain"
+        image: "lnyf-hat",
+        alt: "Hat"
       }],
       subImages: undefined,
-      price: "$5.00",
+      price: "$15.00",
       soldOut: false,
-      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0"
-    }, {
-      title: "Cute LNYF Horse Sticker",
-      images: [{
-        image: "sticker-1",
-        alt: "Sticker"
-      }, {
-        image: "sticker-2",
-        alt: "Sticker"
-      }],
-      subImages: undefined,
-      price: "$1.50",
-      soldOut: false,
-      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0"
-    }
-    // {
-    //   title: "Short Sleeve T-Shirt",
-    //   images: [
-    //     { image: "t-shirt-1", alt: "Short Sleeve" },
-    //     { image: "t-shirt-2", alt: "Short Sleeve" },
-    //     { image: "t-shirt-3", alt: "Short Sleeve" },
-    //   ],
-    //   subImages: undefined,
-    //   price: "$14.00",
-    //   soldOut: false,
-    // },
-    // {
-    //   title: "Coffee Mug",
-    //   images: [
-    //     { image: "mug-main", alt: "Mug" },
-    //     { image: "mug-slides", alt: "Mug" },
-    //   ],
-    //   subImages: undefined,
-    //   price: "$14.00",
-    //   soldOut: false,
-    // },
-    ]
+      link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0"
+    }]
   },
   people: {
     bod: [{
@@ -3651,6 +3664,126 @@ const text = {
         link: "https://www.youtube.com/embed/difpmJqCddQ"
       }, {
         link: "https://www.youtube.com/embed/CcQp8AjK5Hg"
+      }]
+    },
+    2015: {
+      photos: [{
+        image: "AE1A3165",
+        caption: "Show photos"
+      }, {
+        image: "AE1A3299",
+        caption: "Show photos"
+      }, {
+        image: "AE1A3685",
+        caption: "Show photos"
+      }, {
+        image: "AE1A4136",
+        caption: "Show photos"
+      }, {
+        image: "AE1A5819",
+        caption: "Show photos"
+      }, {
+        image: "AE1A6319",
+        caption: "Show photos"
+      }, {
+        image: "AE1A6722",
+        caption: "Show photos"
+      }, {
+        image: "AE1A7072",
+        caption: "Show photos"
+      }, {
+        image: "AE1A7191",
+        caption: "Show photos"
+      }, {
+        image: "AE1A7948",
+        caption: "Show photos"
+      }, {
+        image: "AE1A8015",
+        caption: "Show photos"
+      }, {
+        image: "AE1A8325",
+        caption: "Show photos"
+      }, {
+        image: "AE1A8566",
+        caption: "Show photos"
+      }, {
+        image: "AE1A8937",
+        caption: "Show photos"
+      }]
+    },
+    2014: {
+      photos: [{
+        image: "LNYF-FINAL-004",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-005",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-013",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-023",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-048",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-058",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-073",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-092",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-096",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-101",
+        caption: "Show photos"
+      }, {
+        image: "LNYF-FINAL-110",
+        caption: "Show photos"
+      }]
+    },
+    2012: {
+      photos: [{
+        image: "Group_S",
+        caption: "Group"
+      }, {
+        image: "IMG_3722_S",
+        caption: "Show photos"
+      }, {
+        image: "Parasols",
+        caption: "Parasols"
+      }, {
+        image: "Silk",
+        caption: "Silk"
+      }, {
+        image: "blue-pink chinese-1",
+        caption: "Chinese"
+      }, {
+        image: "blue_pink 2",
+        caption: "Chinese"
+      }, {
+        image: "lotus 1",
+        caption: "Lotus"
+      }, {
+        image: "lotus 2",
+        caption: "Lotus"
+      }, {
+        image: "parasol 1",
+        caption: "Parasol"
+      }, {
+        image: "parasol 2",
+        caption: "Parasol"
+      }, {
+        image: "parasol 3",
+        caption: "Parasol"
+      }, {
+        image: "unnamed",
+        caption: "Show photos"
       }]
     }
   },

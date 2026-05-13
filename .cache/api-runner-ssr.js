@@ -1,30 +1,30 @@
 var plugins = [{
       name: 'gatsby-plugin-styled-components',
-      plugin: require('/Users/jp/Documents/lnyf-website/node_modules/gatsby-plugin-styled-components/gatsby-ssr.js'),
+      plugin: require('/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/gatsby-plugin-styled-components/gatsby-ssr.js'),
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"topLevelImportPaths":[],"pure":false,"disableVendorPrefixes":false},
     },{
       name: 'gatsby-plugin-image',
-      plugin: require('/Users/jp/Documents/lnyf-website/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('/Users/jp/Documents/lnyf-website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      plugin: require('/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-sitemap',
-      plugin: require('/Users/jp/Documents/lnyf-website/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
+      plugin: require('/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
       options: {"plugins":[],"output":"/","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
     },{
       name: 'gatsby-plugin-manifest',
-      plugin: require('/Users/jp/Documents/lnyf-website/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
+      plugin: require('/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
       options: {"plugins":[],"icon":"src/images/icons/lnyf_red_favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"39699cb057d0e196c59dae950f27e360"},
     },{
       name: 'default-site-plugin',
-      plugin: require('/Users/jp/Documents/lnyf-website/gatsby-ssr.js'),
+      plugin: require('/Users/enbunka/Desktop/LNYF/lnyf-website/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'partytown',
-      plugin: require('/Users/jp/Documents/lnyf-website/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */

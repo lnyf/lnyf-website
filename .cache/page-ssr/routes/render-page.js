@@ -17719,24 +17719,24 @@ module.exports = require("punycode");
 /***/ }),
 
 /***/ "react":
-/*!*******************************************************************************!*\
-  !*** external "/Users/jp/Documents/lnyf-website/node_modules/react/index.js" ***!
-  \*******************************************************************************/
+/*!***************************************************************************************!*\
+  !*** external "/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/react/index.js" ***!
+  \***************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/jp/Documents/lnyf-website/node_modules/react/index.js");
+module.exports = require("/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/react/index.js");
 
 /***/ }),
 
 /***/ "react-dom/server":
-/*!************************************************************************************!*\
-  !*** external "/Users/jp/Documents/lnyf-website/node_modules/react-dom/server.js" ***!
-  \************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** external "/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/react-dom/server.js" ***!
+  \********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/jp/Documents/lnyf-website/node_modules/react-dom/server.js");
+module.exports = require("/Users/enbunka/Desktop/LNYF/lnyf-website/node_modules/react-dom/server.js");
 
 /***/ }),
 
