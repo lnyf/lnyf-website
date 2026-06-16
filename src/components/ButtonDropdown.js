@@ -51,6 +51,9 @@ const Dropdown = styled.div`
   top: 40px;
   left: 0px;
   z-index: 300;
+  max-height: 60vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 `;
 
 const DropdownItem = styled.div`

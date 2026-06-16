@@ -938,7 +938,7 @@ const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
 })(["position:relative;display:inline-flex;font-family:\"Oswald\",sans-serif;text-transform:uppercase;font-weight:500;font-size:16px;line-height:16px;@media (min-width:800px){line-height:20px;font-size:20px;}"]);
 const Dropdown = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ButtonDropdown__Dropdown"
-})(["position:absolute;top:40px;left:0px;z-index:300;"]);
+})(["position:absolute;top:40px;left:0px;z-index:300;max-height:60vh;overflow-y:auto;-webkit-overflow-scrolling:touch;"]);
 const DropdownItem = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ButtonDropdown__DropdownItem"
 })(["padding:10px 20px;border:5px solid ", ";background-color:", ";margin-bottom:-5px;cursor:pointer;color:", ";&:hover{background:", ";color:", ";}"], ({
@@ -3015,7 +3015,7 @@ const text = {
         link: "https://www.youtube.com/embed/8KHaVBibACc?si=Yg_2WtACB1olexp5"
       }, {
         link: "https://www.youtube.com/embed/0axC0Em2vBw?si=3yhcyYfqtE-vUSSl"
-      },, {
+      }, {
         link: "https://www.youtube.com/embed/_wUiM3PPsRk?si=MTgAIcM99vX-u-Qp"
       }, {
         link: "https://www.youtube.com/embed/4EehtboydO0?si=DCdUDHIKke9QOOeP"

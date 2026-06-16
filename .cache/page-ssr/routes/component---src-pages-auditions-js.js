@@ -2717,7 +2717,7 @@ const text = {
         link: "https://www.youtube.com/embed/8KHaVBibACc?si=Yg_2WtACB1olexp5"
       }, {
         link: "https://www.youtube.com/embed/0axC0Em2vBw?si=3yhcyYfqtE-vUSSl"
-      },, {
+      }, {
         link: "https://www.youtube.com/embed/_wUiM3PPsRk?si=MTgAIcM99vX-u-Qp"
       }, {
         link: "https://www.youtube.com/embed/4EehtboydO0?si=DCdUDHIKke9QOOeP"
