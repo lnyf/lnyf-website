@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
+import { createPortal } from "react-dom";
 import styled from "styled-components";
 
 const Button = styled.button`
   background-color: ${({theme}) => theme.palette.background};
-  color: ${({theme}) => theme.palette.font}; 
+  color: ${({theme}) => theme.palette.font};
   cursor: pointer;
   padding: 0 20px;
   font-family: "Oswald", sans-serif;
@@ -47,14 +48,21 @@ const Wrapper = styled.div`
 `;
 
 const Dropdown = styled.div`
-  position: absolute;
-  top: 40px;
-  left: 0px;
+  position: fixed;
   z-index: 300;
   max-height: 60vh;
   overflow-y: auto;
   overscroll-behavior: contain;
-  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  @media (min-width: 800px) {
+    line-height: 20px;
+    font-size: 20px;
+  }
 `;
 
 const DropdownItem = styled.div`
@@ -73,53 +81,90 @@ const DropdownItem = styled.div`
 const ButtonDropdown = ({ value, setValue, options, active, ...rest }) => {
   const [open, setOpen] = useState(false);
   const wrapperRef = useRef(null);
+  const buttonRef = useRef(null);
+  const dropdownRef = useRef(null);
+  const [coords, setCoords] = useState({ top: 0, left: 0 });
+
+  const updateCoords = () => {
+    if (buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      setCoords({ top: rect.bottom, left: rect.left });
+    }
+  };
 
   const handleSelect = (value) => {
     setValue(value);
     setOpen(false);
   };
+
+  const toggleOpen = () => {
+    setOpen((prevOpen) => {
+      if (!prevOpen) updateCoords();
+      return !prevOpen;
+    });
+  };
+
   useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target) &&
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+    };
     document.addEventListener("click", handleClickOutside, false);
     return () => {
       document.removeEventListener("click", handleClickOutside, false);
     };
   }, []);
 
-  const handleClickOutside = (event) => {
-    if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
-      setOpen(false);
-    }
-  };
+  useEffect(() => {
+    if (!open) return undefined;
+    updateCoords();
+    window.addEventListener("resize", updateCoords);
+    window.addEventListener("scroll", updateCoords, true);
+    return () => {
+      window.removeEventListener("resize", updateCoords);
+      window.removeEventListener("scroll", updateCoords, true);
+    };
+  }, [open]);
+
   return (
     <Wrapper ref={wrapperRef}>
       <Button
+        ref={buttonRef}
         active={active}
-        onClick={() => setOpen((prevOpen) => !prevOpen)}
+        onClick={toggleOpen}
         {...rest}
       >
         {value}
         <i className="fas fa-angle-down"></i>
       </Button>
-      {open && (
-        <Dropdown>
-          {options.map((o, i) => (
-            <DropdownItem
-              onClick={() => {
-                handleSelect(o.value);
-              }}
-              key={i}
-            >
-              {o.label}
-            </DropdownItem>
-          ))}
-        </Dropdown>
-      )}
+      {open &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <Dropdown
+            ref={dropdownRef}
+            style={{ top: coords.top, left: coords.left }}
+          >
+            {options.map((o, i) => (
+              <DropdownItem
+                onClick={() => {
+                  handleSelect(o.value);
+                }}
+                key={i}
+              >
+                {o.label}
+              </DropdownItem>
+            ))}
+          </Dropdown>,
+          document.body
+        )}
     </Wrapper>
   );
 };
-
-// {options.map((o) => (
-//   <option value={o.value}>{o.label}</option>
-// ))}
 
 export default ButtonDropdown;
