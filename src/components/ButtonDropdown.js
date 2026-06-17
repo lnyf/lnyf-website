@@ -53,7 +53,8 @@ const Dropdown = styled.div`
   z-index: 300;
   max-height: 60vh;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 `;
 
 const DropdownItem = styled.div`
