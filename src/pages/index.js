@@ -11,7 +11,7 @@ import { graphql, Link } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import text from "../text";
 import theme from "../theme";
-import themeGIF from '../images/misc/theme.png' //final theme
+import themeGIF from '../images/theme2027/2027_Theme_w_o_text.png' //final theme
 //import transitionGIF from '../images/misc/blurred-theme.png' //transition to final theme
 
 
@@ -20,7 +20,7 @@ const JumbotronContainer = styled(Container)`
   align-items: center;
   flex-direction: column;
   text-align: right;
-  padding-top: 25vh; 
+  padding-top: 38vh;
   justify-content: flex-start;
   height: 100vh;
 
@@ -102,6 +102,11 @@ const StyledBackgroundImage = styled(GatsbyImage)`
   right: 0;
   z-index: 0;
   transition: opacity 0.3s ease-out;
+  /* the 2027 theme has no pre-blurred copy, so blur it here.
+     scale slightly to keep the blur from feathering in at the edges.
+     darkened so the section text stays legible over it */
+  filter: blur(12px) brightness(0.5);
+  transform: scale(1.05);
 `;
 
 const ButtonContainer = styled.div`
@@ -506,10 +511,10 @@ const IndexPage = ({ data }) => {
         }}
       >
         <TitleContainer>
-          <Typography style={{"text-shadow": `2px 2px 5px ${theme.palette.background}85`}} variant="h5" color="white">
+          <Typography style={{"font-family": '"Open Sans", sans-serif', "font-size": "32px", "letter-spacing": "0.03em", "text-shadow": `2px 2px 5px ${theme.palette.background}85`}} variant="h5" color="white">
             {text.index.jumbotronTop}
           </Typography>
-          <Typography style={{"white-space": "pre-line", "text-shadow": `2px 2px 5px ${theme.palette.background}85`}} variant="h1" color="white">
+          <Typography style={{"white-space": "pre-line", "font-family": '"Prociono", serif', "font-weight": "400", "letter-spacing": "0.02em", "text-shadow": `2px 2px 5px ${theme.palette.background}85`}} variant="h1" color="white">
             {text.index.jumbotronMiddle}
           </Typography>
           {text.index.jumbotronBottom && (
@@ -723,9 +728,9 @@ export const query = graphql`
       }
     }
     blurredBackgroundData: file(
-      name: { eq: "blurred-theme" }
+      name: { eq: "2027_Theme_w_o_text" }
       sourceInstanceName: { eq: "images" }
-      relativeDirectory: { eq: "misc" }
+      relativeDirectory: { eq: "theme2027" }
     ) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)

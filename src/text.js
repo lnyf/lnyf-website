@@ -150,8 +150,8 @@ const text = {
     //store: "https://docs.google.com/forms/d/e/1FAIpQLScHw56q-6mb2jUH9Wx5KhdkTjk4KWjdP0uwR0uTIa_9DWlXIw/viewform",
   },
   index: {
-    jumbotronTop: "Lunar New Year Festival 2026",
-    jumbotronMiddle: "Boundless\nHorizons",
+    jumbotronTop: "Lunar New Year Festival 2027",
+    jumbotronMiddle: "Ascend",
     jumbotronBottom: undefined,
     jumbotronButtons: (
       <>

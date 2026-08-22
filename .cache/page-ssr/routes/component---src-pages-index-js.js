@@ -1794,17 +1794,17 @@ const Waves = ({
 
 /***/ }),
 
-/***/ "./src/images/misc/theme.png":
-/*!***********************************!*\
-  !*** ./src/images/misc/theme.png ***!
-  \***********************************/
+/***/ "./src/images/theme2027/2027_Theme.png":
+/*!*********************************************!*\
+  !*** ./src/images/theme2027/2027_Theme.png ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/theme-f65052276ab74de46be997070e21fe9a.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/2027_Theme-ac7f4b3226346931b4ec193df94d4c5f.png");
 
 /***/ }),
 
@@ -1832,7 +1832,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
 /* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../text */ "./src/text.js");
 /* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../theme */ "./src/theme.js");
-/* harmony import */ var _images_misc_theme_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../images/misc/theme.png */ "./src/images/misc/theme.png");
+/* harmony import */ var _images_theme2027_2027_Theme_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../images/theme2027/2027_Theme.png */ "./src/images/theme2027/2027_Theme.png");
 
 
 
@@ -1878,7 +1878,7 @@ const StyledIcon = (0,styled_components__WEBPACK_IMPORTED_MODULE_12__["default"]
 })(["margin-right:10px;width:35px;@media (min-width:1000px){width:50px;margin-right:20px;}"]);
 const StyledBackgroundImage = (0,styled_components__WEBPACK_IMPORTED_MODULE_12__["default"])(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_13__.GatsbyImage).withConfig({
   displayName: "pages__StyledBackgroundImage"
-})(["position:fixed !important;background-position:center;-webkit-background-size:cover;width:100%;top:0;bottom:0;left:0;right:0;z-index:0;transition:opacity 0.3s ease-out;"]);
+})(["position:fixed !important;background-position:center;-webkit-background-size:cover;width:100%;top:0;bottom:0;left:0;right:0;z-index:0;transition:opacity 0.3s ease-out;filter:blur(12px);transform:scale(1.05);"]);
 const ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_12__["default"].div.withConfig({
   displayName: "pages__ButtonContainer"
 })(["display:flex;justify-content:flex-start;margin-top:45px;"]);
@@ -2118,7 +2118,7 @@ const IndexPage = ({
   const instaImg = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_13__.getImage)(data.instagramData);
   const youtubeImg = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_13__.getImage)(data.youtubeData);
   const facebookImg = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_13__.getImage)(data.facebookData);
-  const currBackground = _images_misc_theme_png__WEBPACK_IMPORTED_MODULE_11__["default"];
+  const currBackground = _images_theme2027_2027_Theme_png__WEBPACK_IMPORTED_MODULE_11__["default"];
   const handleScroll = debounce(() => {
     const scrollY = window.pageYOffset;
     setScrollPos(scrollY);
@@ -2285,7 +2285,7 @@ const IndexPage = ({
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 // export default BlackoutPage
 
-const query = "4000662979";
+const query = "958259159";
 
 /***/ }),
 

@@ -29,6 +29,10 @@ const NavBarLink = styled(Typography)`
   margin-left: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   text-shadow: 1px 1px 3px ${({ theme }) => theme.palette.background}85;
 `;
 
@@ -209,7 +213,7 @@ function debounce(func, wait, immediate) {
   };
 };
 
-const Header = ({ transparent }) => {
+const Header = () => {
   const [visible, setVisible] = useState(true);
   const [prevPos, setPrevPos] = useState(0);
 
@@ -254,10 +258,6 @@ const Header = ({ transparent }) => {
         : AnimateState.CLOSED
     );
   };
-  if (open) {
-    transparent = false;
-  }
-
   const navbarStyles = {
     display: 'flex',
     height: '60px',
@@ -266,8 +266,8 @@ const Header = ({ transparent }) => {
     zIndex: '100',
     alignItems: 'center',
     justifyContent: 'space-between',
-    background: transparent ? 'transparent' : theme.palette.background,
-    'background-color': `${theme.palette.background}73`,
+    background: theme.palette.header,
+    'background-color': theme.palette.header,
     transition: 'top 0.6s',
   }
 
@@ -396,7 +396,7 @@ const Header = ({ transparent }) => {
 const Layout = ({ children, transparent, noWaves }) => {
   return (
     <Page>
-      <Header transparent />
+      <Header />
       <Content>{children}</Content>
       <Footer>
         <FooterDiv>

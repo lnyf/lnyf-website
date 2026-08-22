@@ -9,7 +9,8 @@ const theme = {
     secondary2: "#F4E27B",      // Light Yellow/Cream
     
     // Background colors - using the darker tones
-    background: "#4D7F84",      // Dark Brown/Black
+    background: "#081D33",      // Deep Navy (page background)
+    header: "#4D7197",          // Muted Steel Blue (nav bar)
     secondarybackground: "#FFFFF2", // Off-White/Cream
     
     // Font colors - using contrasting colors for readability
