@@ -111,6 +111,8 @@ const PeoplePage = ({ data }) => {
                   alt={p.name + " portrait"}
                   major={p.major}
                   zodiac={p.zodiac}
+                  talent={p.talent}
+                  character={p.character}
                   facts={p.facts}
                 />
                 <StyledHeader variant="subtitle">{p.name}</StyledHeader>
