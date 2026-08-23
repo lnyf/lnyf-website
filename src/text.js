@@ -168,23 +168,18 @@ const text = {
         </Typography>
       </>
     ),
-    philanthropyTitle: "EarthDance",
+    philanthropyTitle: "AIM HIGH",
     philanthropyText: (
       <>
         <Typography>
-          LNYF is proud to partner with EarthDance as its philanthropy for the Year of the Horse.
+          LNYF is proud to partner with Aim High as its philanthropy for the Year of the Horse.
         </Typography>
 
         <Typography style={{ "font-weight": "bold" }}> About the Philanthropy: </Typography>
 
         <Typography>
-          Based in Ferguson, Missouri, EarthDance operates on the oldest organic farm west of the Mississippi and is nationally recognized for its hands-on, justice-focused approach to farming education. By reconnecting people to the land and one another, EarthDance teaches community members of all ages where their food comes from and how to grow it themselves, fostering deeper relationships with both food and community.
+          Founded in 1991, Aim High has worked towards their mission of empowering motivated middle school students from at-risk environments. Today, they serve approximately 400 students from 60+ schools. Through their year-round Saturday sessions and intensive 5-week summer session, they push students to achieve beyond their best with the goal of forming life-long attitudes and goals. They give their students the tools to finish high school, create positive choices, and improve their self-esteem. We are excited to work with Aim High this year to assist them in their mission to ascend their students to beyond their best.
         </Typography>
-        <Typography>
-          EarthDance makes fresh, locally grown produce accessible through a Pay-What-You-Can model at their Farm Stand and Ferguson Farmers Market booth, partnerships with local food pantries and grocers, and affordable gardening education. With about 60% of their customers living in North St. Louis County—an area facing historic and ongoing barriers to healthy food access—their sliding-scale systems ensure that nourishment is treated as a right, not a privilege, in service of a more regenerative, inclusive future.
-        </Typography>
-
-
       </>
     ),
     philanthropyLink: "https://earthdancefarms.org/",

@@ -1026,7 +1026,7 @@ const LinkSection = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].di
 })(["display:none;align-items:center;flex-wrap:wrap;margin-left:30px;margin-right:30px;@media (min-width:800px){display:flex;}"]);
 const NavBarLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
   displayName: "Layout__NavBarLink"
-})(["margin-left:30px;margin-top:5px;margin-bottom:5px;text-shadow:1px 1px 3px ", "85;"], ({
+})(["margin-left:30px;margin-top:5px;margin-bottom:5px;font-family:\"Open Sans\",sans-serif;font-size:16px;line-height:16px;letter-spacing:0.03em;text-shadow:1px 1px 3px ", "85;"], ({
   theme
 }) => theme.palette.background);
 const StyledLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link).withConfig({
@@ -1085,9 +1085,7 @@ function debounce(func, wait, immediate) {
   };
 }
 ;
-const Header = ({
-  transparent
-}) => {
+const Header = () => {
   const {
     0: visible,
     1: setVisible
@@ -1121,9 +1119,6 @@ const Header = ({
     setOpen(prevOpen => !prevOpen);
     setAnimate(animate === _Menu__WEBPACK_IMPORTED_MODULE_7__.AnimateState.INITIAL || animate === _Menu__WEBPACK_IMPORTED_MODULE_7__.AnimateState.CLOSED ? _Menu__WEBPACK_IMPORTED_MODULE_7__.AnimateState.OPEN : _Menu__WEBPACK_IMPORTED_MODULE_7__.AnimateState.CLOSED);
   };
-  if (open) {
-    transparent = false;
-  }
   const navbarStyles = {
     display: 'flex',
     height: '60px',
@@ -1132,8 +1127,8 @@ const Header = ({
     zIndex: '100',
     alignItems: 'center',
     justifyContent: 'space-between',
-    background: transparent ? 'transparent' : _theme__WEBPACK_IMPORTED_MODULE_6__["default"].palette.background,
-    'background-color': `${_theme__WEBPACK_IMPORTED_MODULE_6__["default"].palette.background}73`,
+    background: _theme__WEBPACK_IMPORTED_MODULE_6__["default"].palette.header,
+    'background-color': _theme__WEBPACK_IMPORTED_MODULE_6__["default"].palette.header,
     transition: 'top 0.6s'
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", null, open && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlay, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(NavOverlayItem, {
@@ -1215,9 +1210,7 @@ const Layout = ({
   transparent,
   noWaves
 }) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Page, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Header, {
-    transparent: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Content, null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Footer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(FooterDiv, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Page, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Content, null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Footer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(FooterDiv, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
     variant: "footertitle",
     style: {
       marginBottom: '10px',
@@ -2086,8 +2079,8 @@ const text = {
     //store: "https://docs.google.com/forms/d/e/1FAIpQLScHw56q-6mb2jUH9Wx5KhdkTjk4KWjdP0uwR0uTIa_9DWlXIw/viewform",
   },
   index: {
-    jumbotronTop: "Lunar New Year Festival 2026",
-    jumbotronMiddle: "Boundless\nHorizons",
+    jumbotronTop: "Lunar New Year Festival 2027",
+    jumbotronMiddle: "Ascend",
     jumbotronBottom: undefined,
     jumbotronButtons: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
       to: "/events"
@@ -2540,104 +2533,119 @@ const text = {
   },
   people: {
     bod: [{
-      image: "sarahcao",
-      name: "Sarah Cao",
-      position: "Executive Director",
-      major: "Philosophy-Neuroscience-Psychology",
-      zodiac: "GOAT",
-      facts: "LNYF is a celebration of my heritage that always reminds me to be proud of my upbringing. It's also a constant reminder of the amazing community and people I'm surrounded by! "
-    }, {
-      image: "emilyso",
-      name: "Emily So",
-      position: "Executive Director",
-      major: "Philosophy-Neuroscience-Psychology",
-      zodiac: "Monkey",
-      facts: "My college experience ❤️ "
-    }, {
-      image: "cecely",
-      name: "Cece Ly",
-      position: "Director of Communications",
-      major: "Organization and Strategic Management & Marketing",
-      zodiac: "Monkey",
-      facts: "It means a community of people who work together towards a common goal of spreading culture through performances and celebration. It’s a community that when I first saw it on stage was one that radiated a level of comfort and excitement in wanting to be part of something like it. To me, it also means opportunities and chances to meet new people, learn new things, and push beyond my limits. "
-    }, {
-      image: "alexzhang",
-      name: "Alex Zhang",
-      position: "Director of Development",
-      major: "Biology: Neuroscience",
-      zodiac: "Monkey",
-      facts: "LNYF is home away from home where I can form memories and friends that I will cherish for a long time."
-    }, {
       image: "nikkinguyen",
       name: "Nikki Nguyen",
-      position: "Director of Performance",
+      position: "Executive Director",
       major: "Political Science and Educational Studies",
-      zodiac: "Rooster",
-      facts: "LNYF is a great supportive community where I can express my Asian heritage!"
+      talent: "I'm ambidextrous",
+      character: "Phineas from Phineas and Ferb",
+      facts: "LNYF is a huge supportive community where I can creatively express my Asian heritage and explore others!"
+    }, {
+      image: "reinaxu",
+      name: "Reina Xu",
+      position: "Executive Director",
+      major: "Biology \u2013 Neuroscience",
+      talent: "I can crack a lot of my bones",
+      character: "Finnick from The Hunger Games",
+      facts: "Community :D"
+    }, {
+      image: "andrialuo",
+      name: "Andria Luo",
+      position: "Director of Performance",
+      major: "Computer Science",
+      talent: "I can do a cartwheel",
+      character: "Mike from Suits",
+      facts: "Lovely people and a lovely time :) LNYF is a wonderful, supportive community and I love being able to celebrate one of my favorite holidays with everyone!"
+    }, {
+      image: "alstonliu",
+      name: "Alston Liu",
+      position: "Director of Communications",
+      major: "Computer Engineering, Financial Engineering",
+      talent: "Gambling",
+      character: "Wooper from Pokemon",
+      facts: "LNYF to me means a community where people of various backgrounds and life experiences can come together to celebrate the renewal of a New Year :D"
+    }, {
+      image: "willli",
+      name: "Will Li",
+      position: "Director of Development",
+      major: "Biochemistry / Molecular Biology",
+      talent: "Being able to put away AYCE sushi any day of the week",
+      character: "Lightning McQueen from Cars",
+      facts: "Making an unforgettable impact with unforgettable people"
     }],
     comm: [{
+      image: "adelinechen",
+      name: "Adeline Chen",
+      position: "Graphic Design Chair",
+      major: "Biology (Neuroscience)",
+      talent: "My intuition...",
+      character: "Iroh from Avatar: The Last Airbender",
+      facts: "A community of lifelong friends! I can always find support and laughter when I'm with the LNYF team :)"
+    }, {
+      // TODO: Hannah Do did not submit the exec intro form - fill in from her response
+      image: "hannahdo",
+      name: "Hannah Do",
+      position: "PR Chair",
+      major: "TBD",
+      talent: "TBD",
+      character: "TBD",
+      facts: "TBD"
+    }, {
+      image: "jocelynliao",
+      name: "Jocelyn Liao",
+      position: "PR Chair",
+      major: "Computer Science + HCI",
+      talent: "Cooking or making matcha",
+      character: "Marinette from Miraculous",
+      facts: "Since joining LNYF as a performer, I feel like I have been able to join an Asian community outside of my own. LNYF has allowed me to truly appreciate all different types of Asian cultures and has allowed me to get to know so many people I never would have met otherwise. I am beyond grateful to now be able to be on exec for a club that means so much to me!"
+    }, {
       image: "carolinezhuang",
       name: "Caroline Zhuang",
       position: "Art Director",
-      major: "Neuroscience",
-      zodiac: "Rooster",
-      facts: "Watching LNYF has always been my favorite part of the school year! I think it's a great way to find community and I'm super excited to be a part of planning this year!"
+      major: "Biology",
+      talent: "I can move my ears",
+      character: "Captain Holt from Brooklyn 99",
+      facts: "Hanging out with friends!"
     }, {
       image: "charliewang",
       name: "Charlie Wang",
       position: "Art Director",
-      major: "Communication Design",
-      zodiac: "Dog",
-      facts: "A reflection of cultural heritage and pride."
+      major: "Biology & Design",
+      talent: "I can roll my R's",
+      character: "Katara from Avatar: The Last Airbender",
+      facts: "Community"
     }, {
-      image: "madisonwang",
-      name: "Madison Wang",
-      position: "Multimedia Director",
-      major: "Communication Design",
-      zodiac: "Monkey",
-      facts: "Lovely Night Yummy Friends"
+      image: "janayan",
+      name: "Jana Yan",
+      position: "Web Master",
+      major: "Studio Art + Computer Science",
+      talent: "Flipping my tongue 180 degrees",
+      character: "Misato from Evangelion",
+      facts: "Doing something meaningful to celebrate my culture, meeting new people, and growing in a learning environment"
     }, {
-      image: "justinlan",
-      name: "Justin Lan",
-      position: "Multimedia Director",
-      major: "Biology",
-      zodiac: "Monkey",
-      facts: "The most welcoming and talented group of people that works so so hard to put on an amazing show both on the stage and behind the scenes."
+      image: "abigailrhee",
+      name: "Abigail Rhee",
+      position: "Multimedia Chair",
+      major: "Communication Design BFA",
+      talent: "Selective memorization",
+      character: "Ena Shinonome from Project Sekai Colorful Stage",
+      facts: "Wonderful people working together to share incredible experiences!"
     }, {
-      image: "jaxonpoentis",
-      name: "Jaxon Poentis",
-      position: "Multimedia Director",
-      major: "Computer Science + Math",
-      zodiac: "Rooster",
-      facts: "LNYF brings together passionate, like-minded individuals to showcase their talents in a vibrant celebration of Asian culture!"
+      image: "davidphan",
+      name: "David Phan",
+      position: "Multimedia",
+      major: "Mechanical Engineering",
+      talent: "I'm an internal GPS",
+      character: "Zoro from One Piece",
+      facts: "Collaboration, food, and fun"
     }, {
-      image: "andrialuo",
-      name: "Andria Luo",
-      position: "PR Chair",
-      major: "Computer Science, Bioinformatics & Psychology minors",
-      zodiac: "Monkey",
-      facts: "Lovely people and a lovely time :) LNYF is a wonderful, supportive community and I love being able to celebrate one of my favorite holidays with everyone."
-    }, {
-      image: "estherperez",
-      name: "Esther Perez",
-      position: "PR Chair",
-      major: "Marketing & Communication Design, PNP minor",
-      zodiac: "Rooster",
-      facts: "A community where you can explore who you are without having to hold yourself back."
-    }, {
-      image: "sophieleong",
-      name: "Sophie Leong",
-      position: "Graphic Design Chair",
-      major: "Communication Design",
-      zodiac: "Monkey",
-      facts: "LNYF is Lunar New Year Festival to me :P (it also means the place where I found some of my closest friends and learned so many life lessons in college!)"
-    }, {
-      image: "johnpaulpineda",
-      name: "John Paul (JP) Pineda",
-      position: "Webmaster",
-      major: "Computer Science + Math",
-      zodiac: "Monkey",
-      facts: "Being part of a passionate and fun community that showcases a variety of Asian culture!"
+      image: "paulpham",
+      name: "Paul Pham",
+      position: "Multimedia",
+      major: "Electrical Engineering",
+      talent: "I can whistle Ode to Joy",
+      character: "Spongebob from Spongebob Squarepants",
+      facts: "It's a culturally significant part of my own culture, Tet, but more importantly, LNYF to me means a celebration of cultures through performances and community."
     }],
     dev: [{
       image: "sarahyou",

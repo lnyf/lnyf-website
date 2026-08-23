@@ -62,6 +62,13 @@ const ImageColumn = styled.div`
   flex-grow: 2;
 `;
 
+const PhilanthropyImageColumn = styled(ImageColumn)`
+  @media (min-width: 1000px) {
+    /* line the image's right edge up with the events bar (78vw wide, 13vw from the left) */
+    margin-right: calc(9vw - 58px);
+  }
+`;
+
 const EmptyColumn = styled.div`
   display: flex;
   width: 0%;
@@ -650,9 +657,9 @@ const IndexPage = ({ data }) => {
               </Link>
             </ButtonContainer>
           </ContentColumn>
-          <ImageColumn>
-            <GatsbyImage image={philanthropyImg} alt="earthdance"></GatsbyImage>
-          </ImageColumn>
+          <PhilanthropyImageColumn>
+            <GatsbyImage image={philanthropyImg} alt="AIM HIGH"></GatsbyImage>
+          </PhilanthropyImageColumn>
         </TwoColumn>
       </ContentContainer>
     </Layout>
@@ -692,7 +699,7 @@ export const query = graphql`
       }
     }
     philanthropyData: file(
-      name: { eq: "earthdance" }
+      name: { eq: "2027_Philanthropy" }
       sourceInstanceName: { eq: "images" }
       relativeDirectory: { eq: "philanthropy" }
     ) {

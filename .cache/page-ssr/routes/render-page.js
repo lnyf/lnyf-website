@@ -17559,7 +17559,7 @@ const App = ({
     href: "https://fonts.gstatic.com",
     crossorigin: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("link", {
-    href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Prociono&display=swap",
     rel: "stylesheet"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("link", {
     rel: "stylesheet",
@@ -17601,8 +17601,10 @@ const theme = {
     // Light Yellow/Cream
 
     // Background colors - using the darker tones
-    background: "#4D7F84",
-    // Dark Brown/Black
+    background: "#081D33",
+    // Deep Navy (page background)
+    header: "#4D7197",
+    // Muted Steel Blue (nav bar)
     secondarybackground: "#FFFFF2",
     // Off-White/Cream
 
