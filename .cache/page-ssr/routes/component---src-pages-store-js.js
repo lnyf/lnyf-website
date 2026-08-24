@@ -2227,7 +2227,9 @@ const StyledHeader = (0,styled_components__WEBPACK_IMPORTED_MODULE_4__["default"
 //         name: String,
 //         position: String,
 //         major: String,
-//         zodiac: String,
+//         zodiac: String | undefined,
+//         talent: String | undefined,
+//         character: String | undefined,
 //         facts: String,
 //       }[],
 //   },
@@ -2290,12 +2292,12 @@ const text = {
       white: true
     }, "Events"))),
     aboutText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Lunar New Year Festival (LNYF) is an annual student-run production staged in commemoration and celebration of the Lunar New Year. LNYF seeks to leave a prolonged impact both on and off the stage. Dynamic performances ranging from acting to dancing to martial arts explore Asian heritage from both traditional and modern perspectives, and acknowledge social issues prevalent in Asian communities. LNYF partners with local non-profit organizations to offer sustainable support to the greater St Louis community.")),
-    philanthropyTitle: "EarthDance",
-    philanthropyText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "LNYF is proud to partner with EarthDance as its philanthropy for the Year of the Horse."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    philanthropyTitle: "AIM HIGH",
+    philanthropyText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "LNYF is proud to partner with Aim High as its philanthropy for the Year of the Horse."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
       style: {
         "font-weight": "bold"
       }
-    }, " About the Philanthropy: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Based in Ferguson, Missouri, EarthDance operates on the oldest organic farm west of the Mississippi and is nationally recognized for its hands-on, justice-focused approach to farming education. By reconnecting people to the land and one another, EarthDance teaches community members of all ages where their food comes from and how to grow it themselves, fostering deeper relationships with both food and community."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "EarthDance makes fresh, locally grown produce accessible through a Pay-What-You-Can model at their Farm Stand and Ferguson Farmers Market booth, partnerships with local food pantries and grocers, and affordable gardening education. With about 60% of their customers living in North St. Louis County\u2014an area facing historic and ongoing barriers to healthy food access\u2014their sliding-scale systems ensure that nourishment is treated as a right, not a privilege, in service of a more regenerative, inclusive future.")),
+    }, " About the Philanthropy: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Founded in 1991, Aim High has worked towards their mission of empowering motivated middle school students from at-risk environments. Today, they serve approximately 400 students from 60+ schools. Through their year-round Saturday sessions and intensive 5-week summer session, they push students to achieve beyond their best with the goal of forming life-long attitudes and goals. They give their students the tools to finish high school, create positive choices, and improve their self-esteem. We are excited to work with Aim High this year to assist them in their mission to ascend their students to beyond their best.")),
     philanthropyLink: "https://earthdancefarms.org/"
   },
   events: [
@@ -2746,10 +2748,26 @@ const text = {
       image: "reinaxu",
       name: "Reina Xu",
       position: "Executive Director",
-      major: "Biology \u2013 Neuroscience",
+      major: "Biology: Neuroscience",
       talent: "I can crack a lot of my bones",
       character: "Finnick from The Hunger Games",
       facts: "Community :D"
+    }, {
+      image: "alstonliu",
+      name: "Alston Liu",
+      position: "Director of Communications",
+      major: "Computer Engineering, Financial Engineering",
+      talent: "Gambling",
+      character: "Wooper from Pokemon",
+      facts: "LNYF to me means a community where people of various background and life experiences can come together to celebrate the renewal of a New Year :D"
+    }, {
+      image: "willli",
+      name: "Will Li",
+      position: "Director of Development",
+      major: "Biochemistry/Molecular Biology",
+      talent: "Being able to put away AYCE sushi any day of the week",
+      character: "Lightning McQueen from Cars",
+      facts: "Making an unforgettable impact with unforgettable people"
     }, {
       image: "andrialuo",
       name: "Andria Luo",
@@ -2758,167 +2776,143 @@ const text = {
       talent: "I can do a cartwheel",
       character: "Mike from Suits",
       facts: "Lovely people and a lovely time :) LNYF is a wonderful, supportive community and I love being able to celebrate one of my favorite holidays with everyone!"
-    }, {
-      image: "alstonliu",
-      name: "Alston Liu",
-      position: "Director of Communications",
-      major: "Computer Engineering, Financial Engineering",
-      talent: "Gambling",
-      character: "Wooper from Pokemon",
-      facts: "LNYF to me means a community where people of various backgrounds and life experiences can come together to celebrate the renewal of a New Year :D"
-    }, {
-      image: "willli",
-      name: "Will Li",
-      position: "Director of Development",
-      major: "Biochemistry / Molecular Biology",
-      talent: "Being able to put away AYCE sushi any day of the week",
-      character: "Lightning McQueen from Cars",
-      facts: "Making an unforgettable impact with unforgettable people"
     }],
     comm: [{
-      image: "adelinechen",
-      name: "Adeline Chen",
-      position: "Graphic Design Chair",
-      major: "Biology (Neuroscience)",
-      talent: "My intuition...",
-      character: "Iroh from Avatar: The Last Airbender",
-      facts: "A community of lifelong friends! I can always find support and laughter when I'm with the LNYF team :)"
-    }, {
-      // TODO: Hannah Do did not submit the exec intro form - fill in from her response
-      image: "hannahdo",
-      name: "Hannah Do",
-      position: "PR Chair",
-      major: "TBD",
-      talent: "TBD",
-      character: "TBD",
-      facts: "TBD"
-    }, {
-      image: "jocelynliao",
-      name: "Jocelyn Liao",
-      position: "PR Chair",
-      major: "Computer Science + HCI",
-      talent: "Cooking or making matcha",
-      character: "Marinette from Miraculous",
-      facts: "Since joining LNYF as a performer, I feel like I have been able to join an Asian community outside of my own. LNYF has allowed me to truly appreciate all different types of Asian cultures and has allowed me to get to know so many people I never would have met otherwise. I am beyond grateful to now be able to be on exec for a club that means so much to me!"
-    }, {
       image: "carolinezhuang",
       name: "Caroline Zhuang",
       position: "Art Director",
-      major: "Biology",
-      talent: "I can move my ears",
-      character: "Captain Holt from Brooklyn 99",
-      facts: "Hanging out with friends!"
+      major: "Neuroscience",
+      zodiac: "Rooster",
+      facts: "Watching LNYF has always been my favorite part of the school year! I think it's a great way to find community and I'm super excited to be a part of planning this year!"
     }, {
       image: "charliewang",
       name: "Charlie Wang",
       position: "Art Director",
-      major: "Biology & Design",
-      talent: "I can roll my R's",
-      character: "Katara from Avatar: The Last Airbender",
-      facts: "Community"
+      major: "Communication Design",
+      zodiac: "Dog",
+      facts: "A reflection of cultural heritage and pride."
     }, {
-      image: "janayan",
-      name: "Jana Yan",
-      position: "Web Master",
-      major: "Studio Art + Computer Science",
-      talent: "Flipping my tongue 180 degrees",
-      character: "Misato from Evangelion",
-      facts: "Doing something meaningful to celebrate my culture, meeting new people, and growing in a learning environment"
+      image: "madisonwang",
+      name: "Madison Wang",
+      position: "Multimedia Director",
+      major: "Communication Design",
+      zodiac: "Monkey",
+      facts: "Lovely Night Yummy Friends"
     }, {
-      image: "abigailrhee",
-      name: "Abigail Rhee",
-      position: "Multimedia Chair",
-      major: "Communication Design BFA",
-      talent: "Selective memorization",
-      character: "Ena Shinonome from Project Sekai Colorful Stage",
-      facts: "Wonderful people working together to share incredible experiences!"
+      image: "justinlan",
+      name: "Justin Lan",
+      position: "Multimedia Director",
+      major: "Biology",
+      zodiac: "Monkey",
+      facts: "The most welcoming and talented group of people that works so so hard to put on an amazing show both on the stage and behind the scenes."
     }, {
-      image: "davidphan",
-      name: "David Phan",
-      position: "Multimedia",
-      major: "Mechanical Engineering",
-      talent: "I'm an internal GPS",
-      character: "Zoro from One Piece",
-      facts: "Collaboration, food, and fun"
+      image: "jaxonpoentis",
+      name: "Jaxon Poentis",
+      position: "Multimedia Director",
+      major: "Computer Science + Math",
+      zodiac: "Rooster",
+      facts: "LNYF brings together passionate, like-minded individuals to showcase their talents in a vibrant celebration of Asian culture!"
     }, {
-      image: "paulpham",
-      name: "Paul Pham",
-      position: "Multimedia",
-      major: "Electrical Engineering",
-      talent: "I can whistle Ode to Joy",
-      character: "Spongebob from Spongebob Squarepants",
-      facts: "It's a culturally significant part of my own culture, Tet, but more importantly, LNYF to me means a celebration of cultures through performances and community."
+      image: "andrialuo",
+      name: "Andria Luo",
+      position: "PR Chair",
+      major: "Computer Science, Bioinformatics & Psychology minors",
+      zodiac: "Monkey",
+      facts: "Lovely people and a lovely time :) LNYF is a wonderful, supportive community and I love being able to celebrate one of my favorite holidays with everyone."
+    }, {
+      image: "estherperez",
+      name: "Esther Perez",
+      position: "PR Chair",
+      major: "Marketing & Communication Design, PNP minor",
+      zodiac: "Rooster",
+      facts: "A community where you can explore who you are without having to hold yourself back."
+    }, {
+      image: "sophieleong",
+      name: "Sophie Leong",
+      position: "Graphic Design Chair",
+      major: "Communication Design",
+      zodiac: "Monkey",
+      facts: "LNYF is Lunar New Year Festival to me :P (it also means the place where I found some of my closest friends and learned so many life lessons in college!)"
+    }, {
+      image: "johnpaulpineda",
+      name: "John Paul (JP) Pineda",
+      position: "Webmaster",
+      major: "Computer Science + Math",
+      zodiac: "Monkey",
+      facts: "Being part of a passionate and fun community that showcases a variety of Asian culture!"
     }],
     dev: [{
-      image: "sarahyou",
-      name: "Sarah You",
+      image: "jackyta",
+      name: "Jacky Ta",
       position: "Philanthropy Chair",
-      major: "Architecture",
-      zodiac: "Rooster caw cawwww",
-      facts: "LNYF provides an opportunity to connect with community members through showcasing East and Southeast Asian culture!"
+      major: "Computational Biology & Educational Studies",
+      talent: "Eating AYCE sushi!",
+      character: "Bree Van de Kamp from Desperate Housewives",
+      facts: "Community!"
     }, {
-      image: "alexflojo",
-      name: "Alex Flojo",
+      image: "elaineyoo",
+      name: "Elaine Yoo",
       position: "Fundraising Chair",
-      major: "Architecture",
-      zodiac: "Monkey",
-      facts: "lovely people, lovely dancing, lovely memories made and to be made!"
+      major: "Computer Science + Math, Economics",
+      talent: "Gonggi",
+      character: "Jang Juwon from Moving",
+      facts: "Connecting with a passionate community, celebrating and exploring different cultures, and making good memories!"
     }, {
-      image: "cynthiazhi",
-      name: "Cynthia Zhi",
+      image: "ethanwong",
+      name: "Ethan Wong",
       position: "Fundraising Chair",
-      major: "Computational Biology",
-      zodiac: "Rooster",
-      facts: "LNYF is a wonderful community of passionate individuals who I get to celebrate one of my favorite holidays with! "
+      major: "Molecular Biology and Biochemistry",
+      talent: "I can make a water droplet sound with my mouth",
+      character: "Mr. Boss from Smiling Friends",
+      facts: "Passionate cultural community"
     }, {
-      image: "phichanda",
-      name: "Phi Chanda",
+      image: "sarahye",
+      name: "Sarah Ye",
       position: "Fundraising Chair",
-      major: "Political Sciencce",
-      zodiac: "Dog",
-      facts: "Where countries with centuries of beef can share dressing rooms and even a stage!"
+      major: "Neuroscience",
+      talent: "Sleeping while swimming",
+      character: "Kim Dokja from Omniscient Reader's Viewpoint",
+      facts: "Family"
     }, {
-      image: "kellygan",
-      name: "Kelly Gan",
+      image: "dungtran",
+      name: "Dung Tran",
       position: "Corporate Sponsorship Chair",
-      major: "Biology, Anthropology minor",
-      zodiac: "Rooster",
-      facts: "LNYF is a chance for a strong community of minorities to support each other and other minorities; it's a beautiful experience to be uplifting others through more than just performance."
-    }, {
-      image: "randuan",
-      name: "Ran Duan",
-      position: "Corporate Sponsorship Chair",
-      major: "Computer Science, Statistics",
-      zodiac: "Goat",
-      facts: "LNYF is about coming together as a community to celebrate the traditions that make our cultures so rich and beautiful."
-    }, {
-      image: "lisaji",
-      name: "Lisa Ji",
-      position: "Corporate Sponsorship Chair",
-      major: "Biology: Neuroscience",
-      zodiac: "Goat",
-      facts: "EVERYTHING. I'm so grateful to have met my best friends here and be a part of the community that celebrate my cultural heritage."
+      major: "Operations and Supply Chain Management, Entrepreneurship",
+      talent: "Strong stomach (I never get sick or ache from street food)",
+      character: "Caraxes from House of the Dragon",
+      facts: "A group of really cool people coming together to share our passion for cultural appreciation and connectivity ;)"
     }, {
       image: "hayoungcho",
       name: "Katie Cho",
-      position: "Treasurer",
-      major: "Data Science",
-      zodiac: "Monkey",
-      facts: "The community!"
+      position: "Corporate Sponsorship Chair",
+      major: "Biology",
+      talent: "I can put my leg behind my neck",
+      character: "Dobby from Harry Potter",
+      facts: "A community to showcase a melting pot of Asian heritage!"
     }, {
-      image: "alstonliu",
-      name: "Alston Liu",
-      position: "Treasurer",
-      major: "Computer Engineering",
-      zodiac: "Rooster",
-      facts: "LNYF means to me that I can experience Lunar New Year away from family and experience how other cultures celebrate it!"
+      image: "kevinsi",
+      name: "Kevin Si",
+      position: "Corporate Sponsorship Chair",
+      major: "Neuroscience",
+      talent: "Taking diabolical 0.5 pics",
+      character: "Calcifer from Howl's Moving Castle",
+      facts: "LNYF has been such an amazing way to connect with people! I'm constantly surrounded by so many talented performers who are all so passionate about their acts, and it's incredible to see everyone's work pay off during show week. Through lion, it's also been a way for me to connect with my culture and share it on campus and in STL!"
     }, {
-      image: "willli",
-      name: "William Li",
+      image: "andyvo",
+      name: "Andy Vo",
       position: "Treasurer",
-      major: "Computer Engineering",
-      zodiac: "Rooster",
-      facts: "Good Vibes and Good Times!"
+      major: "Mechanical Engineering",
+      talent: "I have a high spice tolerance",
+      character: "Finn the Human from Adventure Time",
+      facts: "LNYF is an amazing place where culture meets creativity and brings everyone together."
+    }, {
+      image: "tiffanyly",
+      name: "Tiffany Ly",
+      position: "Treasurer",
+      major: "Biology",
+      talent: "Playing the piano with my eyes closed",
+      character: "Katara from Avatar: The Last Airbender",
+      facts: "Uplifting and supporting community who come together to celebrate Asian culture and heritage"
     }],
     perf: [{
       image: "davidzhu",
