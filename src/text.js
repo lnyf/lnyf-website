@@ -174,7 +174,7 @@ const text = {
     philanthropyText: (
       <>
         <Typography>
-          LNYF is proud to partner with Aim High as its philanthropy for the Year of the Horse.
+          LNYF is proud to partner with Aim High as its philanthropy for the Year of the Goat.
         </Typography>
 
         <Typography style={{ "font-weight": "bold" }}> About the Philanthropy: </Typography>
@@ -356,50 +356,60 @@ const text = {
     //   description:
     //     "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
     // },
-    // {
-      {
-        month: "Jan",
-        day: "28",
-        title: "Merch Drop 2",
-        caption: "",
-        description:
-          "LNYF's second round of merch releases!",
-      },
     {
-      month: "Feb",
-      day: "1",
-      title: "Nami Ramen Benefit Night",
-      caption: "@ Skinker Nami Ramen",
+      month: "Aug",
+      day: "21",
+      title: "Activities Fair",
+      caption: "",
       description:
-        "Visit the Skinker Nami Ramen location anytime and proceeds will go towards our philanthropy!",
+        "Come find the LNYF booth and sign up to be on our mailing list!",
     },
     {
-      month: "Feb",
-      day: "5",
-      title: "Sum Tea Benefit Night",
-      caption: "@ Sum Tea on Olive",
+      month: "Aug",
+      day: "28",
+      title: "Choreo Apps Due",
+      caption: "Due 11:59 pm",
       description:
-        "Visit the Sum Tea on Olive anytime and proceeds will go towards our philanthropy!",
+        "Apply to choreograph a dance in the upcoming show!",
+      link: "https://docs.google.com/document/d/1fPwDiHwoEnvHn7a3U0Pa0dJshJN13q4eGg8ZCsJtBxc/edit?tab=t.0",
     },
     {
-      month: "Feb",
-      day: "4",
-      title: "Rose Pre Order Form Closes",
-      description: "Pre order a rose for specific perfomers of the show! Form: https://forms.gle/etRoDKtpwmS8BLod9",
-    },
-    {
-      month: "Feb",
-      day: "6",
-      title: "LNYF Show 1",
-      caption: "7 pm",
+      month: "Sept",
+      day: "3",
+      title: "First GBM",
+      caption: "",
       description:
-        "Come watch our show. Find more info on our instagram!",
+        "Come join our first GBM to find out more about how we celebrate Lunar New Year through performance, fundraising, and other events!",
+    },
+    {
+      month: "Sept",
+      day: "8-11",
+      title: "Act Workshops",
+      caption: "More info on LNYF's Instagram!",
+      description:
+        "Explore the different LNYF acts before auditions!",
+    },
+    {
+      month: "Sept",
+      day: "12-18",
+      title: "Act Auditions",
+      caption: "More info on the Auditions page and LNYF's Instagram!",
+      description:
+        "Try out to become a performer in this year's LNYF show!",
+    },
+    {
+      month: "Sept",
+      day: "25",
+      title: "Mid-Autumn Celebration",
+      caption: "",
+      description:
+        "Celebrate the Mid-Autumn Festival with LNYF! Find more info on our Instagram.",
     },
     {
       month: "Feb",
-      day: "7",
-      title: "LNYF Shows 2 & 3",
-      caption: "2 & 7 pm",
+      day: "12-13",
+      title: "LNYF Show",
+      caption: "",
       description:
         "Come watch our show. Find more info on our instagram!",
     }
@@ -413,6 +423,14 @@ const text = {
     // },
   ],
   philanthropy: {
+    2027: {
+      image: "2027_Philanthropy",
+      title: "Aim High",
+      money: undefined,
+      description:
+        'LNYF is proud to partner with Aim High as its philanthropy for the Year of the Goat. Founded in 1991, Aim High has worked towards their mission of empowering motivated middle school students from at-risk environments. Today, they serve approximately 400 students from 60+ schools. Through their year-round Saturday sessions and intensive 5-week summer session, they push students to achieve beyond their best with the goal of forming life-long attitudes and goals. They give their students the tools to finish high school, create positive choices, and improve their self-esteem. We are excited to work with Aim High this year to assist them in their mission to ascend their students to beyond their best.',
+      link: "https://www.aimhighstl.org",
+    },
     2026: {
       image: "earthdance",
       title: "EarthDance",

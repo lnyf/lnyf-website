@@ -182,7 +182,7 @@ const EventPane = styled.div`
   border-radius: 20px;
           box-shadow: ${({ theme }) => theme.palette.background}4D 0px 19px 38px, ${({ theme }) => theme.palette.background}38 0px 15px 12px;
   transition: all .3s; 
-  padding: 15px 0;
+  padding: 10px 0;
   @media (max-width: 1000px) {
     width: 96vw;
   }
@@ -213,13 +213,13 @@ const EventBar = styled.div`
 `;
 
 const EventItem = styled.div`
-  width: 180px;
-  margin: 30px;
+  width: 145px;
+  margin: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px 15px;
-  min-height: 150px;
+  padding: 16px 12px;
+  min-height: 110px;
   align-items: center;
   border: 2px solid ${theme.font};
   border-radius: 10px;
@@ -238,21 +238,20 @@ const EventTitle = styled(Typography)`
   hyphens: auto;
   line-height: 1.3;
   padding: 0 5px;
-  font-size: clamp(18px, 3vw, 26px);
+  font-size: clamp(14px, 1.6vw, 18px);
   letter-spacing: normal;
 `;
 
 const EventDate = styled(Typography)`
-  margin-top: 25px;
+  margin-top: 14px;
   display: flex;
   align-items: center;
   flex-direction: column;
-`;
 
-const EventText = styled(Typography)`
-  margin-top: 20px;
-  margin-bottom: 15px;
-  margin-left: 5px;
+  h6 {
+    font-size: clamp(13px, 1.5vw, 17px);
+    line-height: 1.35;
+  }
 `;
 
 const BottomFloatingButton = styled(FloatingButton)`
@@ -606,9 +605,6 @@ const IndexPage = ({ data }) => {
         <div class="events">
         <Typography variant="h2">Events</Typography>
         <Underline />
-        <EventText variant="linkfont" color="secondary2">
-          Click to Learn More
-        </EventText>
         <EventLink to="/events" style={{ textDecoration: 'none' }}>
           <EventPane>
             <EventBar>

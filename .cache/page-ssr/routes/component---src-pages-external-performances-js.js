@@ -2631,41 +2631,48 @@ const text = {
   //   description:
   //     "Watch beautiful fireworks and a variety of dances at our collaboration event with Asian Multicultural Council!",
   // },
-  // {
   {
-    month: "Jan",
-    day: "28",
-    title: "Merch Drop 2",
+    month: "Aug",
+    day: "21",
+    title: "Activities Fair",
     caption: "",
-    description: "LNYF's second round of merch releases!"
+    description: "Come find the LNYF booth and sign up to be on our mailing list!"
+  }, {
+    month: "Aug",
+    day: "28",
+    title: "Choreo Apps Due",
+    caption: "Due 11:59 pm",
+    description: "Apply to choreograph a dance in the upcoming show!",
+    link: "https://docs.google.com/document/d/1fPwDiHwoEnvHn7a3U0Pa0dJshJN13q4eGg8ZCsJtBxc/edit?tab=t.0"
+  }, {
+    month: "Sept",
+    day: "3",
+    title: "First GBM",
+    caption: "",
+    description: "Come join our first GBM to find out more about how we celebrate Lunar New Year through performance, fundraising, and other events!"
+  }, {
+    month: "Sept",
+    day: "8-11",
+    title: "Act Workshops",
+    caption: "More info on LNYF's Instagram!",
+    description: "Explore the different LNYF acts before auditions!"
+  }, {
+    month: "Sept",
+    day: "12-18",
+    title: "Act Auditions",
+    caption: "More info on the Auditions page and LNYF's Instagram!",
+    description: "Try out to become a performer in this year's LNYF show!"
+  }, {
+    month: "Sept",
+    day: "25",
+    title: "Mid-Autumn Celebration",
+    caption: "",
+    description: "Celebrate the Mid-Autumn Festival with LNYF! Find more info on our Instagram."
   }, {
     month: "Feb",
-    day: "1",
-    title: "Nami Ramen Benefit Night",
-    caption: "@ Skinker Nami Ramen",
-    description: "Visit the Skinker Nami Ramen location anytime and proceeds will go towards our philanthropy!"
-  }, {
-    month: "Feb",
-    day: "5",
-    title: "Sum Tea Benefit Night",
-    caption: "@ Sum Tea on Olive",
-    description: "Visit the Sum Tea on Olive anytime and proceeds will go towards our philanthropy!"
-  }, {
-    month: "Feb",
-    day: "4",
-    title: "Rose Pre Order Form Closes",
-    description: "Pre order a rose for specific perfomers of the show! Form: https://forms.gle/etRoDKtpwmS8BLod9"
-  }, {
-    month: "Feb",
-    day: "6",
-    title: "LNYF Show 1",
-    caption: "7 pm",
-    description: "Come watch our show. Find more info on our instagram!"
-  }, {
-    month: "Feb",
-    day: "7",
-    title: "LNYF Shows 2 & 3",
-    caption: "2 & 7 pm",
+    day: "12-13",
+    title: "LNYF Show",
+    caption: "",
     description: "Come watch our show. Find more info on our instagram!"
   }
   // {
@@ -2939,68 +2946,69 @@ const text = {
       facts: "Lovely people and a lovely time :) LNYF is a wonderful, supportive community and I love being able to celebrate one of my favorite holidays with everyone!"
     }],
     comm: [{
+      image: "adelinechen",
+      name: "Adeline Chen",
+      position: "Graphic Design Chair",
+      major: "Biology: Neuroscience",
+      talent: "My intuition...",
+      character: "Iroh from Avatar: The Last Airbender",
+      facts: "A community of lifelong friends! I can always find support and laughter when I'm with the LNYF team :)"
+    }, {
+      image: "jocelynliao",
+      name: "Jocelyn Liao",
+      position: "PR Chair",
+      major: "Computer Science + HCI",
+      talent: "Cooking or making matcha",
+      character: "Marinette from Miraculous",
+      facts: "Since joining LNYF as a performer, I feel like I have been able to join an Asian community outside of my own. LNYF has allowed me to truly appreciate all different types of Asian cultures and has allowed me to get to know so many people I never would have met otherwise. I am beyond grateful to now be able to be on exec for a club that means so much to me!"
+    }, {
       image: "carolinezhuang",
       name: "Caroline Zhuang",
       position: "Art Director",
-      major: "Neuroscience",
-      zodiac: "Rooster",
-      facts: "Watching LNYF has always been my favorite part of the school year! I think it's a great way to find community and I'm super excited to be a part of planning this year!"
+      major: "Biology",
+      talent: "I can move my ears",
+      character: "Captain Holt from Brooklyn 99",
+      facts: "Hanging out with friends!"
     }, {
       image: "charliewang",
       name: "Charlie Wang",
       position: "Art Director",
-      major: "Communication Design",
-      zodiac: "Dog",
-      facts: "A reflection of cultural heritage and pride."
+      major: "Biology & Design",
+      talent: "I can roll my R's",
+      character: "Katara from Avatar: The Last Airbender",
+      facts: "Community"
     }, {
-      image: "madisonwang",
-      name: "Madison Wang",
-      position: "Multimedia Director",
-      major: "Communication Design",
-      zodiac: "Monkey",
-      facts: "Lovely Night Yummy Friends"
-    }, {
-      image: "justinlan",
-      name: "Justin Lan",
-      position: "Multimedia Director",
-      major: "Biology",
-      zodiac: "Monkey",
-      facts: "The most welcoming and talented group of people that works so so hard to put on an amazing show both on the stage and behind the scenes."
-    }, {
-      image: "jaxonpoentis",
-      name: "Jaxon Poentis",
-      position: "Multimedia Director",
-      major: "Computer Science + Math",
-      zodiac: "Rooster",
-      facts: "LNYF brings together passionate, like-minded individuals to showcase their talents in a vibrant celebration of Asian culture!"
-    }, {
-      image: "andrialuo",
-      name: "Andria Luo",
-      position: "PR Chair",
-      major: "Computer Science, Bioinformatics & Psychology minors",
-      zodiac: "Monkey",
-      facts: "Lovely people and a lovely time :) LNYF is a wonderful, supportive community and I love being able to celebrate one of my favorite holidays with everyone."
-    }, {
-      image: "estherperez",
-      name: "Esther Perez",
-      position: "PR Chair",
-      major: "Marketing & Communication Design, PNP minor",
-      zodiac: "Rooster",
-      facts: "A community where you can explore who you are without having to hold yourself back."
-    }, {
-      image: "sophieleong",
-      name: "Sophie Leong",
-      position: "Graphic Design Chair",
-      major: "Communication Design",
-      zodiac: "Monkey",
-      facts: "LNYF is Lunar New Year Festival to me :P (it also means the place where I found some of my closest friends and learned so many life lessons in college!)"
-    }, {
-      image: "johnpaulpineda",
-      name: "John Paul (JP) Pineda",
+      image: "janayan",
+      name: "Jana Yan",
       position: "Webmaster",
-      major: "Computer Science + Math",
-      zodiac: "Monkey",
-      facts: "Being part of a passionate and fun community that showcases a variety of Asian culture!"
+      major: "Studio Art + Computer Science",
+      talent: "Flipping my tongue 180 degrees",
+      character: "Misato from Evangelion",
+      facts: "Doing something meaningful to celebrate my culture, meeting new people, and growing in a learning environment"
+    }, {
+      image: "abigailrhee",
+      name: "Abigail Rhee",
+      position: "Multimedia Chair",
+      major: "Communication Design BFA",
+      talent: "Selective memorization",
+      character: "Ena Shinonome from Project Sekai Colorful Stage",
+      facts: "Wonderful people working together to share incredible experiences!"
+    }, {
+      image: "davidphan",
+      name: "David Phan",
+      position: "Multimedia Chair",
+      major: "Mechanical Engineering",
+      talent: "I'm an internal GPS",
+      character: "Zoro from One Piece",
+      facts: "Collaboration, food, and fun"
+    }, {
+      image: "paulpham",
+      name: "Paul Pham",
+      position: "Multimedia Chair",
+      major: "Electrical Engineering",
+      talent: "I can whistle Ode to Joy",
+      character: "SpongeBob from SpongeBob SquarePants",
+      facts: "It's a culturally significant part of my own culture, Tet, but more importantly, LNYF to me means a celebration of cultures through performances and community."
     }],
     dev: [{
       image: "jackyta",
@@ -3076,40 +3084,45 @@ const text = {
       facts: "Uplifting and supporting community who come together to celebrate Asian culture and heritage"
     }],
     perf: [{
-      image: "davidzhu",
-      name: "David Zhu",
+      image: "alyssazhang",
+      name: "Alyssa Zhang",
       position: "Choreo Chair",
-      major: "Computational Biology",
-      zodiac: "Monkey",
-      facts: "LNYF to me is an opportunity to see a bunch of passionate and talented people come together to create something that's meaningful and celebrates their heritage."
+      major: "Chemistry + Spanish",
+      talent: "I can fold my tongue into a clover ☘️",
+      character: "Kuromi from Hello Kitty",
+      facts: "LNYF is an amazing and supportive community where I can feel more connected with my culture!"
     }, {
-      image: "nevinsong",
-      name: "Nevin Song",
+      image: "andrewchoi",
+      name: "Andrew Choi",
       position: "Choreo Chair",
-      major: "Biomedical Engineering",
-      zodiac: "Monkey",
-      facts: "LNYF means being with friends to showcase our culture together through amazing performances!"
+      major: "Business + Computer Science",
+      talent: "I can pretend to understand you...",
+      character: "Ditto from Pokemon",
+      facts: "Place where I made the best memories in college"
     }, {
-      image: "charlottechen",
-      name: "Charlotte Chen",
+      image: "vungkim",
+      name: "Vung Kim",
       position: "Technical Chair",
-      major: "Biomedical Engineering and Architecture",
-      zodiac: "Sheep",
-      facts: "To me, LNYF is a vibrant celebration of cultural pride, tradition, and unity within the Asian community and beyond. It serves as a platform to share stories, heritage, and creativity with a wider audience through performance and collective effort. More than just a festival, LNYF nurtures a deep sense of belonging, strengthens community connections, and creates opportunities for people of all backgrounds to engage with and appreciate diverse cultural traditions."
+      major: "Psychology",
+      talent: "I can clap with one hand!",
+      character: "Haruhi Fujioka from Ouran High School Host Club",
+      facts: "LNYF is a community that facilitates the performance and celebration of different cultures."
     }, {
-      image: "reinaxu",
-      name: "Reina Xu",
+      image: "ivyhuang",
+      name: "Ivy Huang",
       position: "Special Operations Chair",
       major: "Biology",
-      zodiac: "Monkey",
-      facts: "A great community of performers and friends :D"
+      talent: "Decently good at the card game Egyptian",
+      character: "Qifrey from Witch Hat Atelier",
+      facts: "Connection to culture and people"
     }, {
-      image: "vynguyen",
-      name: "Vy Nguyen",
+      image: "joyezheng",
+      name: "Joye Zheng",
       position: "External Performance Chair",
-      major: "Anthropology",
-      zodiac: "Goat",
-      facts: "A community where we all work together to create a lovely show that celebrates different East and Southeast Asian cultures!"
+      major: "Biology: Neuroscience",
+      talent: "Can eat pints of ice cream at a time",
+      character: "Gojo from Jujutsu Kaisen",
+      facts: "Amazing, talented people coming together to put on a great show, spread Asian culture, and support local organizations"
     }]
   },
   gallery: {
