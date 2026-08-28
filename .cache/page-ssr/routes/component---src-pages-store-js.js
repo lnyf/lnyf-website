@@ -2293,7 +2293,7 @@ const text = {
     }, "Events"))),
     aboutText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Lunar New Year Festival (LNYF) is an annual student-run production staged in commemoration and celebration of the Lunar New Year. LNYF seeks to leave a prolonged impact both on and off the stage. Dynamic performances ranging from acting to dancing to martial arts explore Asian heritage from both traditional and modern perspectives, and acknowledge social issues prevalent in Asian communities. LNYF partners with local non-profit organizations to offer sustainable support to the greater St Louis community.")),
     philanthropyTitle: "AIM HIGH",
-    philanthropyText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "LNYF is proud to partner with Aim High as its philanthropy for the Year of the Horse."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    philanthropyText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "LNYF is proud to partner with Aim High as its philanthropy for the Year of the Goat."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
       style: {
         "font-weight": "bold"
       }
@@ -2524,6 +2524,13 @@ const text = {
   // },
   ],
   philanthropy: {
+    2027: {
+      image: "2027_Philanthropy",
+      title: "Aim High",
+      money: undefined,
+      description: 'LNYF is proud to partner with Aim High as its philanthropy for the Year of the Goat. Founded in 1991, Aim High has worked towards their mission of empowering motivated middle school students from at-risk environments. Today, they serve approximately 400 students from 60+ schools. Through their year-round Saturday sessions and intensive 5-week summer session, they push students to achieve beyond their best with the goal of forming life-long attitudes and goals. They give their students the tools to finish high school, create positive choices, and improve their self-esteem. We are excited to work with Aim High this year to assist them in their mission to ascend their students to beyond their best.',
+      link: "https://www.aimhighstl.org"
+    },
     2026: {
       image: "earthdance",
       title: "EarthDance",
@@ -2800,6 +2807,13 @@ const text = {
       talent: "Cooking or making matcha",
       character: "Marinette from Miraculous",
       facts: "Since joining LNYF as a performer, I feel like I have been able to join an Asian community outside of my own. LNYF has allowed me to truly appreciate all different types of Asian cultures and has allowed me to get to know so many people I never would have met otherwise. I am beyond grateful to now be able to be on exec for a club that means so much to me!"
+    }, {
+      image: "hannahdo",
+      name: "Hannah Do",
+      position: "PR Chair",
+      major: "Biology: Neuroscience, Economics minor",
+      talent: "Having the weirdest dreams",
+      character: "Paris from Gilmore Girls"
     }, {
       image: "carolinezhuang",
       name: "Caroline Zhuang",
@@ -3834,13 +3848,19 @@ const text = {
     }, {
       year: "2025: Interwoven",
       title: undefined,
-      description: "Philanthropy: SQSH (St. Louis Queer Support Helpline)",
+      description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, "Philanthropy: SQSH (St. Louis Queer Support Helpline)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("br", null), "30th Anniversary"),
       image: undefined,
       imageCaption: undefined
     }, {
       year: "2026: Boundless Horizons",
       title: undefined,
       description: "Philanthropy: EarthDance",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2027: Ascend",
+      title: undefined,
+      description: "Philanthropy: Aim High",
       image: undefined,
       imageCaption: undefined
     }]

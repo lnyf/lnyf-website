@@ -32655,12 +32655,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Button */ "./src/components/Button.js");
 /* harmony import */ var _components_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Typography */ "./src/components/Typography.js");
 /* harmony import */ var _components_StyledImage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/StyledImage */ "./src/components/StyledImage.js");
-/* harmony import */ var _components_Seo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Seo */ "./src/components/Seo.js");
-/* harmony import */ var _utils_convertImgArrToMap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/convertImgArrToMap */ "./src/utils/convertImgArrToMap.js");
-/* harmony import */ var _components_ButtonDropdown__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/ButtonDropdown */ "./src/components/ButtonDropdown.js");
-/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../text */ "./src/text.js");
-/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _components_TwoColumn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/TwoColumn */ "./src/components/TwoColumn.js");
+/* harmony import */ var _components_Seo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Seo */ "./src/components/Seo.js");
+/* harmony import */ var _utils_convertImgArrToMap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/convertImgArrToMap */ "./src/utils/convertImgArrToMap.js");
+/* harmony import */ var _components_ButtonDropdown__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/ButtonDropdown */ "./src/components/ButtonDropdown.js");
+/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../text */ "./src/text.js");
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
 
 
 
@@ -32673,26 +32674,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const StyledCaption = (0,styled_components__WEBPACK_IMPORTED_MODULE_10__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
+
+
+/* Keeps the content off the page edges and caps how wide the
+   image/text pair is allowed to stretch. */
+const ContentWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "philanthropy__ContentWrapper"
+})(["max-width:1000px;margin:0 auto;padding:0 16px;@media (min-width:1000px){padding:0 32px;}"]);
+const MediaColumn = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "philanthropy__MediaColumn"
+})(["max-width:520px;@media (min-width:1000px){flex:0 0 40%;max-width:400px;}"]);
+const TextColumn = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
+  displayName: "philanthropy__TextColumn"
+})(["flex:1;min-width:0;@media (min-width:1000px){padding-left:40px;}"]);
+const StyledCaption = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
   displayName: "philanthropy__StyledCaption"
-})(["margin-bottom:20px;"]);
-const StyledHeader = (0,styled_components__WEBPACK_IMPORTED_MODULE_10__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
+})(["margin-bottom:16px;font-size:13px;line-height:18px;@media (min-width:800px){font-size:14px;line-height:20px;}"]);
+const StyledHeader = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
   displayName: "philanthropy__StyledHeader"
-})(["margin-top:40px;margin-bottom:10px;"]);
-const StyledLabel = (0,styled_components__WEBPACK_IMPORTED_MODULE_10__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
+})(["margin-top:24px;margin-bottom:8px;@media (min-width:1000px){margin-top:0;}font-size:22px;line-height:26px;@media (min-width:800px){font-size:28px;line-height:34px;}"]);
+const StyledDescription = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
+  displayName: "philanthropy__StyledDescription"
+})(["font-size:15px;line-height:1.6;@media (min-width:800px){font-size:16px;}"]);
+const StyledLabel = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"]).withConfig({
   displayName: "philanthropy__StyledLabel"
-})(["margin-bottom:10px;"]);
-const StyledAnchor = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].a.withConfig({
+})(["margin-bottom:10px;font-size:16px;line-height:20px;@media (min-width:800px){font-size:17px;line-height:22px;}"]);
+const StyledAnchor = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].a.withConfig({
   displayName: "philanthropy__StyledAnchor"
 })(["margin-top:20px;margin-bottom:20px;display:block;"]);
-const VideoContainer = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].div.withConfig({
+const SmallButton = (0,styled_components__WEBPACK_IMPORTED_MODULE_11__["default"])(_components_Button__WEBPACK_IMPORTED_MODULE_3__["default"]).withConfig({
+  displayName: "philanthropy__SmallButton"
+})(["height:34px;padding:0 26px;font-size:13px;line-height:13px;@media (min-width:800px){font-size:14px;line-height:14px;}"]);
+const VideoContainer = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "philanthropy__VideoContainer"
 })(["position:relative;box-sizing:border-box;width:100%;height:0;padding-bottom:60%;border:", ";box-shadow:", ";"], ({
   theme
 }) => theme.decoration.border, ({
   theme
 }) => theme.decoration.boxShadow);
-const Video = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].iframe.withConfig({
+const Video = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].iframe.withConfig({
   displayName: "philanthropy__Video"
 })(["position:absolute;height:100%;width:100%;"]);
 const PhilanthropyPage = ({
@@ -32704,47 +32724,49 @@ const PhilanthropyPage = ({
   const {
     nodes
   } = imgData;
-  const imgDataMap = (0,_utils_convertImgArrToMap__WEBPACK_IMPORTED_MODULE_7__["default"])(nodes);
+  const imgDataMap = (0,_utils_convertImgArrToMap__WEBPACK_IMPORTED_MODULE_8__["default"])(nodes);
   const {
     0: year,
     1: setYear
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(Object.keys(_text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy).sort((a, b) => b - a)[0]);
-  const img = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_11__.getImage)(imgDataMap[_text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].image]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Seo__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(Object.keys(_text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy).sort((a, b) => b - a)[0]);
+  const img = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_12__.getImage)(imgDataMap[_text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].image]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Seo__WEBPACK_IMPORTED_MODULE_7__["default"], {
     title: "Philanthropy"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_InnerPage__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Philanthropy",
     buttons: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledLabel, {
       variant: "subtitle"
-    }, "Year"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ButtonDropdown__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    }, "Year"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ButtonDropdown__WEBPACK_IMPORTED_MODULE_9__["default"], {
       value: year,
       setValue: setYear,
-      options: Object.keys(_text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy).sort((a, b) => b - a).map(p => ({
+      options: Object.keys(_text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy).sort((a, b) => b - a).map(p => ({
         value: p,
         label: p
       })),
       active: true
     }))
-  }, _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].image && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_StyledImage__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ContentWrapper, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_TwoColumn__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    spacing: 0
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(MediaColumn, null, _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].image && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_StyledImage__WEBPACK_IMPORTED_MODULE_5__["default"], {
     image: img,
-    alt: _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].title
-  }), _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].video && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(VideoContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Video, {
-    src: _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].video,
+    alt: _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].title
+  }), _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].video && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(VideoContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Video, {
+    src: _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].video,
     title: "YouTube video player",
     frameBorder: "0",
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     allowFullScreen: true
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(TextColumn, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledHeader, {
     variant: "h4"
-  }, _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].title), _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].money && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledCaption, {
+  }, _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].title), _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].money && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledCaption, {
     variant: "caption"
-  }, "Money Raised: ", _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].money), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], null, _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledAnchor, {
+  }, "Money Raised: ", _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].money), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledDescription, null, _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyledAnchor, {
     target: "_blank",
-    href: _text__WEBPACK_IMPORTED_MODULE_9__["default"].philanthropy[year].link,
+    href: _text__WEBPACK_IMPORTED_MODULE_10__["default"].philanthropy[year].link,
     rel: "noopener noreferrer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(SmallButton, {
     white: true
-  }, "See More"))));
+  }, "See More")))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PhilanthropyPage);
 const query = "2854820007";
@@ -32912,7 +32934,7 @@ const text = {
     }, "Events"))),
     aboutText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Lunar New Year Festival (LNYF) is an annual student-run production staged in commemoration and celebration of the Lunar New Year. LNYF seeks to leave a prolonged impact both on and off the stage. Dynamic performances ranging from acting to dancing to martial arts explore Asian heritage from both traditional and modern perspectives, and acknowledge social issues prevalent in Asian communities. LNYF partners with local non-profit organizations to offer sustainable support to the greater St Louis community.")),
     philanthropyTitle: "AIM HIGH",
-    philanthropyText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "LNYF is proud to partner with Aim High as its philanthropy for the Year of the Horse."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    philanthropyText: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], null, "LNYF is proud to partner with Aim High as its philanthropy for the Year of the Goat."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_components_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
       style: {
         "font-weight": "bold"
       }
@@ -33143,6 +33165,13 @@ const text = {
   // },
   ],
   philanthropy: {
+    2027: {
+      image: "2027_Philanthropy",
+      title: "Aim High",
+      money: undefined,
+      description: 'LNYF is proud to partner with Aim High as its philanthropy for the Year of the Goat. Founded in 1991, Aim High has worked towards their mission of empowering motivated middle school students from at-risk environments. Today, they serve approximately 400 students from 60+ schools. Through their year-round Saturday sessions and intensive 5-week summer session, they push students to achieve beyond their best with the goal of forming life-long attitudes and goals. They give their students the tools to finish high school, create positive choices, and improve their self-esteem. We are excited to work with Aim High this year to assist them in their mission to ascend their students to beyond their best.',
+      link: "https://www.aimhighstl.org"
+    },
     2026: {
       image: "earthdance",
       title: "EarthDance",
@@ -33419,6 +33448,13 @@ const text = {
       talent: "Cooking or making matcha",
       character: "Marinette from Miraculous",
       facts: "Since joining LNYF as a performer, I feel like I have been able to join an Asian community outside of my own. LNYF has allowed me to truly appreciate all different types of Asian cultures and has allowed me to get to know so many people I never would have met otherwise. I am beyond grateful to now be able to be on exec for a club that means so much to me!"
+    }, {
+      image: "hannahdo",
+      name: "Hannah Do",
+      position: "PR Chair",
+      major: "Biology: Neuroscience, Economics minor",
+      talent: "Having the weirdest dreams",
+      character: "Paris from Gilmore Girls"
     }, {
       image: "carolinezhuang",
       name: "Caroline Zhuang",
@@ -34453,13 +34489,19 @@ const text = {
     }, {
       year: "2025: Interwoven",
       title: undefined,
-      description: "Philanthropy: SQSH (St. Louis Queer Support Helpline)",
+      description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null, "Philanthropy: SQSH (St. Louis Queer Support Helpline)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("br", null), "30th Anniversary"),
       image: undefined,
       imageCaption: undefined
     }, {
       year: "2026: Boundless Horizons",
       title: undefined,
       description: "Philanthropy: EarthDance",
+      image: undefined,
+      imageCaption: undefined
+    }, {
+      year: "2027: Ascend",
+      title: undefined,
+      description: "Philanthropy: Aim High",
       image: undefined,
       imageCaption: undefined
     }]

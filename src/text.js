@@ -880,6 +880,14 @@ const text = {
         facts: "Since joining LNYF as a performer, I feel like I have been able to join an Asian community outside of my own. LNYF has allowed me to truly appreciate all different types of Asian cultures and has allowed me to get to know so many people I never would have met otherwise. I am beyond grateful to now be able to be on exec for a club that means so much to me!",
       },
       {
+        image: "hannahdo",
+        name: "Hannah Do",
+        position: "PR Chair",
+        major: "Biology: Neuroscience, Economics minor",
+        talent: "Having the weirdest dreams",
+        character: "Paris from Gilmore Girls",
+      },
+      {
         image: "carolinezhuang",
         name: "Caroline Zhuang",
         position: "Art Director",
@@ -1953,7 +1961,13 @@ const text = {
       {
         year: "2025: Interwoven",
         title: undefined,
-        description: "Philanthropy: SQSH (St. Louis Queer Support Helpline)",
+        description: (
+          <>
+            Philanthropy: SQSH (St. Louis Queer Support Helpline)
+            <br />
+            30th Anniversary
+          </>
+        ),
         image: undefined,
         imageCaption: undefined,
       },
@@ -1961,6 +1975,13 @@ const text = {
         year: "2026: Boundless Horizons",
         title: undefined,
         description: "Philanthropy: EarthDance",
+        image: undefined,
+        imageCaption: undefined,
+      },
+      {
+        year: "2027: Ascend",
+        title: undefined,
+        description: "Philanthropy: Aim High",
         image: undefined,
         imageCaption: undefined,
       },

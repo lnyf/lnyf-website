@@ -172,10 +172,12 @@ class FlipCard extends React.Component {
                         <Answer variant="caption2">{this.props.character}</Answer>
                     </div>
                 )}
-                <div>
-                    <SecTitle variant="subtitle">What LNYF means to me:</SecTitle>
-                    <Answer variant="caption2">{this.props.facts}</Answer>
-                </div>
+                {this.props.facts && (
+                    <div>
+                        <SecTitle variant="subtitle">What LNYF means to me:</SecTitle>
+                        <Answer variant="caption2">{this.props.facts}</Answer>
+                    </div>
+                )}
             </Back>
         </CardContainer>
       )
