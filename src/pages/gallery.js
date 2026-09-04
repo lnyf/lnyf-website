@@ -90,6 +90,10 @@ const GalleryPage = ({ data }) => {
   const [media, setMedia] = useState(initialMedia);
   const [pic, setPic] = useState(undefined);
 
+  // A year may not have both media types, so fall back when the selected one
+  // isn't available for the year currently picked.
+  const activeMedia = media in text.gallery[year] ? media : initialMedia;
+
   const handleClick = (pic) => {
     setPic(pic);
     setOpen(true);
@@ -117,7 +121,7 @@ const GalleryPage = ({ data }) => {
               {"photos" in text.gallery[year] && (
                 <StyledButton white
                   onClick={() => setMedia("photos")}
-                  active={media === "photos"}
+                  active={activeMedia === "photos"}
                 >
                   Photo
                 </StyledButton>
@@ -125,7 +129,7 @@ const GalleryPage = ({ data }) => {
               {"videos" in text.gallery[year] && (
                 <Button white
                   onClick={() => setMedia("videos")}
-                  active={media === "videos"}
+                  active={activeMedia === "videos"}
                 >
                   Video
                 </Button>
@@ -135,8 +139,8 @@ const GalleryPage = ({ data }) => {
         }
       >
         <Grid>
-          {text.gallery[year][media].map((p, i) =>
-            media === "photos" ? (
+          {text.gallery[year][activeMedia].map((p, i) =>
+            activeMedia === "photos" ? (
               <FadeInOnScroll key={i} direction="up" delay={i * 10}>
                 <ImageContainer>
                   <ImageThumbnail

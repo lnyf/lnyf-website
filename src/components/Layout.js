@@ -291,7 +291,7 @@ const Header = () => {
               Stage Crew & Ushers
             </NavOverlayItem> */}
             <NavOverlayItem to="/performances" onClick={onMenuClick}>
-              Performers
+              Performances
             </NavOverlayItem>
             <NavOverlayItem to="/gallery" onClick={onMenuClick}>
               Gallery
@@ -354,7 +354,7 @@ const Header = () => {
           </NavBarLink> */}
           <NavBarLink variant="linkfont">
             <StyledLink to="/performances">
-              Performers
+              Performances
             </StyledLink>
           </NavBarLink>
           <NavBarLink variant="linkfont">
