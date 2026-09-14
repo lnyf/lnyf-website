@@ -70,6 +70,13 @@ const ImagePlaceholder = styled.div`
   }
 `;
 
+const Choreographers = styled(Typography)`
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-style: italic;
+  opacity: 0.9;
+`;
+
 const ImageContainer = styled.div`
   flex-basis: 0;
   flex-grow: 1;
@@ -122,6 +129,11 @@ const PerformancesPage = ({ data }) => {
               </ImageContainer>
               <PerformanceContent>
                 <StyledHeader variant="h6">{p.title}</StyledHeader>
+                {p.choreographers && (
+                  <Choreographers variant="caption">
+                    Choreographed by {p.choreographers}
+                  </Choreographers>
+                )}
               </PerformanceContent>
             </PerformanceContainer>
           </FadeInOnScroll>

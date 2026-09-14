@@ -282,7 +282,8 @@ const HistoryPage = ({ data }) => {
   const { imgData } = data;
   const { nodes } = imgData;
   const imgDataMap = convertImgArrToMap(nodes);
-  const timeline = text.history.timeline || [];
+  // Displayed newest-first; text.js keeps the timeline in chronological order
+  const timeline = [...(text.history.timeline || [])].reverse();
 
   return (
     <Layout>

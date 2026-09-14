@@ -146,7 +146,7 @@ const text = {
     youtube: "https://www.youtube.com/user/LNYF",
     // store: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
     store2: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0",
-    externalPerformancesForm: "https://docs.google.com/forms/d/e/1FAIpQLSeRiYDlxX0G1_Ytdc_YPKfPy6UnbQG3PJIBZRhczCze7HSWUQ/viewform",
+    externalPerformancesForm: "https://docs.google.com/forms/d/e/1FAIpQLSd2bsJ_9NpPp45zssGhag9T6e-oxGTLyLtnpxMI2NAIC3Hmzw/viewform",
     // usherForm: "https://docs.google.com/forms/d/e/1FAIpQLScMSTqyzn7hWZo2K76uCXTM4f9ewOHQ3066u4xcgvWHsP9YZA/viewform",
     // stageCrewForm: "https://docs.google.com/forms/d/e/1FAIpQLSdFcIttqcgUfXCGSx_HySW1vEDFMt-D_bNS4NUEeerq1lwmTg/viewform",
     //store: "https://docs.google.com/forms/d/e/1FAIpQLScHw56q-6mb2jUH9Wx5KhdkTjk4KWjdP0uwR0uTIa_9DWlXIw/viewform",
@@ -391,11 +391,19 @@ const text = {
     },
     {
       month: "Sept",
-      day: "12-18",
+      day: "13-14",
       title: "Act Auditions",
       caption: "More info on the Auditions page and LNYF's Instagram!",
       description:
         "Try out to become a performer in this year's LNYF show!",
+    },
+    {
+      month: "Sept",
+      day: "15-20",
+      title: "Make-Up Auditions",
+      caption: "More info on the Auditions page and LNYF's Instagram!",
+      description:
+        "In case you missed it, or for a second chance!",
     },
     {
       month: "Sept",
@@ -515,50 +523,62 @@ const text = {
   performances: [
     {
       title: "Lion",
+      choreographers: "Kelly, Kevin, Aphi",
       image: "lion",
     },
     {
       title: "Yoyo",
+      choreographers: "Peter Chang, Ryan Lin, Ivy Huang, Reina Xu",
       image: "yoyo",
     },
     {
       title: "Tinikling",
+      choreographers: "Andrew Aviado, Alice Xu, Cece Idinopulos",
       image: "tinikling",
     },
     {
       title: "Korean Fan",
+      choreographers: "Jessica Lee, Andrew Choi, Min-Suh Kwak",
       image: "kfan",
     },
     {
       title: "Standing Drums",
+      choreographers: "Avery Kim, Daniel Yoo",
       image: "standingdrums",
     },
     {
       title: "Chinese Fan",
+      choreographers: "Andria Luo, Celina Liu, Cynthia Zhi",
       image: "cfan",
     },
     {
       title: "Lotus",
+      choreographers: "Nikki Nguyen, Charlotte Chen",
       image: "lotus",
     },
     {
       title: "Samulnori",
+      choreographers: "Sol Bae, Juneseo Lee, Elaine Yoo",
       image: "samulnori",
     },
     {
       title: "Taekwondo",
+      choreographers: "Andrew, Nathan, Sarah",
       image: "taekwondo",
     },
     {
       title: "Chinese Umbrella",
+      choreographers: "Sophia Zhang, Alyssa Zhang",
       image: "chineseumbrella",
     },
     {
       title: "Pipa Rain",
+      choreographers: "Lucy Jiang",
       image: "piparain",
     },
     {
       title: "Drums & Dragons",
+      choreographers: "David Lin, Max Zeng",
       image: "drumsanddragons",
     },
   ],
@@ -1891,20 +1911,20 @@ const text = {
       {
         year: "2025: Interwoven",
         title: undefined,
-        description: (
-          <>
-            Philanthropy: SQSH (St. Louis Queer Support Helpline)
-            <br />
-            30th Anniversary
-          </>
-        ),
+        description: "Philanthropy: SQSH (St. Louis Queer Support Helpline)",
         image: undefined,
         imageCaption: undefined,
       },
       {
         year: "2026: Boundless Horizons",
         title: undefined,
-        description: "Philanthropy: EarthDance",
+        description: (
+          <>
+            Philanthropy: EarthDance
+            <br />
+            30th Anniversary
+          </>
+        ),
         image: undefined,
         imageCaption: undefined,
       },
