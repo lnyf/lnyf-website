@@ -391,7 +391,7 @@ const text = {
     },
     {
       month: "Sept",
-      day: "13-14",
+      day: "12-13",
       title: "Act Auditions",
       caption: "More info on the Auditions page and LNYF's Instagram!",
       description:

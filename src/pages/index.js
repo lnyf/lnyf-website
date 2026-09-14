@@ -175,6 +175,62 @@ const FloatingDivider = styled.div`
   }
 `;
 
+// text.events has no year on it, so infer one: the LNYF season runs from August
+// through the following summer, which puts Aug-Dec in the season's start year and
+// Jan-Jul in the year after. An event can override this with its own `year` field.
+const SEASON_START_MONTH = 7; // August
+
+const MONTH_INDEX = {
+  jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
+  jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11,
+};
+
+const startOfToday = () => {
+  const d = new Date();
+  d.setHours(0, 0, 0, 0);
+  return d;
+};
+
+// Splits text.events into events still to come and events already finished.
+// An event is only "past" once its LAST day has gone by, so a run like
+// "Sept 13-14" stays upcoming through the 14th.
+const splitEvents = (events, today) => {
+  const seasonStart =
+    today.getMonth() >= SEASON_START_MONTH ? today.getFullYear() : today.getFullYear() - 1;
+
+  const upcoming = [];
+  const past = [];
+
+  events.forEach((event) => {
+    const key = String(event.month || "").trim().slice(0, 3).toLowerCase();
+    const monthIndex = key in MONTH_INDEX ? MONTH_INDEX[key] : null;
+    const days = String(event.day || "").match(/\d+/g);
+
+    if (monthIndex === null || !days) {
+      upcoming.push({ ...event, start: null });
+      return;
+    }
+
+    const year =
+      event.year != null
+        ? Number(event.year)
+        : monthIndex >= SEASON_START_MONTH
+        ? seasonStart
+        : seasonStart + 1;
+
+    const start = new Date(year, monthIndex, Number(days[0]));
+    const end = new Date(year, monthIndex, Number(days[days.length - 1]));
+
+    if (end < today) past.push({ ...event, start });
+    else upcoming.push({ ...event, start });
+  });
+
+  upcoming.sort((a, b) => (a.start && b.start ? a.start - b.start : 0));
+  past.sort((a, b) => b.start - a.start);
+
+  return { upcoming, past };
+};
+
 const EventPane = styled.div`
   width: 78vw;
           background-color: ${({ theme }) => theme.palette.secondary1}26;  
@@ -191,66 +247,74 @@ const EventPane = styled.div`
   }
 `;
 
-const EventBar = styled.div`
+const EventList = styled.div`
   z-index: 1;
-  display: -webkit-box;
-  flex-direction: row;
-  overflow-x: scroll;
-  overflow-y: visible;
-  padding: 10px 0;
-  &::-webkit-scrollbar {
-    width: 0.8em;
-  }
-  &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 6px ${({ theme }) => theme.palette.background}4D;
-    border-radius: 10px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: slategray;
-    opacity: 0.6;
-    border-radius: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4px 0;
+`;
+
+const EventToggle = styled.div`
+  display: flex;
+  gap: 12px;
+  margin: 20px 0 18px;
+  flex-wrap: wrap;
+`;
+
+const EventEmpty = styled(Typography)`
+  padding: 26px 28px;
+  text-align: left;
 `;
 
 const EventItem = styled.div`
-  width: 145px;
-  margin: 18px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 16px 12px;
-  min-height: 110px;
+  flex-direction: row;
   align-items: center;
-  border: 2px solid ${theme.font};
-  border-radius: 10px;
+  gap: 20px;
+  padding: 16px 28px;
   color: ${theme.palette.font};
   box-sizing: border-box;
-  overflow: visible;
+
+  & + & {
+    border-top: 1px solid ${({ theme }) => theme.palette.secondary1}33;
+  }
+
+  @media (max-width: 600px) {
+    gap: 14px;
+    padding: 14px 18px;
+  }
 `;
 
 const EventTitle = styled(Typography)`
-  text-align: center;
+  text-align: left;
   display: block;
-  max-width: 100%;
+  flex: 1;
+  min-width: 0;
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
   line-height: 1.3;
-  padding: 0 5px;
   font-size: clamp(14px, 1.6vw, 18px);
   letter-spacing: normal;
 `;
 
-const EventDate = styled(Typography)`
-  margin-top: 14px;
+const EventDate = styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 6px;
+  flex-shrink: 0;
+  width: 130px;
 
   h6 {
     font-size: clamp(13px, 1.5vw, 17px);
     line-height: 1.35;
+  }
+
+  @media (max-width: 600px) {
+    width: 92px;
+    gap: 4px;
   }
 `;
 
@@ -465,6 +529,20 @@ const MovingSpotlight = () => {
 
 const IndexPage = ({ data }) => {
   const [scrollPos, setScrollPos] = React.useState(0);
+  const [eventFilter, setEventFilter] = React.useState("upcoming");
+
+  // Seeded on render so the static markup is stable, then refreshed on mount so a
+  // page built weeks ago still splits the events against the visitor's real date.
+  const [today, setToday] = React.useState(startOfToday);
+  React.useEffect(() => {
+    setToday(startOfToday());
+  }, []);
+
+  const { upcoming, past } = React.useMemo(
+    () => splitEvents(text.events, today),
+    [today]
+  );
+  const shownEvents = eventFilter === "upcoming" ? upcoming : past;
 
   // All code used for transition animations, may not be used in the future
   // const [currBackground, setCurrBackground] = React.useState(transitionGIF);
@@ -605,15 +683,33 @@ const IndexPage = ({ data }) => {
         <div class="events">
         <Typography variant="h2">Events</Typography>
         <Underline />
+        <EventToggle>
+          <Button
+            onClick={() => setEventFilter("upcoming")}
+            active={eventFilter === "upcoming"}
+          >
+            Upcoming Events
+          </Button>
+          <Button
+            onClick={() => setEventFilter("past")}
+            active={eventFilter === "past"}
+          >
+            Past Events
+          </Button>
+        </EventToggle>
         <EventLink to="/events" style={{ textDecoration: 'none' }}>
           <EventPane>
-            <EventBar>
-              {text.events.map((e, i) => {
+            <EventList>
+              {shownEvents.length === 0 && (
+                <EventEmpty variant="h5" color="secondary2">
+                  {eventFilter === "upcoming"
+                    ? "No upcoming events right now — check back soon!"
+                    : "No past events yet this season."}
+                </EventEmpty>
+              )}
+              {shownEvents.map((e, i) => {
                 return (
                   <EventItem key={i}>
-                    <EventTitle variant="h5" color="secondary2">
-                      {e.title}
-                    </EventTitle>
                     <EventDate>
                       <Typography variant="h6" color="secondary2">
                         {e.month}
@@ -622,10 +718,13 @@ const IndexPage = ({ data }) => {
                         {e.day}
                       </Typography>
                     </EventDate>
+                    <EventTitle variant="h5" color="secondary2">
+                      {e.title}
+                    </EventTitle>
                   </EventItem>
                 );
               })}
-            </EventBar>
+            </EventList>
           </EventPane>
         </EventLink>
         </div>
