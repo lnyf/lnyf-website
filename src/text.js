@@ -1022,6 +1022,12 @@ const text = {
         { link: "https://www.youtube.com/embed/ZFiTkl1LCqc", },
         { link: "https://www.youtube.com/embed/IkkLR1TUTcs", },
         { link: "https://www.youtube.com/embed/qcwGhEe47U8", },
+        { link: "https://www.youtube.com/embed/AIdryZRQfx4", },
+        { link: "https://www.youtube.com/embed/0Wlfvp84f6Q", },
+        { link: "https://www.youtube.com/embed/FfwfGKOaFQ4", },
+        { link: "https://www.youtube.com/embed/uvKWn8BwyVM", },
+        { link: "https://www.youtube.com/embed/v-Ab5BxJfvQ", },
+        { link: "https://www.youtube.com/embed/65IdZZUIvyE", },
       ],
     },
     2025: {
