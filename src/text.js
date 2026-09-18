@@ -523,22 +523,22 @@ const text = {
   performances: [
     {
       title: "Lion",
-      choreographers: "Kelly, Kevin, Aphi",
+      choreographers: "A Phi Le, Kelly Gan, Kevin Si",
       image: "lion",
     },
     {
       title: "Yoyo",
-      choreographers: "Peter Chang, Ryan Lin, Ivy Huang, Reina Xu",
+      choreographers: "Ivy Huang, Peter Chang, Reina Xu, Ryan Lin",
       image: "yoyo",
     },
     {
       title: "Tinikling",
-      choreographers: "Andrew Aviado, Alice Xu, Cece Idinopulos",
+      choreographers: "Alice Xu, Andrew Phillip Aviado, Cecilia Idinopulos",
       image: "tinikling",
     },
     {
       title: "Korean Fan",
-      choreographers: "Jessica Lee, Andrew Choi, Min-Suh Kwak",
+      choreographers: "Andrew Choi, Jessica Lee, Min-Suh Kwak",
       image: "kfan",
     },
     {
@@ -553,22 +553,22 @@ const text = {
     },
     {
       title: "Lotus",
-      choreographers: "Nikki Nguyen, Charlotte Chen",
+      choreographers: "Charlotte Chen, Nikki Nguyen",
       image: "lotus",
     },
     {
       title: "Samulnori",
-      choreographers: "Sol Bae, Juneseo Lee, Elaine Yoo",
+      choreographers: "Elaine Yoo, Juneseo Lee, Sol Bae",
       image: "samulnori",
     },
     {
       title: "Taekwondo",
-      choreographers: "Andrew, Nathan, Sarah",
+      choreographers: "Andrew Kang, Nathan Zhou, Sarah Cai",
       image: "taekwondo",
     },
     {
       title: "Chinese Umbrella",
-      choreographers: "Sophia Zhang, Alyssa Zhang",
+      choreographers: "Alyssa Zhang, Sophia Zhang",
       image: "chineseumbrella",
     },
     {
