@@ -117,7 +117,7 @@ const SecTitle = styled(Typography)`
 
 const Answer = styled(Typography)`
   && {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Open Sans Fallback", sans-serif;
     font-size: 11px;
     line-height: 15px;
     font-weight: 400;

@@ -595,7 +595,7 @@ const IndexPage = ({ data }) => {
         }}
       >
         <TitleContainer>
-          <Typography style={{"font-family": '"Open Sans", sans-serif', "font-size": "32px", "letter-spacing": "0.03em", "text-shadow": `2px 2px 5px ${theme.palette.background}85`}} variant="h5" color="white">
+          <Typography style={{"font-family": '"Open Sans", "Open Sans Fallback", sans-serif', "font-size": "32px", "letter-spacing": "0.03em", "text-shadow": `2px 2px 5px ${theme.palette.background}85`}} variant="h5" color="white">
             {text.index.jumbotronTop}
           </Typography>
           <Typography style={{"white-space": "pre-line", "font-family": '"Prociono", serif', "font-weight": "400", "letter-spacing": "0.02em", "text-shadow": `2px 2px 5px ${theme.palette.background}85`}} variant="h1" color="white">

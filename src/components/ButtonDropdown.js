@@ -7,7 +7,7 @@ const Button = styled.button`
   color: ${({theme}) => theme.palette.font};
   cursor: pointer;
   padding: 0 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -36,7 +36,7 @@ const Button = styled.button`
 const Wrapper = styled.div`
   position: relative;
   display: inline-flex;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -54,7 +54,7 @@ const Dropdown = styled.div`
   overflow-y: auto;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;

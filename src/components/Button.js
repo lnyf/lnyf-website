@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Wrapper = styled.button`
   cursor: pointer;
   padding: 0 40px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   color: ${({ active }) => {

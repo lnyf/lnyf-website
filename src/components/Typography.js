@@ -7,7 +7,7 @@ const Header1 = styled.h1`
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
     margin: -10px 0 0 -5px;
@@ -22,7 +22,7 @@ const Header2 = styled.h2`
   font-size: 42px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
     line-height: 68px;
@@ -36,7 +36,7 @@ const Header3 = styled.h3`
   font-size: 34px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
     line-height: 64px;
@@ -50,7 +50,7 @@ const Header4 = styled.h4`
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
     line-height: 50px;
@@ -64,7 +64,7 @@ const Header5 = styled.h5`
   font-size: 22px;
   font-weight: 300;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
     line-height: 40px;
@@ -78,7 +78,7 @@ const Header6 = styled.h6`
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
     line-height: 30px;
@@ -92,7 +92,7 @@ const LinkFont = styled.p`
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
 `;
 
 const FloatingButtonFont = styled.p`
@@ -101,14 +101,14 @@ const FloatingButtonFont = styled.p`
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
 `;
 
 const Subtitle = styled.p`
   line-height: 20px;
   font-size: 20px;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: uppercase;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
@@ -122,7 +122,7 @@ const Caption = styled.p`
   font-size: 16px;
   font-weight: 300;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: uppercase;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
@@ -137,7 +137,7 @@ const Caption2 = styled.p`
   font-size: 12px;
   font-weight: 300;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: none;
   color: ${({ color }) => color};
   @media (min-width: 800px) {
@@ -157,7 +157,7 @@ const Paragraph = styled.p`
 const FooterTitle = styled.p`
   font-size: 15px;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: uppercase;
   color: ${({ theme }) => theme.palette.accent3};
   font-weight: 300;
@@ -170,7 +170,7 @@ const FooterLink = styled.p`
   font-size: 10px;
   margin: 0;
   font-weight: 300;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-transform: uppercase;
   @media (min-width: 800px) {
     font-size: 14px;
@@ -182,7 +182,7 @@ const CreditFont = styled.p`
   margin: 0;
   color: ${({ theme }) => theme.palette.accent3};
   font-weight: 200;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   text-align: center;
   margin-top: 15px;
 `;

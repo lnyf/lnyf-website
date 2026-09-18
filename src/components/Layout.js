@@ -1,6 +1,6 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Container from "../components/Container";
 import Typography from "../components/Typography";
@@ -29,7 +29,7 @@ const NavBarLink = styled(Typography)`
   margin-left: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Open Sans Fallback", sans-serif;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -76,7 +76,7 @@ const NavOverlayItem = styled(Link)`
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.04);
   color: #f7f7f5;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   font-weight: 500;
   font-size: clamp(1.45rem, 4.2vw, 2.25rem);
   letter-spacing: 0.08em;
@@ -185,7 +185,7 @@ const NewsletterForm = styled.form`
   width: 100%;
   max-width: 800px;
   margin-bottom: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
   gap: 12px;
   
   @media (max-width: 600px) {
@@ -198,35 +198,38 @@ const StyledWaves = styled(Waves)`
   margin-top: 40px;
 `;
 
-function debounce(func, wait, immediate) {
-  var timeout;
-  return function () {
-    var context = this, args = arguments;
-    var later = function () {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-};
-
 const Header = () => {
   const [visible, setVisible] = useState(true);
-  const [prevPos, setPrevPos] = useState(0);
-
-  const handleScroll = debounce(() => {
-    const scrollY = window.pageYOffset;
-    setVisible(scrollY < 20 || scrollY < prevPos);
-    setPrevPos(scrollY);
-  }, 10);
+  const prevPos = useRef(0);
+  // The browser restores the previous scroll offset just after hydration. That
+  // arrives as a scroll event we must not read as "the user scrolled down", or
+  // the bar animates itself off screen on load.
+  const primed = useRef(false);
 
   useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
+    prevPos.current = window.pageYOffset;
+    let queued = false;
+
+    const handleScroll = () => {
+      if (queued) return;
+      queued = true;
+      window.requestAnimationFrame(() => {
+        queued = false;
+        const scrollY = window.pageYOffset;
+        if (!primed.current) {
+          primed.current = true;
+          prevPos.current = scrollY;
+          return;
+        }
+        if (Math.abs(scrollY - prevPos.current) < 6) return;
+        setVisible(scrollY < 20 || scrollY < prevPos.current);
+        prevPos.current = scrollY;
+      });
+    };
+
+    document.addEventListener("scroll", handleScroll, { passive: true });
     return () => document.removeEventListener("scroll", handleScroll);
-  }, [prevPos, visible, handleScroll]);
+  }, []);
 
   const { redIconData } =
     useStaticQuery(graphql`
@@ -457,7 +460,7 @@ const Layout = ({ children, transparent, noWaves }) => {
                 fontSize: '1rem',
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
-                fontFamily: '"Oswald", sans-serif',
+                fontFamily: '"Oswald", "Oswald Fallback", sans-serif',
                 marginTop: '10px',
               }}
               onMouseEnter={e => {

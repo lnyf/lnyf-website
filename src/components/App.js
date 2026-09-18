@@ -5,10 +5,32 @@ import { Helmet } from "react-helmet";
 import theme from "../theme";
 
 const GlobalStyle = createGlobalStyle`
+  /* Metric-matched stand-ins used only until the Google fonts finish loading.
+     size-adjust scales Arial to the same text width as the real font, so the
+     swap doesn't reflow the nav bar (measured: Open Sans 90.8%, Oswald 70.6%
+     of Arial's advance width at the same size). */
+  @font-face {
+    font-family: "Open Sans Fallback";
+    src: local("Arial"), local("Helvetica"), local("Liberation Sans");
+    size-adjust: 90.8%;
+    ascent-override: 106%;
+    descent-override: 29%;
+    line-gap-override: 0%;
+  }
+
+  @font-face {
+    font-family: "Oswald Fallback";
+    src: local("Arial"), local("Helvetica"), local("Liberation Sans");
+    size-adjust: 70.6%;
+    ascent-override: 165%;
+    descent-override: 41%;
+    line-gap-override: 0%;
+  }
+
   html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Open Sans Fallback', sans-serif;
     color: ${theme.palette.font};
     background-color: ${theme.palette.background};
     scroll-behavior: smooth;

@@ -22,7 +22,7 @@ const ContactSubject = styled.input`
   font-size: 14px;
   height: 35px;
   margin: 10px 0 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Open Sans Fallback", sans-serif;
   @media (min-width: 600px) {
     padding: 0 25px;
     font-size: 18px;
@@ -37,7 +37,7 @@ const ContactBody = styled.textarea`
   padding: 17.5px 17.5px;
   font-size: 14px;
   margin: 10px 0 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Open Sans Fallback", sans-serif;
   @media (min-width: 600px) {
     padding: 25px 25px;
     font-size: 18px;
