@@ -314,6 +314,15 @@ const Header = () => {
             <NavOverlayItem to="/history" onClick={onMenuClick}>
               History
             </NavOverlayItem>
+            <NavOverlayItem
+              as="a"
+              href={text.links.stageCrewForm}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={onMenuClick}
+            >
+              Stage Crew App
+            </NavOverlayItem>
             {/* <NavOverlayItem to="/store" onClick={onMenuClick}>
               Donate
             </NavOverlayItem> */}
@@ -384,6 +393,16 @@ const Header = () => {
           <NavBarLink variant="linkfont">
             <StyledLink to="/history">
               History
+            </StyledLink>
+          </NavBarLink>
+          <NavBarLink variant="linkfont">
+            <StyledLink
+              as="a"
+              href={text.links.stageCrewForm}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Stage Crew App
             </StyledLink>
           </NavBarLink>
           {/* Store hidden for now - uncomment to re-open

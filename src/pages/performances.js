@@ -77,6 +77,21 @@ const Choreographers = styled(Typography)`
   opacity: 0.9;
 `;
 
+const Performers = styled.p`
+  margin: 0;
+  font-family: "Oswald", "Oswald Fallback", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.75;
+  line-height: 18px;
+  font-size: 13px;
+  @media (min-width: 800px) {
+    line-height: 22px;
+    font-size: 16px;
+  }
+`;
+
 const ImageContainer = styled.div`
   flex-basis: 0;
   flex-grow: 1;
@@ -133,6 +148,9 @@ const PerformancesPage = ({ data }) => {
                   <Choreographers variant="caption">
                     Choreographed by {p.choreographers}
                   </Choreographers>
+                )}
+                {p.performers && p.performers.length > 0 && (
+                  <Performers>{p.performers.join(" · ")}</Performers>
                 )}
               </PerformanceContent>
             </PerformanceContainer>
