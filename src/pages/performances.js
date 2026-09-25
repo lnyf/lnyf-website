@@ -73,7 +73,6 @@ const ImagePlaceholder = styled.div`
 const Choreographers = styled(Typography)`
   margin-top: 0;
   margin-bottom: 5px;
-  font-style: italic;
   opacity: 0.9;
 `;
 

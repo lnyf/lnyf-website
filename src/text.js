@@ -523,7 +523,7 @@ const text = {
   performances: [
     {
       title: "Lion",
-      choreographers: "A Phi Le, Kelly Gan, Kevin Si",
+      choreographers: "Kelly Gan, A Phi Le, Kevin Si",
       image: "lion",
       performers: [
         "Luna Chen",
@@ -538,7 +538,7 @@ const text = {
     },
     {
       title: "Yoyo",
-      choreographers: "Ivy Huang, Peter Chang, Reina Xu, Ryan Lin",
+      choreographers: "Peter Chang, Ivy Huang, Ryan Lin, Reina Xu",
       image: "yoyo2",
       performers: [
         "Allison Chang",
@@ -556,7 +556,7 @@ const text = {
     },
     {
       title: "Tinikling",
-      choreographers: "Alice Xu, Andrew Phillip Aviado, Cecilia Idinopulos",
+      choreographers: "Andrew Phillip Aviado, Cecilia Idinopulos, Alice Xu",
       image: "tinikleing2",
       performers: [
         "Arianne Chacon",
@@ -576,7 +576,7 @@ const text = {
     },
     {
       title: "Korean Fan",
-      choreographers: "Andrew Choi, Jessica Lee, Min-Suh Kwak",
+      choreographers: "Andrew Choi, Min-Suh Kwak, Jessica Lee",
       image: "kfan",
       performers: [
         "Elim Fu",
@@ -609,7 +609,7 @@ const text = {
     },
     {
       title: "Chinese Fan",
-      choreographers: "Andria Luo, Celina Liu, Cynthia Zhi",
+      choreographers: "Celina Liu, Andria Luo, Cynthia Zhi",
       image: "cfan2",
       performers: [
         "Jessica Hu",
@@ -640,7 +640,7 @@ const text = {
     },
     {
       title: "Samulnori",
-      choreographers: "Elaine Yoo, Juneseo Lee, Sol Bae",
+      choreographers: "Sol Bae, Juneseo Lee, Elaine Yoo",
       image: "samulnori",
       performers: [
         "Elizabeth Chen",
@@ -660,7 +660,7 @@ const text = {
     },
     {
       title: "Taekwondo",
-      choreographers: "Andrew Kang, Nathan Zhou, Sarah Cai",
+      choreographers: "Sarah Cai, Andrew Kang, Nathan Zhou",
       image: "taekwondo",
       performers: [
         "Iliana Acevedo",
