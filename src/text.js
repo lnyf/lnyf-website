@@ -539,7 +539,7 @@ const text = {
     {
       title: "Yoyo",
       choreographers: "Ivy Huang, Peter Chang, Reina Xu, Ryan Lin",
-      image: "yoyo",
+      image: "yoyo2",
       performers: [
         "Allison Chang",
         "Angela Chen",
@@ -557,7 +557,7 @@ const text = {
     {
       title: "Tinikling",
       choreographers: "Alice Xu, Andrew Phillip Aviado, Cecilia Idinopulos",
-      image: "tinikling",
+      image: "tinikleing2",
       performers: [
         "Arianne Chacon",
         "Karis DePaz",
@@ -610,7 +610,7 @@ const text = {
     {
       title: "Chinese Fan",
       choreographers: "Andria Luo, Celina Liu, Cynthia Zhi",
-      image: "cfan",
+      image: "cfan2",
       performers: [
         "Jessica Hu",
         "Khadija Lahmidi",
