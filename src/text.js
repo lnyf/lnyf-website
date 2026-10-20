@@ -186,6 +186,75 @@ const text = {
     ),
     philanthropyLink: "https://earthdancefarms.org/",
   },
+  benefitNights: {
+    intro:
+      "Grab a bite, support the show! Eat at these St. Louis restaurants on their benefit nights to help fund LNYF 2027.",
+    // start/end are YYYY-MM-DD. Leave start empty for dates still being finalized.
+    // time: e.g. "5:00 – 9:00 PM" (shows "Time TBA" when empty).
+    // Images live in src/images/benefit_night_2027 and are referenced by file name.
+    nights: [
+      {
+        name: "Brew Bites",
+        cuisine: "Sandwiches, breakfast & smoothies",
+        start: "2026-10-16",
+        end: "2026-10-17",
+        time: "",
+        address: "6662 Delmar Blvd, University City, MO 63130",
+        logo: "brew_bites_logo",
+        photos: ["brew_bites_meal_1", "brew_bites_smoothies_1", "brew_bites_meal_2"],
+      },
+      {
+        name: "Nudo House",
+        cuisine: "Ramen, pho & soft serve",
+        start: "2026-10-23",
+        end: "2026-10-25",
+        time: "",
+        address: "6105-A Delmar Blvd, St. Louis, MO 63112",
+        logo: "nudo_house_logo",
+        photos: ["nudo_house_meal_1", "nudo_house_soft_serve_1", "nudo_house_meal_4"],
+      },
+      {
+        name: "Africana",
+        cuisine: "African cuisine & Adinkra Lounge",
+        start: "2026-11-13",
+        end: "2026-11-15",
+        time: "",
+        address: "5860 Delmar Blvd, St. Louis, MO 63112",
+        logo: "AFRICANA_logo",
+        photos: ["AFRICANA_meal_2", "AFRICANA_drink_1", "AFRICANA_meal_1"],
+      },
+      {
+        name: "Joyful House",
+        cuisine: "Vietnamese, boba & bubble waffles",
+        start: "2026-11-20",
+        end: "2026-11-22",
+        time: "",
+        address: "3900 S Grand Blvd, St. Louis, MO 63118",
+        logo: "Joyful_House_logo",
+        photos: ["Joyful_House_meal_1", "Joyful_House_drink_1", "Joyful_House_dessert_1"],
+      },
+      {
+        name: "Drunken Fish",
+        cuisine: "Sushi & Asian fusion",
+        start: "",
+        end: "",
+        time: "",
+        address: "",
+        logo: "",
+        photos: [],
+      },
+      {
+        name: "Snarf's Sandwiches",
+        cuisine: "Toasted sandwiches",
+        start: "",
+        end: "",
+        time: "",
+        address: "360 N Skinker Blvd, St. Louis, MO 63130",
+        logo: "",
+        photos: [],
+      },
+    ],
+  },
   events: [
     // {
     //   month: "Aug",
