@@ -239,7 +239,7 @@ const text = {
         start: "",
         end: "",
         time: "",
-        address: "",
+        address: "1 Maryland Plaza, St. Louis, MO 63108",
         logo: "",
         photos: [],
       },
@@ -645,7 +645,7 @@ const text = {
     {
       title: "Korean Fan",
       choreographers: "Andrew Choi, Min-Suh Kwak, Jessica Lee",
-      image: "kfan",
+      image: "kfan2027",
       performers: [
         "Elim Fu",
         "Hailey Kim",
