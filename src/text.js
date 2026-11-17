@@ -139,13 +139,18 @@ const StyledHeader = styled(Typography)`
 //   },
 // };
 
+// Use the CashNet entry link, not the /cashneti/static/storefront/SULUNAR/catalog
+// address from the browser bar: the entry link starts a session and redirects
+// to the catalog; the catalog address only works if a session already exists.
+const STORE_URL = "https://commerce.cashnet.com/SULUNAR";
+
 const text = {
   links: {
     facebook: "https://www.facebook.com/WULNYF/",
     instagram: "https://www.instagram.com/wu.lnyf/?hl=en",
     youtube: "https://www.youtube.com/user/LNYF",
     // store: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
-    store2: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0",
+    store: STORE_URL,
     externalPerformancesForm: "https://docs.google.com/forms/d/e/1FAIpQLSd2bsJ_9NpPp45zssGhag9T6e-oxGTLyLtnpxMI2NAIC3Hmzw/viewform",
     // usherForm: "https://docs.google.com/forms/d/e/1FAIpQLScMSTqyzn7hWZo2K76uCXTM4f9ewOHQ3066u4xcgvWHsP9YZA/viewform",
     stageCrewForm: "https://docs.google.com/forms/d/e/1FAIpQLSecmXGLRFzrBqMli5pKH-DE9WYqS8-NwijeudeC6NDhORZoGQ/viewform",
@@ -855,34 +860,40 @@ const text = {
       //   link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.ha-young%40wustl.edu%7C7aa47855e0474490089f08de13180a8c%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C638969191135872910%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UUUgnWC5SuA4Tw0gwFH5ywGZ3NrbADcOKY4Bp3shYpM%3D&reserved=0",
       // },
       {
-        title: "Short Sleeve T-Shirt",
+        title: "Hoodie",
         images: [
-          { image: "lnyf-shirt", alt: "Short Sleeve" },
+          { image: "hoodie front", alt: "LNYF 2027 hoodie, front" },
+          { image: "hoodie back", alt: "LNYF 2027 hoodie, back" },
+          { image: "cover", alt: "LNYF 2027 hoodie and tote bag" },
+          { image: "DSC_2075", alt: "LNYF 2027 hoodie" },
+          { image: "DSC_2103", alt: "LNYF 2027 hoodie, back" },
         ],
         subImages: undefined,
-        price: "$15.00",
         soldOut: false,
-        link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0",
+        link: STORE_URL,
       },
       {
-        title: "Shot Glass",
+        title: "Tote Bag",
         images: [
-          { image: "lnyf-shot-glass", alt: "Shot Glass" },
+          { image: "tote_1", alt: "LNYF 2027 tote bag" },
+          { image: "tote_2", alt: "LNYF 2027 tote bag" },
+          { image: "tote_3", alt: "LNYF 2027 tote bag" },
+          { image: "DSC_2085", alt: "LNYF 2027 tote bag" },
         ],
         subImages: undefined,
-        price: "$16.00",
         soldOut: false,
-        link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0",
+        link: STORE_URL,
       },
       {
-        title: "Hat",
+        title: "Keychain",
         images: [
-          { image: "lnyf-hat", alt: "Hat" },
+          { image: "keychain_1", alt: "LNYF 2027 keychain" },
+          { image: "DSC_2094", alt: "LNYF 2027 keychain" },
+          { image: "DSC_2091", alt: "LNYF 2027 keychain" },
         ],
         subImages: undefined,
-        price: "$15.00",
         soldOut: false,
-        link: "https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FSULUNAR&data=05%7C02%7Cc.d.ly%40wustl.edu%7Cf8e8fb57056f490e511808de603f3bf4%7C4ccca3b571cd4e6d974b4d9beb96c6d6%7C0%7C0%7C639054021869053019%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=50rDOu%2BftYCc6bmqilEVDdIDj9DJA5RryrAfgS%2FzcLw%3D&reserved=0",
+        link: STORE_URL,
       },
     ],
   },

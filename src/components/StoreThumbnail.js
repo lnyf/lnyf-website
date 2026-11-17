@@ -60,9 +60,7 @@ const StoreThumbnail = ({
     setIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
   const handlePrev = () => {
-    setIndex((prevIndex) => {
-      return Math.abs(prevIndex - 1) % images.length;
-    });
+    setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
   const img = getImage(imageDataMap[images[index].image]);

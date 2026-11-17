@@ -329,10 +329,9 @@ const Header = () => {
             {/* <NavOverlayItem to="/store" onClick={onMenuClick}>
               Donate
             </NavOverlayItem> */}
-            {/* Store hidden for now - uncomment to re-open
             <NavOverlayItem to="/store" onClick={onMenuClick}>
               Store
-            </NavOverlayItem> */}
+            </NavOverlayItem>
           </NavOverlayContent>
         </NavOverlay>
       )}
@@ -413,12 +412,11 @@ const Header = () => {
               Stage Crew App
             </StyledLink>
           </NavBarLink>
-          {/* Store hidden for now - uncomment to re-open
           <NavBarLink variant="linkfont">
             <StyledLink to="/store">
               Store
             </StyledLink>
-          </NavBarLink> */}
+          </NavBarLink>
         </LinkSection>
       </div>
     </div>
@@ -448,10 +446,9 @@ const Layout = ({ children, transparent, noWaves }) => {
           {/* <Link to="/store" style={{ color: 'white', textDecoration: 'none' }}>
             <Typography variant="footerlink">Donate</Typography>
           </Link> */}
-          {/* Store hidden for now - uncomment to re-open
           <Link to="/store" style={{ color: 'white', textDecoration: 'none' }}>
             <Typography variant="footerlink" style={{ fontSize: '1.1rem', marginBottom: '1px'}}>Store</Typography>
-          </Link> */}
+          </Link>
           <Link to="/philanthropy" style={{ color: 'white', textDecoration: 'none' }}>
             <Typography variant="footerlink" style={{ fontSize: '1.1rem', marginBottom: '1px'}}>Philanthropy</Typography>
           </Link>

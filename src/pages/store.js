@@ -112,16 +112,7 @@ const StorePage = ({ data }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>Buy Drop 1</Button>
-              </a>
-            )}
-            {text.links.store2 && (
-              <a
-                href={text.links.store2}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button>Buy Drop 2</Button>
+                <Button>Shop Merch</Button>
               </a>
             )}
             {text.store.caption && (
@@ -144,7 +135,7 @@ const StorePage = ({ data }) => {
               />
               <StyledHeader variant="subtitle">{s.title}</StyledHeader>
               <Subtitle variant="caption">{s.subtitle}</Subtitle>
-              <Typography variant="caption">{s.price}</Typography>
+              {s.price && <Typography variant="caption">{s.price}</Typography>}
               {s.link && !s.soldOut && (
                 <StyledLink
                   href={s.link}
@@ -188,7 +179,7 @@ export const query = graphql`
     imgData: allFile(
       filter: {
         sourceInstanceName: { eq: "images" }
-        relativeDirectory: { eq: "store" }
+        relativeDirectory: { regex: "/^Merch2027\\//" }
       }
     ) {
       nodes {
